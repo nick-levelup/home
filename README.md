@@ -1,4 +1,5 @@
 Первый раз.
+
 1. Установить git (Git Bush для Windows)
 2. Зайти в терминал (Git Bush)
 3. Склонировать репозиторий командой - git clone https://github.com/nick-levelup/home.git
