@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Рецепт №3 - Квас украинский</title>
+	<meta charset="utf-8">
+	<style>
+		body {
+			font-size: 20px;
+		}
+		em {
+			color: red;
+		}
+		table {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		table td {
+			width: 350px;
+			border: 1px solid black;
+		}
+		.logo{
+			position: absolute;
+			top: 1%;
+			left: 1%;
+		}
+		.hint {
+			font-size: 0.7em;
+		}
+		.top-menu-container {
+			text-align: center;
+		}
+		.top-menu {
+			font-size: 2em;
+			list-style: none;
+		}
+		.top-menu li {
+			display: inline;
+			margin: 0 50px 0 0;
+		}
+		.content {
+			margin: 3%;
+		}
+		.pager-container {
+			text-align: center;
+		}
+		.pager {
+			font-size: 1.4em;
+			list-style: none;
+		}
+		.pager li {
+			display: inline;
+			margin-right: 50px;
+		}
+		.login-block{
+			position: absolute;
+			top: 1%;
+			right: 1%;
+			width: 11%;
+			font-size: 0.7em;
+			background-color: #ccc;
+			padding: 1% 1% 1% 1%;
+			border-radius: 3px;
+		}
+		.title-login{
+			text-align: left;
+			font-size: 1.3em;
+			margin: 0 0 10% 0;
+		}
+		.l-side, .r-side{
+			float: left;
+			margin: 0 0 3% 0;
+		}
+		.l-side{
+			width: 20%;
+		}
+		.r-side{
+			width: 80%;
+			text-align: right;
+		}
+		.subm-block{
+			text-align: right;
+		}
+		.registation-block, .lostpasswd-block{
+			width:50%;
+			float:left;
+		}
+		.lostpasswd-block{
+			text-align: right;			
+		}
+		</style>
+</head>
+<body>
+	<div class="logo"><img src="../images/logo.gif" alt="Логотип"></div>
+	<div class="top-menu-container">
+		<ul class="top-menu">
+			<li><a href="../index.html" accesskey="m">Главная</a></li>
+			<li><a href="../contacts.html">Контакты</a></li>
+			<li><a href="../about.html">О нас</a></li>
+		</ul>
+		<p class="hint"><em>*</em> Для навигации по рецептам испльзуйте комбинации Alt+K, Alt+L(Opera 15+, Google Chorome), Shift+Alt+K, Shift+Alt+L(Mozilla Firefox)</p>
+	</div>
+	<div class="login-block">
+		<form action="/login" method="POST">
+			<div class="title-login">Авторизация на сайте:</div>
+			<div class="l-side"><label for="userlogin">Имя:</label></div>
+			<div class="r-side"><input type="text" id="userlogin" placeholder="Введите имя"></div>
+			<div class="l-side"><label for="userpasswd">Пароль:</label></div>
+			<div class="r-side"><input type="password" id="userpasswd" placeholder="Введите пароль"></div>
+			<div class="subm-block"><p><input type="submit" value="Вход"></p></div>
+			<div class="registation-block"><a href="../registration.html">Регистрация</a></div>
+			<div class="lostpasswd-block"><a href="../lostpasswd.html">Забыли пароль?</a></div>
+		</form>
+	</div>
+	<div class="content">
+		<h1>Квас украинский (на бородинском хлебе)</h1><!--Рецепт №3 http://www.smachno.ua/dir/recipes/beverages/6540.html-->
+		<h3>Основные характеристики</h3>
+		<table>
+			<tr>
+				<td>Альтернативное название:</td>
+				<td>свиные ребра-гриль</td>
+			</tr>
+			<tr>
+				<td>Вид кухни:</td>
+				<td>домашняя, украинская</td>
+			</tr>
+			<tr>
+				<td>Событийность:</td>
+				<td>блюдо на каждый день</td>
+			</tr>
+			<tr>
+				<td>Порции:</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<td>Время:</td>
+				<td>70</td>
+			</tr>
+			<tr>
+				<td>Категория:</td>
+				<td>Холодные напитки</td>
+			</tr>
+		</table>
+		<h3>Тип блюда</h3>
+		<table>
+			<tr>
+				<td>по основному продукту:</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>по способу приготовления:</td>
+				<td>варка</td>
+			</tr>
+			<tr>
+				<td>по подаче:</td>
+				<td>напитки</td>
+			</tr>
+		</table>
+		<h3>Приготовление</h3>
+		<table>
+			<tr>
+				<td>по сложности:</td>
+				<td>средне</td>
+			</tr>
+			<tr>
+				<td>по времени:</td>
+				<td>долго</td>
+			</tr>
+		</table>
+		<h3>Ингредиенты</h3>
+		<table>
+			<tr>
+				<td>Хлеб бородинский</td>
+				<td>1000 г</td>
+			</tr>
+			<tr>
+				<td>Сок свекольный</td>
+				<td>3 ст. л.</td>
+			</tr>
+			<tr>
+				<td>Корица молотая</td>
+				<td>1 ст. л.</td>
+			</tr>
+			<tr>
+				<td>Сахар</td>
+				<td>4 стакана</td>
+			</tr>
+			<tr>
+				<td>Дрожжи пресованные</td>
+				<td>20г</td>
+			</tr>
+			<tr>
+				<td>Мука</td>
+				<td>1 ст. л.</td>
+			</tr>
+			<tr>
+				<td>Вода (для закваски)</td>
+				<td>1 ст. л.</td>
+			</tr>
+		</table>
+		<h2>Способ приготовления</h2>
+		<p>Хлеб нарезаем на небольшие кусочки, посыпаем корицей и заливаем крутым кипятком (5 л). Даем остыть до 25°С. Готовим закваску: дрожжи растираем с мукой и водой. Вливаем закваску, перемешиваем, накрываем салфеткой и ставим в теплое место. Когда масса перебродит, добавляем разведенный кипятком (1 л) сахар и переносим на холод. Через четыре дня осторожно переливаем прозрачный слой в другую посуду, добавляем свекольный сок и кипятим 20 минут. Охлаждаем, разливаем в бутылки и закупориваем. На сутки оставляем в теплом месте, а затем ставим в холодильник.</p>
+		<div class="pager-container">
+			<ul class="pager">
+				<li><a href="recipe2.html" accesskey="k">&laquo; назад</a></li>
+				<li><a hidden href="recipe1.html" accesskey="l">вперед &raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

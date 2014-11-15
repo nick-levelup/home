@@ -1,0 +1,1240 @@
+1. Изменить тип документа на HTML5
+
+<!DOCTYPE html>
+
+2. Добавьте текст внутри тэга <body>.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente?</p>
+    </body>
+</html>
+
+3. Измените заголовок страницы на "Новый заголовок"
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Новый заголовок</title>
+    </head>
+    <body>
+         <h1>Тэг &lt;title&gt;</h1>
+         <p>Обозначает заголовок страницы.</p>
+         <p>Позволяет очень удобно ориентироваться между множеством открытых вкладок.</p>
+    </body>
+</html>
+
+4. Измените кодировку документа
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Кодировка</h1>
+        <p>Когда кодировка документа задана неверно, некоторые символы отображаются как «иероглифы», а некоторые нет.</p>
+    </body>
+</html>
+
+5. Измените описание ключевых слов на следующее: html, css.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="html, css">
+    </head>
+    <body>
+        <h1>&lt;meta name="keywords"&gt;</h1>
+        <p>Задаёт ключевые слова.</p>
+        <p>Данный мета-тег поисковые системы используют для того, чтобы определить релевантность ссылки. При формировании данного тега необходимо использовать только те слова, которые содержатся в самом документе.</p>
+    </body>
+</html>
+
+6. Добавить следующее краткое описание страницы: изучаем мета-тэги
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="html, css">
+        <meta name="description" content="изучаем мета-тэги">
+    </head>
+    <body>
+        <h1>&lt;meta name="description"&gt;</h1>
+        <p>Данный тег используется при создании краткого описания страницы, используется поисковыми системами для индексации, а также при создании аннотации в выдаче по запросу. При отсутствии тега поисковые системы выдают в аннотации первую строку документа или отрывок, содержащий ключевые слова. Отображается после ссылки при поиске страниц в поисковике.</p>
+    </body>
+</html>
+
+7. Раскомментируйте оба абзаца в разделе 1, закомментируйте один абзац в разделе 2.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Этот тэг задаёт кодировку -->
+        <meta charset="utf-8">
+        <meta name="keywords" content="ключевые слова">
+    </head>
+    <body>
+        <div id="block1">
+            <h1>Раздел 1</h1>
+            <p>Первый абзац.</p> 
+            <p>Второй абзац.</p>
+        </div>
+        <div id="block2">
+            <h1>Раздел 2</h1>
+            <p>Первый абзац.</p>
+           <!--  <p>Второй абзац.</p> --> "command+/""
+        </div>
+    </body>
+</html>
+
+8. Создайте в неразмеченной части текста минимум три абзаца
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Абзацы</title>
+    </head>
+    <body>
+        <p>Абзац — отрезок письменной речи, состоящий из нескольких предложений.</p>
+        <p>Абзац, обозначая своего рода «цезуру», является единицей членения, промежуточной между фразой и главой, и служит для группировки однородных единиц изложения, исчерпывая один из его моментов (тематический, сюжетный и т. д.).</p>
+        <p>Выделение фразы в особый абзац усиливает падающий на неё смысловой акцент.</p>
+        <p>Для выделения абзаца его, помимо новой строки, печатают со строки красной, то есть отделяют вертикальным отступом от соседних абзацев и/или делают абзацный отступ.</p>
+    </body>
+</html>
+
+9. Используйте в тексте подзаголовки трех уровней.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Заголовки</title>
+    </head>
+    <body>
+        <h1> Заголовки</h1>
+        <p>Заголовки являются одним из важнейших инструментов для структурирования текста.</p>
+
+        <h2>1.1 Рекомендации по использованию заголовков и подзаголовков</h2>
+        <p>Вот некоторые рекомендации по использованию заголовков в HTML-странице.</p>
+
+        <h3>1.1.1 Использование заголовка h1 </h3>
+        <p>Не рекомендуется, чтобы на одной странице содержалось несколько заголовков верхнего уровня.</p>
+
+        <h4>1.1.2 Использование подзаголовков (h2-h6)</h4>
+        <p>При использовании подзаголовков не рекомендуется пропускать уровни заголовков, т.е. после заголовка h1 должен идти подзаголовок h2 и только потом подзаголовок h3.</p>
+    </body>
+</html>
+
+10. Добавьте в список из примера минимум три пункта.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Неупорядоченный список</title>
+    </head>
+    <body>
+        <h1>Список тэгов</h1>
+        <p>Список уже изученных тэгов:</p>
+        <ul>
+            <li>html</li>
+            <li>head</li>
+            <li>body</li>
+            <li>div</li>
+            <li>p</li>
+            <li>a</li>
+        </ul>
+        <p>Неупорядоченный список используется для простого перечисления объектов, когда порядок неважен.</p>
+    </body>
+</html>
+
+11. Добавьте в список из примера минимум три пункта, затем измените начало нумерации списка с помощью атрибута start
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Упорядоченный список</title>
+    </head>
+    <body>
+        <h1>Список заголовков</h1>
+        <p>Список тэгов заголовков и подзаголовков в порядке убывания:</p>
+        <ol  start="3">
+            <li>h1</li>
+            <li>h2</li>
+            <li>h3</li>
+            <li>h4</li>
+            <li>h5</li>
+            <li>h6</li>
+        </ol>
+        <p>Упорядоченный список используется для перечисления объектов или действий, когда важен порядок.</p>
+    </body>
+</html>
+
+12. Добавьте два пункта в список "Тэги заголовков". Добавьте в пункт "Тэги списков" неупорядоченный список из двух элементов.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Многоуровневый список</title>
+    </head>
+    <body>
+        <h1>Разделы курса</h1>
+        <ol>
+            <li>
+                Тэги заголовков
+                <ol>
+                    <li>h1</li>
+                    <li>h2</li>
+                    <li>h3</li>
+                    <li>h4</li>
+                </ol>
+            </li>
+            <li>Тэги списков
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>Тэги форм</li>
+        </ol>
+    </body>
+</html>
+
+13. Создайте четырехуровневый упорядоченный список.
+
+Интернет-деятели
+    Дизайнеры
+        Артемий Лебедев
+                design.ru
+                artlebedev.ru 
+    Программисты
+Предприниматели
+Политики
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Интернет-деятели
+            <ul>
+                <li>Дизайнер
+                <ul>
+                    <li>Артемий Лебедев
+                    <ul>
+                        <li>design.ru</li>
+                        <li>artlebedev.ru</li>
+                    </ul>
+                </li>
+                </ul>
+                </li>
+                <li>Программис</li>
+            </ul>
+        </li>
+        </li>
+        
+        <li>Предприниматели</li>
+        <li>Политики</li>
+    </ul>
+</body>
+</html>
+
+14. Добавьте в список определение тэга dl.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Список определений</title>
+    </head>
+    <body>
+        <dl>
+            <dt>dl</dt>
+                <dd>тэг, задающий налоло списка</dd>
+            <dt>dt</dt>
+                <dd>тэг, задающий термин</dd>
+            <dt>dd</dt>
+                <dd>тэг, задающий определение термина</dd>
+        </dl>
+    </body>
+</html>
+
+15. Используйте в тексте тэги strong и b.
+
+Тэг <strong> определяет важность отмеченного текста.
+Тэг <b> предназначен для выделения текста без придания ему особой важности.
+Очевидно, что смысловые отличия двух тэгов малы. Визуально оба тэга одинаковы, они выделяют текст жирным.
+Отметим, что новый смысл тэгу <b> придали в HTML5. Раньше это был тэг, который просто делает текст жирным. Т.е. он был предназначен только для визуального форматирования.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Тэги strong и b</title>
+    </head>
+    <body>
+        <p>Наверное, за это <strong>время многие</strong> сошли бы с ума, но я по-прежнему люблю разработку и поддерживаю движение веб-стандартов. Именно стандарты, <b>на мой взгляд, заставляют</b> думать в правильном направлении.</p>
+    </body>
+</html>
+
+16. Используйте в тексте тэги em и i.
+
+Тэг <em> определяет текст, на который сделан особый акцент.
+Тэг <i> обозначает текст, который выделен интонационно.
+Смысловые отличия двух тэгов малы, чтобы почувствовать эти различия попробуйте произнести предложения выше вслух с разной интонацией для выделенных слов. Визуально оба тэга одинаковы, они выделяют текст курсивом.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Тэги em и i</title>
+    </head>
+    <body>
+        <p>Мне очень повезло с командой, <em>именно с ней во мне</em> зародилось чувство прекрасного, с которым я очень трепетно отношусь к пользовательским интерфейсам. В последнее время моя приоритетная задача — сделать так, чтобы продукт работал с наименьшим <i>количеством действий</i>. Пользователи это наше всё.</p>
+    </body>
+</html>
+
+17. Расставьте переносы внутри куплетов песни, а сами куплеты разделите с помощью тэга hr.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Переносы и разделители</title>
+    </head>
+    <body>
+        <p><cite>Чайф. С войны.</cite></p>
+
+        <p>В твоем парадном темно,<br>
+        Резкий запах привычно бьет в нос.<br>
+        Твой дом был под самой крышей -<br>
+        В нем немного ближе до звезд.</p>
+        <hr>
+        <p>Ты шел не спеша, возвращаясь с войны<br>
+        Со сладким чувством победы,<br>
+        С горьким чувством вины.</p>
+        <hr>
+        <p>Вот твой дом, но в двери<br>
+        Уже новый замок.<br>
+        Здесь ждали тебя так долго,<br>
+        Но ты вернуться не мог.</p>
+    </body>
+</html>
+
+18. Правильно примените тэги цитат: blockquote, q, cite.
+<blockquote> предназначен для выделения длинных цитат. Тэг выделяет цитату как отдельный блок текста с отступами сверху и снизу.
+<q> предназначен для выделения коротких цитат в тексте предложения. Текст внутри этого тэга автоматически обрамляется кавычками.
+<cite> используется для того, чтобы выделить источник или автора цитаты.
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Цитаты</title>
+    </head>
+    <body>
+        <blockquote>Никогда ничего не просите! Никогда и ничего, и в особенности у тех, кто сильнее вас. Сами предложат и сами всё дадут!
+        <cite>Булгаков</cite></blockquote>
+        <hr>
+        Известное выражение <q>Hasta la vista, baby</q> принадлежит <cite>Терминатору.</cite>
+    </body>
+</html>
+
+19. Приведите в надлежащий вид три формулы в примере.
+Тэг <sup> отображает шрифт в виде верхнего индекса.
+Тэг <sub> отображает шрифт в виде нижнего индекса.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Верхние и нижние индексы</title>
+    </head>
+    <body>
+        <p>Формулы:</p>
+        <ul>
+            <li>H<sub>2</sub>SO<sub>4</sub></li>
+            <li>C<sub>2</sub>H<sub>5</sub>OH</li>
+            <li>sin<sup>2</sup>x+cos<sup>2</sup>x=1</li>           
+        </ul>
+    </body>
+</html>
+
+20. Пометьте в примере еще одну ошибку как исправленную и еще одну как добавленную с помощью тэгов del и ins.
+<del> выделяет текст, который был удален в новой версии документа.
+<ins> выделяет текст, который был добавлен в новой версии документа.
+Оба тэга имеют атрибут datetime, в котором можно указать время, когда была внесена та или иная правка.
+Простейшим примером применения данных тэгов может служить список ошибок. Когда ошибка исправлена, её помечают тэгом <del>, если найдена новая ошибка, то её добавляют в список и помечают тэгом <ins>.
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Тэги del и ins</title>
+    </head>
+    <body>
+        <p>Список ошибок на 12.08.2012</p>
+        <ul>
+            <li><del datetime="13.08.2012">Пункты меню слипаются</del></li>
+            <li><ins datetime="14.08.2014"Неверный рамер шрифта в заголовке</ins></li>
+            <li>Логотип не обновлен</li>
+            <li><ins datetime="14.08.2012">Ошибки в текстах</ins></li>
+            <li><del datetime="13.08.2014">Макет разваливается на минимальной ширине</del></li>
+        </ul>
+    </body>
+</html>
+
+21. Заключите в тэг pre весь текст внутри тэга body
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Преформатированный текст</title>
+    </head>
+    <body>
+<pre>
+  /\ \  __/\ \        /\ \        
+  \ \ \/\ \ \ \     __\ \ \____   
+   \ \ \ \ \ \ \  /'__`\ \ '__`\  
+    \ \ \_/ \_\ \/\  __/\ \ \_\ \ 
+     \ `\___x___/\ \____\\ \_,__/ 
+      \ /__//__/  \/____/ \/___/  
+</pre>
+    </body>
+</html>
+
+22. Выделите не менее трех фрагментов текста с помощью тэга mark.
+В HTML5 появился новый тэг <mark>, который обозначает выделенный текст.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Выделенный текст</title>
+    </head>
+    <body>
+        <p>Я занимаюсь веб-разработкой более 12 лет. За это время научился:</p>
+        <ul>
+            <li>выстраивать стратегию развития компании;</li>
+            <li>автоматизировать внутренние процессы компании;</li>
+            <li>управлять командой разработчиков;</li>
+            <li>обучать и учиться.</li>
+        </ul>
+        <p>Наверное, за это <mark>время многие сошли бы с ума</mark>, но я по прежнему люблю разработку и поддерживаю движение веб-стандартов. Именно стандарты, на мой взгляд, заставляют думать в правильном направлении.</p>
+    </body>
+</html>
+
+23. Разметить как на картинке.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Язык разметки</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Язык разметки</h1>
+        <p><strong>Язык разметки</strong> в компьютерной терминологии — набор символов или последовательностей, вставляемых в текст для передачи информации о его выводе или строении. Принадлежит классу компьютерных языков.<p>
+        <h2>Структура языка</h2>
+        <p>Текстовый документ, написанный с использованием языка разметки, содержит не только сам текст но и дополнительную информацию:</p>
+            <ul>
+                <li>указание на заголовки</li>
+                <li><mark>выделения</mark></li>
+                <li>списки</li>
+                <li>и т. д.</li>
+            </ul> 
+        <p>В более сложных случаях язык разметки позволяет вставлять в документ <i>интерактивные элементы</i> и содержание других документов.</p>
+    </body>
+</html>
+
+24. Разметить как на картинке
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Рецепт каши</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Пшенная каша с тыквой</h1>
+        <ol>
+            <li>Пшено, 1 стакан</li>
+            <li>Вода H<sub>2</sub>0 или AquaLife<sup>®</sup>, 2 стакана</li>
+            <li>Молоко, <del datetime="13.12.2014">1,5 стакана</del>> 2 стакана</li>
+            <li>Масло сливочное, 3 ст.л.</li>
+            <li>Тыква, около 300г</li>
+            <li>Соль, по вкусу</li>
+            <li><ins datetime="13.12.2014">Сахар демерара, посыпать сверху</ins>></li>
+        </ol>
+        <p><em>Примечания:</em></p>
+        <p>Пшено необходимо перебрать</p>
+        <p>Тыкву нарезать кубиками 1х1 см</p>
+        <p>Кашу перемешивать не надо</p>
+    </body>
+</html>
+
+25. Добавьте с помощью тэга <a> еще пару ссылок. Пока что не добавляйте к тэгу никаких атрибутов.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Что такое ссылка?</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <a href="http://htmlacademy.ru">Главная страница Htmlacademy</a><br/>
+        <a>Еще одна ссылка</a><br/>
+        <a>Третья ссылка</a><br/>
+    </body>
+</html>
+
+26. Добавьте к ссылкам без атрибута атрибут href. Значение атрибута первой ссылки: http://htmlacademy.ru/courses, второй ссылки: /courses
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Задаем адрес ссылки</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <a href="http://htmlacademy.ru">Главная страница Htmlacademy</a><br/>
+        <a href="http://htmlacademy.ru/courses">Еще одна ссылка</a><br/>
+        <a href="/courses">Третья ссылка</a><br/>
+    </body>
+</html>
+
+27. Абсолютные адреса.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Абсолютные адреса</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <a href="http://htmlacademy.ru">Главная страница Htmlacademy</a><br/>
+        <a href="http://htmlacademy.ru/courses">Курсы</a><br/>
+        <a href="/courses">Тоже курсы</a>
+    </body>
+</html>
+
+28. Относительные адреса
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Относительные адреса</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <ol>
+            <li><a href="../../4">Курс "Знакомство"</a></li>
+            <li><a href="..">Описание курса</a></li>
+            <li><a href="3">Предыдущее задание</a></li>
+        </ol>
+
+        <p>Текущий адрес: <code>http://htmlacademy.ru/courses/40/run/4</code></p>
+        <p>Относительный адрес <code>..</code> преобразуется в <code>http://htmlacademy.ru/courses/40</code>, а относительный адрес <code>3</code> в <code>http://htmlacademy.ru/courses/40/run/3</code></p>
+    </body>
+</html>
+
+29. Задайте следующий адрес ссылки: /assets/course4/img1.jpg
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Ссылка на изображение</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <p><a href="/assets/course4/img1.jpg">Знакомьтесь, Дон Кексоне!</a></p>
+    </body>
+</html>
+
+30. Создайте навигацию внутри страницы, прописав у ссылок правильные адреса с якорями. Затем пощелкайте по всем ссылкам.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Ссылка с якорем</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>URL</h1>
+        <h2 id="contents">Оглавление</h2>
+        <ol>
+             <li><a href="">История</a></li>
+             <li><a href="">Структура URL</a></li>
+             <li><a href="">Кодирование URL</a></li>
+        </ol>
+        <h2 id="history">История</h2>
+        <p>URL был изобретён Тимом Бернерсом-Ли в 1990 году в стенах Европейского совета по ядерным исследованиям в Женеве, Швейцария. URL стал фундаментальной инновацией в Интернете.</p>
+        <p>Изначально URL предназначался для обозначения мест расположения ресурсов (чаще всего файлов) во Всемирной паутине. Сейчас URL применяется для обозначения адресов почти всех ресурсов Интернета. Стандарт URL закреплён в документе RFC 1738, прежняя версия была определена в RFC 1630.</p>
+        <p>Сейчас URL позиционируется как часть более общей системы идентификации ресурсов URI, сам термин URL постепенно уступает место более широкому термину URI. Стандарт URL регулируется организацией IETF и её подразделениями.</p>
+        <a href="#contents">К оглавлению</a>
+
+        <h2 id="structure">Структура URL</h2>
+        <p>Изначально локатор URL был разработан как система для максимально естественного указания на местонахождения ресурсов в сети. Локатор должен был быть легко расширяемым и использовать лишь ограниченный набор ASCII‐символов (к примеру, пробел никогда не применяется в URL). В связи с этим, возникла следующая традиционная форма записи URL:</p>
+        <p>&lt;схема&gt;://&lt;логин&gt;:&lt;пароль&gt;@&lt;хост&gt;:&lt;порт&gt;/&lt;URL-путь&gt;?&lt;параметры&gt;#&lt;якорь&gt;</p>
+        <a href="#contents">К оглавлению</a>
+
+        <h2 id="encoding">Кодирование URL</h2>
+        <p>Появление адресов URL стало существенным нововведением в Интернете. Однако с момента его изобретения и по сей день стандарт URL обладает серьёзным недостатком — в нём можно использовать только ограниченный набор символов, даже меньший, нежели в ASCII: латинские буквы, цифры и лишь некоторые знаки препинания. Если мы захотим использовать в URL символы кириллицы, или иероглифы, или, скажем, специфические символы французского языка, то нужные нам символы должны быть перекодированы особым образом.</p>
+        <a href="#contents">К оглавлению</a>
+    </body>
+</html>
+
+31. Добавьте всплывающие подсказки к двум ссылкам.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Всплывающая подсказка</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>URL</h1>
+        <h2 id="contents">Оглавление</h2>
+        <ol>
+             <li><a href="#history" title="link1">История</a></li>
+             <li><a href="#structure" title="link2">Структура URL</a></li>
+        </ol>
+    </body>
+</html>
+
+32. Добавьте в тело документа тэг изображение /assets/course4/img1.jpg
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Добавим изображение</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <p>Дон Кексоне</p>
+        <img src="/assets/course4/img1.jpg">
+    </body>
+</html>
+
+33. Измените размеры изображения.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Размеры изображения</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <p>Дон Кексоне</p>
+        <img src="/assets/course4/img1.jpg" width="300" height="300"  />
+    </body>
+</html>
+
+34. Задайте альтернативный текст Рыжий кот
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Альтернативный текст</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <p>Дон Кексоне</p>
+        <img src="/assets/course4/img1.jpg" width="250" alt="Рыжий кот" />
+    </body>
+</html>
+
+35. Добавьте ссылку с маленького изображения на полноразмерное изображение, адрес: /assets/course4/img1.jpg
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Изображение-ссылка</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <p>Дон Кексоне</p>
+        <a href="/assets/course4/img1.jpg" alt="img"><img src="/assets/course4/img1_small.jpg" /></a>
+    </body>
+</html>
+
+36. Задайте адреса 6 изображений.
+Адрес первого изображения:
+/assets/course4/photo1.jpg,
+второго:
+/assets/course4/photo2.jpg
+и так далее до цифры 6.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Фоторепортаж</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>День кота</h1>
+
+        <p>В то утро Кексик проснулся в своей сумке-гнезде очень рано. День обещал быть насыщенным.</p>
+        <img src="/assets/course4/photo1.jpg," alt="Пробуждение" />
+
+        <p>В связи с чем он решил позаниматься на своей вешалке-турнике.</p>
+        <img src="/assets/course4/photo2.jpg," alt="Зарядка" />
+
+        <p>Занятия утомили кота и он решил слегка отдохнуть, посмотреть телевизор.</p>
+        <img src="/assets/course4/photo3.jpg," alt="Телевизор" />
+
+        <p>Восстановив силы, кот занялся привычными делами по наведению беспорядка, но был пойман.</p>
+        <img src="/assets/course4/photo4.jpg," alt="Пойман раз" />
+
+        <p>Ближе к вечеру подвернулась отличная возможность отведать сметаны, но и в этот раз его поймали на месте преступленя.</p>
+        <img src="/assets/course4/photo5.jpg," alt="Пойман два" />
+
+        <p>Решив, что на сегодня свершений достаточно, Кексик с чистой совестью отправился спать.</p>
+        <img src="/assets/course4/photo6.jpg," alt="Сон" />
+    </body>
+</html>
+
+37. Добавьте в таблицу еще две строки со статистикой для браузеров Opera и IE.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Добавляем строки</title>
+    </head>
+    <body>
+        <p><strong>Распределение браузеров</strong></p>
+        <table border="1">
+            <tr>
+                <td>Браузер</td>
+                <td>Посещения</td>
+            </tr>
+            <tr>
+                <td>Firefox</td>
+                <td>163</td>
+            </tr>
+            <tr>
+                <td>Chrome</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Opera</td>
+                <td>999935</td>
+            </tr>
+            <tr>
+                <td>IE</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+38. Добавьте в таблицу еще два столбца: "операционная система" и "посещаемость в процентах".
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Добавляем столбцы</title>
+    </head>
+    <body>
+        <p><strong>Распределение браузеров</strong></p>
+        <table border="1">
+            <tr>
+                <td>Браузер</td>
+                <td>Посещения</td>
+                <td>ОС</td>
+                <td>Посещения в %</td>
+            </tr>
+            <tr>
+                <td>Firefox</td>
+                <td>163</td>
+                <td>MACOS</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Chrome</td>
+                <td>78</td>
+                <td>MACOS</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+                <td>MACOS</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+39. Создайте заголовок таблицы "Распределение браузеров"
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Заголовок таблицы</title>
+    </head>
+    <body>
+        <p><strong>Распределение браузеров</strong></p>
+        <table>
+        <caption>Распределение браузеров</caption>
+            <tr>
+                <th>Браузер</th>
+                <th>Посещения</th>
+            </tr>
+            <tr>
+                <td>Firefox</td>
+                <td>163</td>
+            </tr>
+            <tr>
+                <td>Chrome</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+40. Добавьте форму, которая будет отправляться на адрес /echo методом post.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Тэг form</title>
+    </head>
+    <body>
+        <h1>Форма входа</h1>
+        <form action="/echo" method="POST"></form>
+    </body>
+</html>
+
+41. Добавьте в форму текстовое поле ввода, с именем login.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Текстовое поле ввода</title>
+    </head>
+    <body>
+        <h1>Форма входа</h1>
+        <form action="/echo" method="POST">
+            <input type="text" name="login">
+        </form>
+    </body>
+</html>
+
+42. Добавьте текстовому полю два атрибута:
+
+идентификатор total-field;
+значение по умолчанию 100.
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Идентификатор и значение по умолчанию</title>
+    </head>
+    <body>
+        <h1>Форма оплаты</h1>
+        <form action="/echo" method="POST">
+            Сумма оплаты: <input type="text" name="total" id="total-field" value="100"> руб.
+        </form>
+    </body>
+</html>
+
+43. Оберните подпись к полю и само поле в тэг label.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Подпись для поля ввода</title>
+    </head>
+    <body>
+        <h1>Форма входа</h1>
+        <form action="/echo" method="POST">
+            <label for="login-field">Ваш логин</label>
+            <input type="text" name="login" id="login-field">
+        </form>
+    </body>
+</html>
+
+44. Оберните текст Ваш логин в тэг label и свяжите подпись с полем ввода при помощи атрибута for. 
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Связываем подпись и поле по id</title>
+    </head>
+    <body>
+        <h1>Форма входа</h1>
+        <form action="/echo" method="POST">
+            <table>
+            <tr>
+                <td>
+                    <label for="login-field">Ваш логин</label>
+                  
+                </td>
+                <td><input type="text" name="login" id="login-field"></td>
+            </tr>
+            </table>
+        </form>
+    </body>
+</html>
+
+45. Добавьте еще одно текстовое поле с именем password, идентификатором password-field.
+Добавьте подпись и свяжите её с полем с помощью атрибута for.
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Добавим еще одно поле </title>
+    </head>
+    <body>
+        <h1>Форма входа</h1>
+        <form action="/echo" method="POST">
+            <label for="login-field">Ваш логин</label>
+            <input type="text" name="login" id="login-field"><br>
+            <br>
+            <label for="password-field">Ваш пароль</label>  
+            <input type="text" name="password" id="password-field.">
+
+        </form>
+    </body>
+</html>
+
+46. Поменяйте у пароля тип поля на password.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Поле для ввода пароля</title>
+    </head>
+    <body>
+        <h1>Форма входа</h1>
+        <form action="/echo" method="POST">
+            <label for="login-field">Ваш логин</label>
+            <input type="text" name="login" id="login-field">
+            <br>
+            <label for="password-field">Ваш пароль</label>
+            <input type="password" name="password" id="password-field" value="где же звездочки?">
+        </form>
+    </body>
+</html>
+
+47. Добавьте кнопку для отправки формы с подписью Войти
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Кнопка отправки формы</title>
+    </head>
+    <body>
+        <h1>Форма входа</h1>
+        <form action="/echo" method="POST">
+            <label for="login-field">Ваш логин</label>
+            <input type="text" name="login" id="login-field">
+            <br>
+            <label for="password-field">Ваш пароль</label>
+            <input type="password" name="password" id="password-field">  
+            <br> 
+            <input type="submit" name="login" value="LOGIN">
+            <!-- добавьте кнопку сюда -->
+        </form>
+    </body>
+</html>
+
+48. Добавьте многстрочное текстовое поле с именем comment, идентификатором comment-field.
+Задайте полю высоту 10 строк.
+Задайте полю исходное значение текст комментария.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Многострочное поле ввода</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Комментарии</h1>
+        <form action="/echo" method="POST">
+            <p>Список комментариев, а внизу поле для вашего комментария:</p>
+            <!-- добавьте поле сюда -->
+            <textarea name="comment" id="comment-field" cols="30" rows="10" value="Комментарий"></textarea><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+</html>
+
+49. Добавьте чекбокс с именем subscribe, идентификатором subscribe-field.
+Сделайте, чтобы галочка в поле стояла по умолчанию
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Чекбокс или «галочка»</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Регистрация</h1>
+        <form action="/echo" method="POST">
+            <p>Множество полей и как всегда в конце формы регистрации вопрос:</p>
+           <input type="checkbox" name="subscribe" id="subscribe-field" checked> <!-- добавьте поле сюда -->
+            <label for="subscribe-field">Подписать вас на рассылку?</label>
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+</html>
+
+50. Разметить
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Испытание: форма регистрации</title>
+    </head>
+    <body>
+        <h1>Регистрация</h1>
+        <form action="/echo" method="POST">   
+            <label for="login">Ваш логин (email):</label>
+            <input type="text" name="login" id="ligin"><br>
+           
+            <label for="passwd"> Пароль:</label>
+            <input type="password" name="passwd" id="passwd"><br>
+            
+            <label for="about">Информация о себе:</label>
+            <textarea name="about" id="about" cols="30" rows="10"></textarea><br>
+            
+            <label for="rss">Подписаться на рассылку</label>
+            <input type="checkbox" name="rss" id="rss">
+            <input type="submit" name="button" id="button" value="Зарегистрироваться">         
+        </form>
+    </body>
+</html>
+
+51. Добавьте переключатель с именем question1.
+Задайте переключателю значение p.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Переключатель или «радиобаттон»</title>
+    </head>
+    <body>
+        <h1>Тест</h1>
+        <form action="/echo" method="post">
+            <p>В тестах часто встречают задания типа «выберите один из предложенных вариантов».</p>
+            <p><em>Какой тэг обозначает «абзац»?</em></p>
+            <label><input type="radio" name="question1" value="p"> тэг &lt;p&gt;</label><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+</html>
+
+52. Добавьте ещё один переключатель с именем question1 и значением b.
+Сделайте его выбранным по умолчанию.
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Группа переключателей</title>
+    </head>
+    <body>
+        <h1>Тест</h1>
+        <form action="/echo" method="post">
+            <p>В тестах часто встречают задания типа «выберите один из предложенных вариантов».</p>
+            <p><em>Какой тэг обозначает «абзац»?</em></p>
+            <label><input type="radio" name="question1" value="p"> тэг &lt;p&gt;</label><br>
+            <label><input type="radio" name="question1" value="b"> тэг &lt;b&gt;</label><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+</html>
+
+53. Добавьте выпадающий список с именем year.
+Добавьте в него вариант со значением 2000 и подписью 2000 год.
+И вариант со значением 2001 и подписью 2001 год.
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Выпадающий список или «селект»</title>
+    </head>
+    <body>
+        <h1>Анкета</h1>
+        <form action="/echo" method="post">
+            <p>Часто выпадающие списки используют для ввода дат.</p>
+            <p><em>Ваш год рождения</em></p>
+            <select name="year">
+                <option value="2000">2000 год</option>
+                <option value="2001">2001 год</option>
+            </select>
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+</html>
+
+54. Сделайте выпадающий список мультиселектом.
+Допишите к его имени [].
+Увеличьте его размер до 7.
+Сделайте, чтобы по умолчанию было отмечено воскресенье.
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>«Мультиселект»</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Анкета</h1>
+        <form action="/echo" method="post">
+            <p>В мультиселекте можно выбрать несколько вариантов, щелкая по ним, зажав клавишу Ctrl.</p>
+            <p><em>Любимые дни недели</em></p>
+            <select size="7" multiple name="days[]">
+                <option>Понедельник</option>
+                <option>Вторник</option>
+                <option>Среда</option>
+                <option>Четверг</option>
+                <option>Пятница</option>
+                <option>Суббота</option>
+                <option selected>Воскресенье</option>
+            </select>
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+</html>
+
+55. Задайте для формы атрибут enctype необходимый для загрузки файлов.
+Добавьте поле для загрузки файлов с именем avatar.
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Поле для загрузки файлов</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Профиль</h1>
+        <form action="/echo" method="post" enctype="multipart/form-data">
+            <p>Выберите изображение для своего аватара:</p>
+            <input type="file" name="avatar">           
+            <input type="submit" value="Загрузить">
+        </form>
+    </body>
+</html>
+
+56. Добавьте скрытое поле с именем account_number и значением 225.
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Скрытое поле</title>
+    </head>
+    <body>
+        <h1>Оплата услуг</h1>
+        <form action="/echo" method="post">
+            <p><label>Сумма платежа: <input type="text" name="amount" value="500"> руб.</label></p>
+            <p><input type="hidden" name="account_number" value="255"></p>
+            <input type="submit" value="Оплатить">
+        </form>
+    </body>
+</html>
+
+57. Разметить
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Испытание: редактирование профиля</title>
+       <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Профиль</h1>
+        <form action="/echo" method="post" enctype="multipart/form-data">
+           <p>Ваш пол:</p>
+           <label><input type="radio" name="man" value="man">мужской</label>
+           <label><input type="radio" name="woman" value="woman">женский</label>
+           <p>Месяц и год рождения:</p>
+            <select name="month">
+                <option value="January">Январь</option>
+                <option value="February">Февраль</option>
+                <option value="March">Март</option>
+                <option value="April">Апрель</option>
+                <option value="May" selected>Май</option>
+                <option value="June">Июнь</option>
+                <option value="July">Июль</option>
+                <option value="August">Август</option>
+                <option value="September">Сентябрь</option>
+                <option value="October">Октябрь</option>
+                <option value="November">Ноябрь</option>
+                <option value="December">Декабрь</option>
+            </select>
+            <select name="year">
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+                <option value="1996">1996</option>
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990"  selected>1990</option>
+                <option value="1989">1989</option>
+                <option value="1988">1988</option>
+                <option value="1987">1987</option>
+                <option value="1986">1986</option>
+                <option value="1985">1985</option>
+                <option value="1984">1984</option>
+                <option value="1983">1983</option>
+                <option value="1982">1982</option>
+                <option value="1981">1981</option>
+                <option value="1980">1980</option>
+                <option value="1979">1979</option>
+                <option value="1978">1978</option>
+                <option value="1977">1977</option>
+                <option value="1976">1976</option>
+                <option value="1975">1975</option>
+                <option value="1974">1974</option>
+                <option value="1973">1973</option>
+                <option value="1972">1972</option>
+                <option value="1971">1971</option>
+                <option value="1970">1970</option>
+            </select>
+           <p>Знакомые технологии:</p>
+           <select size="4" multiple name="technology[]">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+            </select>
+            <p>Фото:</p>
+            <input type="file"><br>
+            <input type="submit" value="Сохранить">
+        </form>
+    </body>
+</html>
