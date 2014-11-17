@@ -115,14 +115,14 @@
 		</ul> 
 		<p class="hint"><em>*</em> Для навигации по меню испльзуйте комбинации Alt+K, Alt+L(Opera 15+, Google Chorome), Shift+Alt+K, Shift+Alt+L(Mozilla Firefox)</p>
 	</div>
-	<div class="login-block">
+		<div class="login-block">
 		<form action="/login" method="POST">
 			<div class="title-login">Авторизация на сайте:</div>
 			<div class="l-side"><label for="userlogin">Имя:</label></div>
-			<div class="r-side"><input type="text" id="userlogin" placeholder="Введите имя"></div>
+			<div class="r-side"><input type="text" name="login" id="userlogin" placeholder="Введите имя"></div>
 			<div class="l-side"><label for="userpasswd">Пароль:</label></div>
-			<div class="r-side"><input type="password" id="userpasswd" placeholder="Введите пароль"></div>
-			<div class="subm-block"><p><input type="submit" value="Вход"></p></div>
+			<div class="r-side"><input type="password" name="pass" id="userpasswd" placeholder="Введите пароль"></div>
+			<div class="subm-block"><p><input type="submit" name="subbut" value="Вход"></p></div>
 			<div class="registation-block"><a href="registration.html">Регистрация</a></div>
 			<div class="lostpasswd-block"><a href="lostpasswd.html">Забыли пароль?</a></div>
 		</form>
@@ -144,8 +144,8 @@
 						<div class="l-side"><label for="user-passwd2"> Пароль ещё раз:</label></div>
 						<div class="r-side"><input type="password" name="passwd2" id="user-passwd2"></div>
 						<div class="l-side">Ваш пол:</div>
-						<div class="r-side"><label><input type="radio" name="man" value="man">мужской</label>
-											<label><input type="radio" name="woman" value="woman">женский</label></div>
+						<div class="r-side"><label><input type="radio" name="sex" value="man">мужской</label>
+											<label><input type="radio" name="sex" value="woman">женский</label></div>
 						<div class="l-side">Месяц и год рождения:</div>
 						<div class="r-side">
 							<select name="month">
@@ -215,11 +215,11 @@
 								<option value="PHP">PHP</option>
 							</select><br></div>
 						<div class="l-side"><label for="photo">Фото:</label></div>
-						<div class="r-side"><input type="file" id="photo"></div>
+						<div class="r-side"><input type="file" name="foto" id="photo"></div>
 						<div class="l-side"><label for="about">Информация о себе:</label></div>
 						<div class="r-side"><textarea name="about" id="about" cols="50" rows="10"></textarea></div>
-						<div class="c-side"><label for="rss"><input type="checkbox" name="rss" id="rss" checked> Подписаться на рассылку</label></div>
-						<div class="c-side"><label for="license"><input type="checkbox" name="lic" id="license"> Согласен с политикой конфиденциальности!</label></div>
+						<div class="c-side"><label for="rss"><input type="checkbox" name="rss" id="rss" value="addrss" checked> Подписаться на рассылку</label></div>
+						<div class="c-side"><label for="license"><input type="checkbox" name="lic" id="license" value="acptlic"> Согласен с политикой конфиденциальности!</label></div>
 						<div class="c-side"><input type="submit" name="button" id="button" value="Зарегистрироваться"> </div>
 					</form>
 				</div>

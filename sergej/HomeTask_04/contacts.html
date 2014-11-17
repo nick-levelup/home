@@ -120,10 +120,10 @@
 		<form action="/login" method="POST">
 			<div class="title-login">Авторизация на сайте:</div>
 			<div class="l-side"><label for="userlogin">Имя:</label></div>
-			<div class="r-side"><input type="text" id="userlogin" placeholder="Введите имя"></div>
+			<div class="r-side"><input type="text" name="login" id="userlogin" placeholder="Введите имя"></div>
 			<div class="l-side"><label for="userpasswd">Пароль:</label></div>
-			<div class="r-side"><input type="password" id="userpasswd" placeholder="Введите пароль"></div>
-			<div class="subm-block"><p><input type="submit" value="Вход"></p></div>
+			<div class="r-side"><input type="password" name="pass" id="userpasswd" placeholder="Введите пароль"></div>
+			<div class="subm-block"><p><input type="submit" name="subbut" value="Вход"></p></div>
 			<div class="registation-block"><a href="registration.html">Регистрация</a></div>
 			<div class="lostpasswd-block"><a href="lostpasswd.html">Забыли пароль?</a></div>
 		</form>
@@ -159,7 +159,7 @@
 					<div class="r-side"><input type="tel" name="tel" id="guest-tel"></div>
 					<div class="с-side"><label for="guest-message">Сообщение:</label></div>
 					<div class="с-side"><textarea name="message" id="guest-message" cols="70" rows="10"></textarea></div>
-					<div class="с-side"><label for="rss"><input type="checkbox" name="rss" id="rss"> Подписаться на рассылку</label></div>
+					<div class="с-side"><label for="rss"><input type="checkbox" name="rss" id="rss" value="add_rss"> Подписаться на рассылку</label></div>
 		            <div class="с-side"><input type="submit" name="button" id="button" value="Отправить"></div>
 		       	</form>
 			</div>
