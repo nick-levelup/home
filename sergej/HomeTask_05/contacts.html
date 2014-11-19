@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Контакты</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<header>
+		<div class="logo"><img src="images/logo.gif" alt="Логотип"></div>
+		<div class="top-menu-container">
+			<ul class="top-menu">
+				<li><a href="index.html" title="Главная" accesskey="k">Главная</a></li>
+				<li><a href="contacts.html" title="Контакты">Контакты</a></li>
+				<li><a href="about.html" title="О нас" accesskey="l">О нас</a></li>
+			</ul>
+			<p class="hint"><em>*</em> Для навигации по меню испльзуйте комбинации Alt+K, Alt+L(Opera 15+, Google Chorome), Shift+Alt+K, Shift+Alt+L(Mozilla Firefox)</p>
+		</div>
+		<div class="login-block">
+			<form action="login.html" method="POST">
+				<div class="title-login">Авторизация на сайте:</div>
+				<div class="subm-block"><p><input type="submit" name="subbut" value="Авторизироваться"></p></div>
+			</form>
+		</div>
+	</header>
+	<article>
+		<div class="page-header">
+			<h1>Контакты</h1>
+		</div>
+		<div class="container">
+
+			<div class="block-5">
+				<div class="adress">
+					<h3>Наш адрес</h3>
+					<p>Украина, Днепропетровск</p>
+					<p>Красная, 21г</p>
+					<p>Торгово-сервисный центр</p>
+					<p>«Новый металлург», 3 эт.</p>
+					<br>
+					<h3>Наши телефоны</h3>
+					<ul class="phones">
+						<li>+38 056 376 9066</li>
+						<li>+38 099 731 8385</li>
+						<li>+38 096 084 2513</li>
+						<li><a href="mailto:office@levelup.dp.ua">office@levelup.dp.ua</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="block-2">
+				<div class="feedback">
+					<h3>Напишите нам</h3>
+					<form action="/echo" method="POST">   
+						<div class="block-8"> <label for="guest-name">Ваше имя:</label> </div>
+						<div class="block-4"><input type="text" name="name" id="guest-name"></div>
+						<div class="block-8"><label for="guest-email"> Электронная почта:</label></div>
+						<div class="block-4"><input type="email" name="email" id="guest-email"></div>
+						<div class="block-8"><label for="guest-tel">Ваш телефон:</label></div>
+						<div class="block-4"><input type="tel" name="tel" id="guest-tel"></div>
+						<div class="block-8"><label for="guest-message">Сообщение:</label></div>
+						<div class="block-4"><textarea name="message" id="guest-message" cols="70" rows="10"></textarea></div>
+						<div class="block-12"><label for="rss"><input type="checkbox" name="rss" id="rss" value="add_rss"> Подписаться на рассылку</label></div>
+						<div class="block-12"><input type="submit" name="button" id="button" value="Отправить"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</article>
+	<footer>
+		<div class="container">
+			<div class="block-12">
+				<p>2014&copy; LevelUP. Frontend. HomeTask№5</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
