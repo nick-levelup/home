@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Забыли пароль?</title>
+</head>
+<body>
+	<h4>Забыли пароль?</h4>
+	<form action="script.recept.php" method="GET">
+	<input type="text" name="email" id="mail" value="email">
+	<label for="mail">Введите Ваш Email и Вам будут отправлен новый пароль</label><br>
+	<label><input type="submit" value="Отправить"></label>
+    </form>
+</body>
+</html>
