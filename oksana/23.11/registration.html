@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Регистрация</title>
+</head>
+<body>
+	<h1>Регистрация</h1>
+	<form action="hhhh.html" method="GET">
+		<label for="username">Введите Ваш имя</label><br>
+		<input type="text" id="username" value="" name="username" autocomplete="on" autofocus required><br><br>
+		<label for="usermail">Введите Ваш e-mail:</label><br>
+		<input type="email" id="usermail" value="" name="usermail" placeholder="E-mail..." autocomplete="on" required><br><br>
+		<label for="phone">Введите Ваш телефон:</label><br>
+		<input type="tel" id="phone" value="" name="phone" placeholder="380..." autocomplete="on"><br><br>
+		<label for="birthday">Дата рождения</label><br>
+		<input type="date" id="birthday" value="" name="birthday" max="2014-12-31" min="1930-12-31"><br>
+
+		<p>Выберите Ваш пол</p>
+		<input type="radio" id="women" value="women" name="sex" checked>
+		<label for="women">Женский</label><br>
+		<input type="radio" id="men" value="men" name="sex">
+		<label for="men">Мужской</label><br><br>
+
+		<label for="countryid">Ваша страна</label>
+		<select name="countryid" id="countryid">
+			<option value="Russia">Россия</option>
+			<option value="Belorussia">Беларусь</option>
+			><option value="Ukraine" selected="selected">Украина</option>
+		</select>
+
+		<p>Выберите какие рубрики Вам отправлять на почту:<br>
+		<input type="checkbox" name="spam" id="desert" value="Десерт">
+		<label for="desert">Десерты</label><br>
+		<input type="checkbox" name="spam" id="osnovnoe" value="Основные блюда">
+		<label for="osnovnoe">Основные блюда</label><br>
+		<input type="checkbox" name="spam" id="vtorie" value="Вторые блюда">
+		<label for="vtorie">Вторые блюда</label><br>
+		<input type="checkbox" name="spam" id="salaty" value="Салаты">
+		<label for="salaty">Салаты</label><br>
+		<input type="checkbox" name="spam" id="zakyska" value="Закуски">
+		<label for="zakyska">Закуски</label></p>
+		<label for="userphoto">Выберите Ваше фото для отображения в аккаунте:</label><br>
+		<input type="file" name="photo" id="userphoto"><br><br>
+		<label for="userpassword">Придумайте пароль</label><br>
+		<input type="password" id="userpassword" value="" placeholder="Password..." required><br><br>
+		<input type="checkbox" name="rule" value="agree" id="rules" checked>
+		<label for="rules">С правилами и условиями согласен</label><br><br>
+		<input type="submit" value="Регистрация">
+	</form>
+</body>
+</html>
