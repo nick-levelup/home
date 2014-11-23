@@ -75,210 +75,212 @@
 								<input type="password" name="passwd" id="user-passwd" class="form-control" required>
 								<label for="user-passwd2"> Пароль ещё раз:</label>
 								<input type="password" name="passwd2" id="user-passwd2" class="form-control" required>
-								<label for="inputProgress">Заполнение формы</label>
-								<meter min="0" max="100" value="0" class="form-meter" id="inputProgress" ></meter><br>
+								<label>Заполнение формы</label>
+								<meter min="0" max="100" value="0" class="form-meter" id="inputProgress"></meter><br>
 								<div class="login-links"></div>
 								<label for="license"><input type="checkbox" name="lic" id="license" value="acptlic" required> Согласен с политикой конфиденциальности!</label><br>
 								<button class="btn btn-lg btn-primary pull-right" type="submit">Зарегистрироваться</button>
-							</div>
-							<div class="col-xs-12 col-lg-3">
-								<a href="#questionaryModal" data-toggle="modal">Заполнить анкету</a>
-								<div class="modal fade zoomIn animated" id="questionaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="myModalLabel">Анкета</h4>
-											</div>
-											<div class="modal-body">
-												<h4>Заполнить данные</h4>
-												<fieldset>
-													<legend>О вас</legend>
-													<div class="row">
-														<div class="col-xs-4">
-															<label>Ваш пол:</label>
-															<label for="inlineRadio1" class="radio-inline">
-																<input type="radio" name="sex" id="inlineRadio1" value="man"> мужской
-															</label>
-															<label for="inlineRadio2" class="radio-inline">
-																<input type="radio" name="sex" id="inlineRadio2" value="woman"> женский
-															</label>
-														</div>
-														<div class="col-xs-4">
-															<label for="inputeColor">Любимый цвет</label>
-															<input type="color" name="color" id="inputeColor" class="form-control">
-														</div>
-														<div class="col-xs-4">
-															<label for="inputeNumber">Любимая цифра</label>
-															<input type="number" name="number" min="0" max="9" step="1" id="inputeNumber" class="form-control">
-														</div>
-														<div class="col-xs-4">
-															<label>Месяц и год рождения:</label>
-														</div>
-														<div class="col-xs-4">
-															<select name="month" class="form-control">
-																<option value="January">Январь</option>
-																<option value="February">Февраль</option>
-																<option value="March">Март</option>
-																<option value="April">Апрель</option>
-																<option value="May" selected>Май</option>
-																<option value="June">Июнь</option>
-																<option value="July">Июль</option>
-																<option value="August">Август</option>
-																<option value="September">Сентябрь</option>
-																<option value="October">Октябрь</option>
-																<option value="November">Ноябрь</option>
-																<option value="December">Декабрь</option>
-															</select>
-														</div>
-														<div class="col-xs-4">
-															<select name="year" class="form-control">
-																<option value="2010">2010</option>
-																<option value="2009">2009</option>
-																<option value="2008">2008</option>
-																<option value="2007">2007</option>
-																<option value="2006">2006</option>
-																<option value="2005">2005</option>
-																<option value="2004">2004</option>
-																<option value="2003">2003</option>
-																<option value="2002">2002</option>
-																<option value="2001">2001</option>
-																<option value="2000">2000</option>
-																<option value="1999">1999</option>
-																<option value="1998">1998</option>
-																<option value="1997">1997</option>
-																<option value="1996">1996</option>
-																<option value="1995">1995</option>
-																<option value="1994">1994</option>
-																<option value="1993">1993</option>
-																<option value="1992">1992</option>
-																<option value="1991">1991</option>
-																<option value="1990" selected>1990</option>
-																<option value="1989">1989</option>
-																<option value="1988">1988</option>
-																<option value="1987">1987</option>
-																<option value="1986">1986</option>
-																<option value="1985">1985</option>
-																<option value="1984">1984</option>
-																<option value="1983">1983</option>
-																<option value="1982">1982</option>
-																<option value="1981">1981</option>
-																<option value="1980">1980</option>
-																<option value="1979">1979</option>
-																<option value="1978">1978</option>
-																<option value="1977">1977</option>
-																<option value="1976">1976</option>
-																<option value="1975">1975</option>
-																<option value="1974">1974</option>
-																<option value="1973">1973</option>
-																<option value="1972">1972</option>
-																<option value="1971">1971</option>
-																<option value="1970">1970</option>
-															</select>
-														</div>
-														<div class="col-xs-6">
-															<label for="photoalbum">Фотоальбом:</label>
-															<input type="file" name="fotoalbum" id="photoalbum" multiple>
-														</div>
-														<div class="col-xs-6">
-															<label for="inputPhone">Модель телефона</label>
-															<select name="phone" class="form-control" id="inputPhone">
-																<optgroup label="Nokia">
-																	<option>Nokia 225</option>
-																	<option>Nokia X1</option>
-																	<option>Nokia XL</option>
-																	<option>Nokia X2</option>
-																</optgroup> 
-																<optgroup label="Htc">
-																	<option>Htc Sensation</option>
-																	<option>Htc Sensation XE</option>
-																	<option>Htc Desire V</option>
-																	<option>Htc Desire V DualSim</option>
-																	<option>Htc One</option>
-																	<option>Htc One X</option>
-																	<option>Htc One M8</option>
-																</optgroup>
-																<optgroup label="Samsung" disabled>
-																	<option>Samsung Galaxy S3</option>
-																	<option>Samsung Galaxy S4</option>
-																	<option>Samsung Galaxy S5</option>
-																</optgroup>
-															</select>
-														</div>
+							</form>
+						</div>
+						<div class="col-xs-12 col-lg-3">
+							<a href="#questionaryModal" data-toggle="modal">Заполнить анкету</a>
+							<div class="modal fade zoomIn animated" id="questionaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+											<h4 class="modal-title" id="myModalLabel">Анкета</h4>
+										</div>
+										<div class="modal-body">
+											<h4>Заполнить данные</h4>
+											<fieldset>
+												<legend>О вас</legend>
+												<div class="row">
+													<div class="col-xs-4">
+														<label>Ваш пол:</label>
+														<label for="inlineRadio1" class="radio-inline">
+															<input type="radio" name="sex" id="inlineRadio1" value="man" form="reg-form"> мужской
+														</label>
+														<label for="inlineRadio2" class="radio-inline">
+															<input type="radio" name="sex" id="inlineRadio2" value="woman" form="reg-form"> женский
+														</label>
 													</div>
-												</fieldset>
-												<fieldset>
-													<legend>Адрес</legend>
-													<div class="row">
-														<div class="col-xs-4">
-															<label for="inputeIndex">Индекс</label>
-															<input type="text" name="postindex" id="inputeindex" pattern="[0-9]{6}" class="form-control">
-														</div>	
-														<div class="col-xs-4">
-															<label for="inputeCountry">Страна</label>
-															<input type="text" name="country" id="inputeCountry" class="form-control" value="Украина" readonly>
-														</div>	
-														<div class="col-xs-4">
-															<label for="inputeTown">Город</label>
-															<input type="text" name="town" id="inputeTown" class="form-control">
-														</div>
-														<div class="col-xs-8">
-															<label for="inputeStreet">Улица</label>
-															<input type="text" name="street" id="inputeStreet" class="form-control">
-														</div>
-														<div class="col-xs-4">
-															<label for="inputeHouse">Дом</label>
-															<input type="text" name="house" id="inputeHouse" class="form-control">
-														</div>	
-														<div class="col-xs-6">
-															<label for="inputeTel">Телефон</label>
-															<input type="tel" name="tel" id="inputeTel" class="form-control">
-														</div>	
-														<div class="col-xs-6">
-															<label for="inputeSite">Сайт</label>
-															<input type="url" name="site" id="inputeSite" class="form-control">
-														</div>	
+													<div class="col-xs-4">
+														<label for="inputeColor">Любимый цвет</label>
+														<input type="color" name="color" id="inputeColor" class="form-control" form="reg-form">
+													</div>
+													<div class="col-xs-4">
+														<label for="inputeNumber">Любимая цифра</label>
+														<input type="number" name="number" min="0" max="9" step="1" id="inputeNumber" class="form-control" form="reg-form">
+													</div>
+													<div class="col-xs-4">
+														<label>Месяц и год рождения:</label>
+													</div>
+													<div class="col-xs-4">
+														<select name="month" class="form-control" form="reg-form">
+															<option value="January">Январь</option>
+															<option value="February">Февраль</option>
+															<option value="March">Март</option>
+															<option value="April">Апрель</option>
+															<option value="May" selected>Май</option>
+															<option value="June">Июнь</option>
+															<option value="July">Июль</option>
+															<option value="August">Август</option>
+															<option value="September">Сентябрь</option>
+															<option value="October">Октябрь</option>
+															<option value="November">Ноябрь</option>
+															<option value="December">Декабрь</option>
+														</select>
+													</div>
+													<div class="col-xs-4">
+														<select name="year" class="form-control" form="reg-form">
+															<option value="2010">2010</option>
+															<option value="2009">2009</option>
+															<option value="2008">2008</option>
+															<option value="2007">2007</option>
+															<option value="2006">2006</option>
+															<option value="2005">2005</option>
+															<option value="2004">2004</option>
+															<option value="2003">2003</option>
+															<option value="2002">2002</option>
+															<option value="2001">2001</option>
+															<option value="2000">2000</option>
+															<option value="1999">1999</option>
+															<option value="1998">1998</option>
+															<option value="1997">1997</option>
+															<option value="1996">1996</option>
+															<option value="1995">1995</option>
+															<option value="1994">1994</option>
+															<option value="1993">1993</option>
+															<option value="1992">1992</option>
+															<option value="1991">1991</option>
+															<option value="1990" selected>1990</option>
+															<option value="1989">1989</option>
+															<option value="1988">1988</option>
+															<option value="1987">1987</option>
+															<option value="1986">1986</option>
+															<option value="1985">1985</option>
+															<option value="1984">1984</option>
+															<option value="1983">1983</option>
+															<option value="1982">1982</option>
+															<option value="1981">1981</option>
+															<option value="1980">1980</option>
+															<option value="1979">1979</option>
+															<option value="1978">1978</option>
+															<option value="1977">1977</option>
+															<option value="1976">1976</option>
+															<option value="1975">1975</option>
+															<option value="1974">1974</option>
+															<option value="1973">1973</option>
+															<option value="1972">1972</option>
+															<option value="1971">1971</option>
+															<option value="1970">1970</option>
+														</select>
+													</div>
+													<div class="col-xs-6">
+														<label for="photoalbum">Фотоальбом:</label>
+														<input type="file" name="fotoalbum" id="photoalbum" multiple form="reg-form">
+													</div>
+													<div class="col-xs-6">
+														<label for="inputPhone">Модель телефона</label>
+														<select name="phone" class="form-control" id="inputPhone" form="reg-form">
+															<optgroup label="Nokia">
+																<option>Nokia 225</option>
+																<option>Nokia X1</option>
+																<option>Nokia XL</option>
+																<option>Nokia X2</option>
+															</optgroup> 
+															<optgroup label="Htc">
+																<option>Htc Sensation</option>
+																<option>Htc Sensation XE</option>
+																<option>Htc Desire V</option>
+																<option>Htc Desire V DualSim</option>
+																<option>Htc One</option>
+																<option>Htc One X</option>
+																<option>Htc One M8</option>
+															</optgroup>
+															<optgroup label="Samsung" disabled>
+																<option>Samsung Galaxy S3</option>
+																<option>Samsung Galaxy S4</option>
+																<option>Samsung Galaxy S5</option>
+															</optgroup>
+														</select>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset>
+												<legend>Адрес</legend>
+												<div class="row">
+													<div class="col-xs-4">
+														<label for="inputeIndex">Индекс</label>
+														<input type="text" name="postindex" id="inputeIndex" pattern="[0-9]{6}" class="form-control" form="reg-form">
 													</div>	
-												</fieldset>
-												<fieldset>
-													<legend>Другое</legend>
-													<div class="row">
-														<div class="col-xs-8">
-															<label for="about">Информация о себе:</label>
-															<textarea name="about" id="about" cols="50" rows="5" class="form-control"></textarea>
-														</div>
-														<div class="col-xs-4">
-															<label for="tech"> Знакомые технологии:</label>
-															<select size="6" multiple name="technology[]" id="tech"	class="form-control">
-																<option value="HTML">HTML</option>
-																<option value="CSS">CSS</option>
-																<option value="JavaScript">JavaScript</option>
-																<option value="PHP">PHP</option>
-																<option value="MySQL">MySQL</option>
-																<option value="Ajax">AJAX</option>
-															</select>
-														</div>
-														<div class="col-xs-12">
-															<label for="rss"><input type="checkbox" name="rss" id="rss" value="addrss" checked> Подписаться на рассылку</label>
-														</div>
+													<div class="col-xs-4">
+														<label for="inputeCountry">Страна</label>
+														<input type="text" name="country" id="inputeCountry" class="form-control" value="Украина" readonly form="reg-form">
+													</div>	
+													<div class="col-xs-4">
+														<label for="inputeTown">Город</label>
+														<input type="text" name="town" id="inputeTown" class="form-control" form="reg-form">
 													</div>
-												</fieldset>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal">Сохранить</button>
-											</form>
+													<div class="col-xs-8">
+														<label for="inputeStreet">Улица</label>
+														<input type="text" name="street" id="inputeStreet" class="form-control" form="reg-form">
+													</div>
+													<div class="col-xs-4">
+														<label for="inputeHouse">Дом</label>
+														<input type="text" name="house" id="inputeHouse" class="form-control" form="reg-form">
+													</div>	
+													<div class="col-xs-6">
+														<label for="inputeTel">Телефон</label>
+														<input type="tel" name="tel" id="inputeTel" class="form-control" form="reg-form">
+													</div>	
+													<div class="col-xs-6">
+														<label for="inputeSite">Сайт</label>
+														<input type="url" name="site" id="inputeSite" class="form-control" form="reg-form">
+													</div>	
+												</div>	
+											</fieldset>
+											<fieldset>
+												<legend>Другое</legend>
+												<div class="row">
+													<div class="col-xs-8">
+														<label for="about">Информация о себе:</label>
+														<textarea name="about" id="about" cols="50" rows="5" class="form-control" form="reg-form"></textarea>
+													</div>
+													<div class="col-xs-4">
+														<label for="tech"> Знакомые технологии:</label>
+														<select size="6" multiple name="technology[]" id="tech"	class="form-control" form="reg-form">
+															<option value="HTML">HTML</option>
+															<option value="CSS">CSS</option>
+															<option value="JavaScript">JavaScript</option>
+															<option value="PHP">PHP</option>
+															<option value="MySQL">MySQL</option>
+															<option value="Ajax">AJAX</option>
+														</select>
+													</div>
+													<div class="col-xs-12">
+														<label for="rss"><input type="checkbox" name="rss" id="rss" value="addrss" checked form="reg-form"> Подписаться на рассылку</label>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Сохранить</button>
+											
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</article>
-			</div>
-			<hr>
-			<footer>
-				<p>HomeTask - Ярчук С.А. &copy; LevelUP.Frontend 2014</p>
-			</footer>
+				</div>
+			</article>
+		</div>
+		<hr>
+		<footer>
+			<p>HomeTask - Ярчук С.А. &copy; LevelUP.Frontend 2014</p>
+		</footer>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
