@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Форма заказа</title>	
+	</head>
+	<body>
+		<h3>Для оформления заказа заполните поля формы:</h3>
+		<form name="order" method="POST" action="order.php">
+			<label> Выберите модель, которая Вам понравилась:</label><br>
+			<select name="model">
+				<option value="model111"> Модель 111</option>
+				<option value="model112"> Модель 112</option>
+				<option value="model113"> Модель 113</option>
+				<option value="model114"> Модель 114</option>
+				<option value="model115"> Модель 115</option>
+				<option value="model116"> Модель 116</option>
+				<option value="model117"> Модель 117</option>
+				<option value="model118"> Модель 118</option>
+				<option value="model119"> Модель 119</option>
+				<option value="model120"> Модель 120</option>
+				<option value="model121"> Модель 121</option>
+				<option value="model122"> Модель 122</option>
+			</select><br> <br>
+			<label>Выберите размер: <br>
+			<input name="size" type="number" max="45" min="35" step="1" value="35">
+			</label><br><br>
+			<label >Предпочтительный цвет:</label><br>
+			<datalist id="color">
+				<option value="красный">red</option>
+				<option value="белый">white</option>
+				<option value="черный">black</option>
+				<option value="зеленый">green</option>
+				<option value="желтый">yellow</option>
+			</datalist>
+			<input list="color" type="text" name="color" required><br><br>
+			<label>Номер Вашей кредитной карты: <br> 
+			<input type="text" required name="card" placeholder="Введите номер карты" pattern="[0-9]{8,16}">
+			</label><br><br>
+			<label>Укажите номер телефона, <br>
+			по которому мы можем связаться с Вами: <br> 
+			<input type="tel" required name="tel" placeholder="Ваш телефон" pattern="[0-9]{7,12}"> 
+			</label><br><br>
+			<button name="payment">Оплатить</button>
+		</form>
+	</body>
+</html>
