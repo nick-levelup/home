@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>HomeTask Ярчук С.А.</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Меню</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo" href="#">HomeTask№6</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<ul class="nav navbar-nav pull-right">
+						<li><a href="login.html">Вход</a></li>
+						<li><a href="registration.html">Регистрация</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="row row-offcanvas row-offcanvas-left">
+			<aside>
+				<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Рецепты</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li><a href="recipes/recipe1.html">Кальмары с майонезом</a></li>
+								<li><a href="recipes/recipe2.html">Свиные ребрышки</a></li>
+								<li><a href="recipes/recipe3.html">Квас украинский</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<article>
+				<div class="col-xs-12 col-sm-9">
+					<div class="pull-left visible-xs">
+						<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Рецепты</button>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-lg-12">
+							<h1>Контакты</h1>
+							<hr>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-lg-6">
+							<address>
+								<div class="address">
+									<h4>Наш адрес</h4>
+									<p>Украина, г. Днепропетровск<br>ул. Красная, 21г,<br>Торгово-сервисный центр<br>«Новый металлург», 3 эт.</p>
+								</div>
+							</address>
+						</div>
+						<div class="col-xs-12 col-lg-6">
+							<h4>Наши телефоны</h4>
+							<ul class="phones">
+								<li>+38 056 376 9066</li>
+								<li>+38 099 731 8385</li>
+								<li>+38 096 084 2513</li>
+								<li><a href="mailto:office@levelup.dp.ua">office@levelup.dp.ua</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-lg-12">
+							<div class="feedback-button">
+								<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#feedbackModal">Есть вопросы?</button>
+							</div>	
+							<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+											<h4 class="modal-title" id="myModalLabel">Напишите нам</h4>
+										</div>
+										<div class="modal-body">
+											<form action="/echo" method="POST">   
+												<label for="guest-name">Ваше имя:</label>
+												<input type="text" name="name" id="guest-name" placeholder="Имя" class="form-control">
+												<label for="guest-email"> Электронная почта:</label>
+												<input type="email" name="email" id="guest-email" placeholder="Email" class="form-control">
+												<label for="guest-tel">Ваш телефон:</label>
+												<input type="tel" name="tel" id="guest-tel" placeholder="Телефон" class="form-control">
+												<label for="guest-message">Сообщение:</label>
+												<textarea name="message" id="guest-message" cols="50" rows="5" placeholder="Сообщение" class="form-control"></textarea>
+												<label for="rss"><input type="checkbox" name="rss" id="rss" value="add_rss"> Подписаться на рассылку</label>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+												<button class="btn btn-primary" type="submit">Отправить</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<hr>
+		<footer>
+			<p>HomeTask - Ярчук С.А. &copy; LevelUP.Frontend 2014</p>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+	$(document).ready(function () {
+		$('[data-toggle="offcanvas"]').click(function () {
+			$('.row-offcanvas').toggleClass('active')
+		});
+	});
+	</script>
+</body>
+</html>

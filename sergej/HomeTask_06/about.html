@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>HomeTask Ярчук С.А.</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Меню</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo" href="#">HomeTask№6</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<ul class="nav navbar-nav pull-right">
+						<li><a href="login.html">Вход</a></li>
+						<li><a href="registration.html">Регистрация</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="row row-offcanvas row-offcanvas-left">
+			<aside>
+				<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Рецепты</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li><a href="recipes/recipe1.html">Кальмары с майонезом</a></li>
+								<li><a href="recipes/recipe2.html">Свиные ребрышки</a></li>
+								<li><a href="recipes/recipe3.html">Квас украинский</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<article>
+				<div class="col-xs-12 col-sm-9">
+					<div class="pull-left visible-xs">
+						<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Рецепты</button>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-lg-12">
+							<h1>О принципах обучения в IT-центре Level Up</h1>
+							<hr> 
+						</div>    
+					</div>
+					<div class="row">
+						<div class="col-xs-8 col-lg-8">
+							<p>Дорогие друзья. Расставляя приоритеты в целях нашего учебного центра и устанавливая общие правила для преподавателей и студентов, мы исходим из некоторых принципиальных соображений.</p>
+							<p>Мы считаем, что учебный процесс есть совместная работа наставника и студента. Мы уверены, что время, как и любой материальный ресурс, имеет ценность, а потому пропуски аудиторных занятий - это невосполнимая утрата независимо от их причины. Мы настаиваем на том, что для учебы эффективен лишь формат, когда студент доверяет преподавателю, поэтому выполняет все без исключения его рекомендации. А преподаватель рассчитывает на выполнение всех поставленных учебных задач.</p>
+							<p>Мы гарантируем, что со своей стороны всегда максимально ответственны и профессиональны и совершенствуемся в этом постоянно. Гарантируем не на словах, а тем, что в отношениях с вами используем помесячную форму расчетов без многотысячных предоплат. Это, если хотите - выгодное отличие нашего стиля работы.</p>
+						</div>
+						<div class="col-xs-4 col-lg-4">
+							<div class="about"><img src="images/about.png" alt="О нас"></div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<hr>
+		<footer>
+			<p>HomeTask - Ярчук С.А. &copy; LevelUP.Frontend 2014</p>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+	$(document).ready(function () {
+		$('[data-toggle="offcanvas"]').click(function () {
+			$('.row-offcanvas').toggleClass('active')
+		});
+	});
+	</script>
+</body>
+</html>
