@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<title>Кулинарный журнал</title>
+	</head>
+	<body> 
+		<table border="0" width="400" height="50" bgcolor="#fab218" align="center">
+			<tr>
+				<td align="center"><a href="index.html">Главная</a></td>
+				<td align="center"><a href="contacts.html">Контакты</a></td>
+				<td align="center"><a href="about_us.html"> О нас</a></td>
+			</tr>
+		</table>
+		<h2>Регистрация на сайте</h2>
+		<form action="script.recept.php" method="POST">
+			<label> Имя <input type="text" size="50" name="Name"></label><br><br>
+			<label> Фамилия <input type="text" size="44" name="LName"></label><br><br>
+			<label> Загрузить Ваше фото <input type="file" name="photo"> </label><br><br>
+			<label>Дата рожденья</label>
+			<select name="days">
+				<option value="day"> день </option>
+				<option value="1">1</option>	
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</select>
+			<select name="months">
+				<option value="month"> месяц </option>
+				<option value="jan"> январь </option>
+				<option value="feb"> февраль </option>
+				<option value="march"> март </option>
+				<option value="apr"> апрель </option>
+				<option value="may"> май </option>
+				<option value="june"> июнь </option>
+				<option value="july"> июль </option>
+				<option value="aug"> август </option>
+				<option value="sep"> сентябрь </option>
+				<option value="oct"> октябрь </option>
+				<option value="nov"> ноябрь </option>
+				<option value="dec"> декабрь </option>
+			</select>
+			<select name="years">
+				<option value="year">год</option>
+				<option value="2014">2014</option>
+				<option value="2013">2013</option>
+				<option value="2012">2012</option>
+				<option value="2011">2011</option>
+				<option value="2010">2010</option>
+				<option value="2009">2009</option>
+				<option value="2008">2008</option>
+				<option value="2007">2007</option>
+				<option value="2006">2006</option>
+			</select><br><br>
+			<label>Город</label>
+			<select name="city">
+				<option value="Kiev">Киев</option>
+				<option value="Moscow">Москва</option>
+				<option value="Paris">Париж</option>
+				<option value="London">Лондон</option>
+				<option value="York">Нью-Йорк</option>
+			</select><br><br>
+			<label>Пол</label>
+			<label><input type="radio" name="sex" value="man"> Мужской </label>
+			<label><input type="radio" name="sex" value="woman"> Женский </label><br><br>
+			<label> Почтовый ящик <input type="text" name="mail" size="18"> </label>
+			<select name="mail">
+				<option value="mail">@mail.ru</option>
+				<option value="inbox">@inbox.ru</option>
+				<option value="gmail">@gmail.com</option>
+			</select><br><br>		
+			<label> Пароль <input type="password" name="password1"> </label><br><br>
+			<label> Повторите пароль <input type="password" name="password2"> </label><br><br>
+			<label> Я хочу получать подписку новостей <input type="checkbox" name="news" checked> </label><br> <br>
+			<input type="submit" name="regisrtation" value="Зарегистрироваться"> 
+		</form>
+	</body>
+</html>
+
+
+

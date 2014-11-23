@@ -1,0 +1,155 @@
+body {
+	font-size: 20px;
+}
+em {
+	color: red;
+}
+ol {
+	margin: 0 0 50px;
+}
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+table td {
+	width: 350px;
+	border: 1px solid black;
+}
+dt {
+	font-weight: bold;
+	font-size:1.2em;
+	margin:0 0 15px;
+}
+dd {
+	margin:0 0 20px 30px;
+}
+footer {
+	text-align: center;
+}
+/*------------------------------blocks-------------------------------*/
+.container {
+	width:99%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.block-1, .block-2, .block-3, .block-4, .block-5, .block-6, .block-7, .block-8, .block-9, .block-10, .block-11, .block-12 {
+	position: relative;
+	min-height: 1px;
+	float: left;
+	margin: 1% 0 1% 0;
+}
+.block-12 {
+	width: 100%;
+}
+.block-11 {
+	width: 91.66666667%;
+}
+.block-10 {
+	width: 83.33333333%;
+}
+.block-9 {
+	width: 75%;
+}
+.block-8 {
+	width: 66.66666667%;
+}
+.block-7 {
+	width: 58.33333333%;
+}
+.block-6 {
+	width: 50%;
+}
+.block-5 {
+	width: 41.66666667%;
+}
+.block-4 {
+	width: 33.33333333%;
+}
+.block-3 {
+	width: 25%;
+}
+.block-2 {
+	width: 16.66666667%;
+}
+.block-1 {
+	width: 8.33333333%;
+}
+.page-header{
+	margin: 0 0 0 3%;
+}
+/*------------------------------/blocks-------------------------------*/
+.logo{
+	position: absolute;
+	top: 1%;
+	left: 1%;
+}
+.hint{
+	font-size: 0.7em;
+}
+.top-menu-container{
+	text-align: center;
+}
+.top-menu{
+	font-size: 2em;
+	list-style: none;
+}
+.top-menu li{
+	display: inline;
+	margin: 0 50px 0 0;
+}
+.content{
+	margin: 0 0 0 3%;
+}
+.login-block{
+	position: absolute;
+	top: 1%;
+	right: 1%;
+	width: 11%;
+	font-size: 0.7em;
+	background-color: #ccc;
+	padding: 1% 1% 1% 1%;
+	border-radius: 3px;
+}
+.title-login{
+	text-align: left;
+	font-size: 1.3em;
+	margin: 0 0 10% 0;
+}
+.subm-block{
+	text-align: center;
+}
+.pager-container{
+	text-align:center;
+}
+.pager {
+	font-size: 1.4em;
+	list-style: none;
+}
+.pager li {
+	display: inline;
+	margin-right: 50px;
+}
+.adress{
+	margin: 0 0 0 10%;
+}
+.phones {
+	list-style:none;
+}
+.about{
+	text-align: justify;
+}
+img.about-img{
+	width: 100%;
+}	
+.userblock {
+	text-align: center;
+}	
+.tal{
+	text-align: left;
+}	
+.tar{
+	text-align: right;
+}
+.tac{
+	text-align: center;
+}

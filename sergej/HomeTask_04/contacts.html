@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Контакты</title>
+	<meta charset="utf-8">
+	<style>
+		body {
+			font-size: 20px;
+		}
+		em {
+			color: red;
+		}
+		span {
+			color:#8fbbfc;
+		}
+		.logo{
+			position: absolute;
+			top: 1%;
+			left: 1%;
+		}
+		.hint {
+			font-size: 0.7em;
+		}
+		.top-menu-container {
+			text-align: center;
+		}
+		.top-menu {
+			font-size: 2em;
+			list-style: none;
+		}
+		.top-menu li {
+			display: inline;
+			margin: 0 50px 0 0;
+		}
+		.content {
+			margin: 0 0 0 10%;
+		}
+		.content p {
+			margin: 0 0 3px 45px;
+		}
+		.phones {
+			list-style: none;
+		}
+		.login-block{
+			position: absolute;
+			top: 1%;
+			right: 1%;
+			width: 11%;
+			font-size: 0.7em;
+			background-color: #ccc;
+			padding: 1% 1% 1% 1%;
+			border-radius: 3px;
+		}
+		.login-block .title-login{
+			text-align: left;
+			font-size: 1.3em;
+			margin: 0 0 10% 0;
+
+		}
+		.login-block .l-side, .login-block .r-side{
+			float: left;
+			margin: 0 0 3% 0;
+		}
+		.login-block .l-side{
+			width: 20%;
+		}
+		.login-block .r-side{
+			width: 80%;
+			text-align: right;
+		}
+		.login-block .subm-block{
+			text-align: right;
+		}
+		.login-block .registation-block, .login-block .lostpasswd-block{
+			width:50%;
+			float:left;
+		}
+		.login-block .lostpasswd-block{
+			text-align: right;			
+		}
+		.container{
+			width: 100%;
+			position: relative;
+		}
+		.left-container, .right-container{
+			width: 50%;
+			float: left;
+			min-height: 1px;
+		}
+		.feedback .l-side, .feedback .r-side{
+			float: left;
+			margin: 0 0 1% 0;
+			min-height: 1px;
+		}
+		.feedback .l-side{
+			width: 20%;
+		}
+		.feedback .r-side{
+			width: 70%;
+		}
+		.feedback .c-side{
+			width: 100%;
+		}
+		.pafe-title{
+			margin: 3% 0 1% 3%;
+		}
+	</style>
+</head>
+<body>
+	<div class="logo"><img src="images/logo.gif" alt="Логотип"></div>
+	<div class="top-menu-container">
+		<ul class="top-menu">
+			<li><a href="index.html" title="Главная" accesskey="k">Главная</a></li>
+			<li><a href="contacts.html" title="Контакты">Контакты</a></li>
+			<li><a href="about.html" title="О нас" accesskey="l">О нас</a></li>
+		</ul>
+		<p class="hint"><em>*</em> Для навигации по меню испльзуйте комбинации Alt+K, Alt+L(Opera 15+, Google Chorome), Shift+Alt+K, Shift+Alt+L(Mozilla Firefox)</p>
+	</div>
+	<div class="login-block">
+		<form action="/login" method="POST">
+			<div class="title-login">Авторизация на сайте:</div>
+			<div class="l-side"><label for="userlogin">Имя:</label></div>
+			<div class="r-side"><input type="text" name="login" id="userlogin" placeholder="Введите имя"></div>
+			<div class="l-side"><label for="userpasswd">Пароль:</label></div>
+			<div class="r-side"><input type="password" name="pass" id="userpasswd" placeholder="Введите пароль"></div>
+			<div class="subm-block"><p><input type="submit" name="subbut" value="Вход"></p></div>
+			<div class="registation-block"><a href="registration.html">Регистрация</a></div>
+			<div class="lostpasswd-block"><a href="lostpasswd.html">Забыли пароль?</a></div>
+		</form>
+	</div>
+	<div class="pafe-title"><h1>Контакты</h1></div>
+	<div class="container">
+		<div class="left-container">
+			<div class="content">
+				<h3>Наш адрес</h3>
+				<p>Украина, Днепропетровск</p>
+				<p>Красная, 21г</p>
+				<p>Торгово-сервисный центр</p>
+				<p>«Новый металлург», 3 эт.</p>
+				<br>
+				<h3>Наши телефоны</h3>
+				<ul class="phones">
+					<li>+38 056 376 9066</li>
+					<li>+38 099 731 8385</li>
+					<li>+38 096 084 2513</li>
+					<li><a href="mailto:office@levelup.dp.ua">office@levelup.dp.ua</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right-container">
+			<div class="feedback">
+				<h3>Напишите нам</h3>
+				<form action="/echo" method="POST">   
+					<div class="l-side"> <label for="guest-name">Ваше имя:</label> </div>
+					<div class="r-side"><input type="text" name="name" id="guest-name"></div>
+					<div class="l-side"><label for="guest-email"> Электронная почта:</label></div>
+					<div class="r-side"><input type="email" name="email" id="guest-email"></div>
+					<div class="l-side"><label for="guest-tel">Ваш телефон:</label></div>
+					<div class="r-side"><input type="tel" name="tel" id="guest-tel"></div>
+					<div class="с-side"><label for="guest-message">Сообщение:</label></div>
+					<div class="с-side"><textarea name="message" id="guest-message" cols="70" rows="10"></textarea></div>
+					<div class="с-side"><label for="rss"><input type="checkbox" name="rss" id="rss" value="add_rss"> Подписаться на рассылку</label></div>
+		            <div class="с-side"><input type="submit" name="button" id="button" value="Отправить"></div>
+		       	</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

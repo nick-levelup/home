@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Востановление пароля</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
+</head>
+<body> 
+	<header>
+		<div class="logo"><img src="images/logo.gif" alt="Логотип"></div>
+		<div class="top-menu-container">
+			<ul class="top-menu">
+				<li><a href="index.html" title="Главная">Главная</a></li>
+				<li><a href="contacts.html" title="Контакты" accesskey="l">Контакты</a></li>
+				<li><a href="about.html" title="О нас" accesskey="k">О нас</a></li>
+			</ul> 
+			<p class="hint"><em>*</em> Для навигации по меню испльзуйте комбинации Alt+K, Alt+L(Opera 15+, Google Chorome), Shift+Alt+K, Shift+Alt+L(Mozilla Firefox)</p>
+		</div>
+		<div class="login-block">
+			<form action="login.html" method="POST">
+				<div class="title-login">Авторизация на сайте:</div>
+				<div class="subm-block"><p><input type="submit" name="subbut" value="Авторизироваться"></p></div>
+			</form>
+		</div>
+	</header>
+	<article>
+		<div class="page-header userblock">
+			<h1>Востановление пароля</h1>
+		</div>
+		
+		<div class="container">
+			<div class="block-4"></div>
+			<div class="block-4">
+				<div class="content tac">
+					<form action="/echo" method="POST">   
+						<label for="user-email"> Электронная почта:</label>
+						<input type="email" name="email" id="user-email">
+						<input type="submit" name="button" id="button" value="Восстановить">         
+					</form>
+				</div>
+			</div>
+			<div class="block-4"></div>
+		</div>
+	</article>
+	<footer>
+		<div class="container">
+			<div class="block-12">
+				<p>2014&copy; LevelUP. Frontend. HomeTask№5</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

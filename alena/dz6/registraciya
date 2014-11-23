@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Регистраия </title>
+</head>
+<body>
+	<h1>Регистрация</h1>
+	<form action="script.recept.php" method="POST">
+	<input type="text" name="name" value="Имя"><br>
+	<input type="text" name="name" value="Фамилия"><br>
+	<h2>Ваш пол:</h2>
+	<input type="radio" name="radio" id="z"> <label for="z">Женский</label>
+	<input type="radio" name="radio" id="m"> <label for="m">Мужской</label>
+	<h2>Ваша дата рождения:</h2>
+    <input type="date" name="date"><br>
+    <input type="tel" name="tel" value="Номер телефона"><br>
+    <input type="email"name="email"value="email"><br>
+    <h2>Пароль:</h2>
+	<input type="password" name="password"><br>
+    <label><input type="submit" value="Отправить"></label>
+    </form>
+ </body>
+</html>

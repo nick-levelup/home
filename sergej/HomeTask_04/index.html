@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Главная</title>
+	<meta charset="utf-8">
+	<style>
+		body{
+			font-size: 20px;
+		}
+		em{
+			color: red;
+		}
+		ol{
+			margin: 0 0 50px;
+		}
+		.logo{
+			position: absolute;
+			top: 1%;
+			left: 1%;
+		}
+		.hint{
+			font-size: 0.7em;
+		}
+		.top-menu-container{
+			text-align: center;
+		}
+		.top-menu{
+			font-size: 2em;
+			list-style: none;
+		}
+		.top-menu li{
+			display: inline;
+			margin: 0 50px 0 0;
+		}
+		.content{
+			margin: 3%;
+		}
+		.login-block{
+			position: absolute;
+			top: 1%;
+			right: 1%;
+			width: 11%;
+			font-size: 0.7em;
+			background-color: #ccc;
+			padding: 1% 1% 1% 1%;
+			border-radius: 3px;
+		}
+		.title-login{
+			text-align: left;
+			font-size: 1.3em;
+			margin: 0 0 10% 0;
+		}
+		.l-side, .r-side{
+			float: left;
+			margin: 0 0 3% 0;
+		}
+		.l-side{
+			width: 20%;
+		}
+		.r-side{
+			width: 80%;
+			text-align: right;
+		}
+		.subm-block{
+			text-align: right;
+		}
+		.registation-block, .lostpasswd-block{
+			width:50%;
+			float:left;
+		}
+		.lostpasswd-block{
+			text-align: right;			
+		}
+	</style>
+</head>
+<body> 
+	<div class="logo"><img src="images/logo.gif" alt="Логотип"></div>
+	<div class="top-menu-container">
+		<ul class="top-menu">
+			<li><a href="index.html" title="Главная">Главная</a></li>
+			<li><a href="contacts.html" title="Контакты" accesskey="l">Контакты</a></li>
+			<li><a href="about.html" title="О нас" accesskey="k">О нас</a></li>
+		</ul> 
+		<p class="hint"><em>*</em> Для навигации по меню испльзуйте комбинации Alt+K, Alt+L(Opera 15+, Google Chorome), Shift+Alt+K, Shift+Alt+L(Mozilla Firefox)</p>
+	</div>
+		<div class="login-block">
+		<form action="/login" method="POST">
+			<div class="title-login">Авторизация на сайте:</div>
+			<div class="l-side"><label for="userlogin">Имя:</label></div>
+			<div class="r-side"><input type="text" name="login" id="userlogin" placeholder="Введите имя"></div>
+			<div class="l-side"><label for="userpasswd">Пароль:</label></div>
+			<div class="r-side"><input type="password" name="pass" id="userpasswd" placeholder="Введите пароль"></div>
+			<div class="subm-block"><p><input type="submit" name="subbut" value="Вход"></p></div>
+			<div class="registation-block"><a href="registration.html">Регистрация</a></div>
+			<div class="lostpasswd-block"><a href="lostpasswd.html">Забыли пароль?</a></div>
+		</form>
+	</div>
+	<div class="content">
+		<h1 contenteditable>Главная</h1>
+		<h3>Список рецептов:</h3>
+		<ol>
+			<li><a style="color: blue;" href="recipes/recipe1.html">Рецепт №1 - Кальмары с майонезом</a></li>
+			<li><a style="color: red;" href="recipes/recipe2.html">Рецепт №2 - Свиные ребрышки</a></li>
+			<li><a style="color: green;" href="recipes/recipe3.html" target="_blank">Рецепт №3 - Квас украинский</a></li>
+		</ol>
+		<h3>Usemap/map</h3>
+		<p><img src="images/img.jpg" alt="Скачать рисунок ska-punk" usemap="#viki-links"></p>
+		<map name="viki-links" id="viki-links">
+			<area alt="ska" title="ska" href="https://ru.wikipedia.org/wiki/Ска" target="_blank" shape="rect" coords="18,194,257,308">
+			<area alt="punk" title="punk" href="https://ru.wikipedia.org/wiki/Панк-рок" target="_blank" shape="rect" coords="302,48,542,179">
+			<area alt="ska-punk" title="ska-punk" href="https://ru.wikipedia.org/wiki/Ска-панк" target="_blank" shape="rect" coords="634,40,986,297">
+		</map>
+	</div>
+</body>
+</html>

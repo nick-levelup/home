@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="utf-8">
+	<title>Контакты</title>
+ </head>
+
+<body>
+  <table border="1">
+    <tr>
+      <td><a href="index.html">Главная</a></td>
+      <td>Контакты</td>
+      <td><a href="about.html">О нас</a></td>
+    </tr>
+  </table> 
+  
+  <img src="images/images2.jpg" width="194" height="259" alt="здание">
+  <h3>Наш адрес:</h3>
+  <p>Украина, Днепропетровск<br>Красная, 21г<br>Торгово-сервисный центр<br>«Новый металлург», 3 эт.</p>
+<form action="/echo" method="POST">
+  <table border="0" cellspacing="5" cellpadding="5">
+    <caption>Форма обратной связи</caption>
+    <tr>
+      <td><label for="name-field">Имя</label></td>
+      <td><input type="text" name="name" id="name-field"></td>
+    </tr>
+    <tr>
+      <td><label for="email-field">e-mail</label></td>
+      <td><input type="text" name="email" id="email-field"></td>
+    </tr>
+    <tr>
+      <td><label for="text-field">Текст</label></td>
+      <td><textarea rows="5" cols="35" name="text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="wish-field">Пожелание</label></td>
+      <td><textarea rows="7" cols="35" name="wish"></textarea></td>
+    </tr>
+    <tr>
+      <td align="right" colspan="2">
+      <input type="submit" value="Отправить">
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Регистрация</title>
+	<meta charset="utf-8">
+	<style>
+		body{
+			font-size: 20px;
+		}
+		em{
+			color: red;
+		}
+		ol{
+			margin: 0 0 50px;
+		}
+		.logo{
+			position: absolute;
+			top: 1%;
+			left: 1%;
+		}
+		.hint{
+			font-size: 0.7em;
+		}
+		.top-menu-container{
+			text-align: center;
+		}
+		.top-menu{
+			font-size: 2em;
+			list-style: none;
+		}
+		.top-menu li{
+			display: inline;
+			margin: 0 50px 0 0;
+		}
+		.content{
+			margin: 3%;
+		}
+		.login-block{
+			position: absolute;
+			top: 1%;
+			right: 1%;
+			width: 11%;
+			font-size: 0.7em;
+			background-color: #ccc;
+			padding: 1% 1% 1% 1%;
+			border-radius: 3px;
+		}
+		.title-login{
+			text-align: left;
+			font-size: 1.3em;
+			margin: 0 0 10% 0;
+		}
+		.l-side, .r-side{
+			float: left;
+			margin: 0 0 3% 0;
+		}
+		.l-side{
+			width: 20%;
+		}
+		.r-side{
+			width: 80%;
+			text-align: right;
+		}
+		.subm-block{
+			text-align: right;
+		}
+		.registation-block, .lostpasswd-block{
+			width:50%;
+			float:left;
+		}
+		.lostpasswd-block{
+			text-align: right;			
+		}
+		.container{
+			width: 100%;
+			position: relative;
+		}
+		.left-container, .center-container, .right-container{
+			width: 33.33333%;
+			float: left;
+			min-height: 1px;
+		}
+		.center-container{
+			text-align: center;
+		}
+		.reg{
+			font-size: 0.7em;
+		}
+		.reg .l-side, .feedback .r-side{
+			float: left;
+			margin: 0 0 1% 0;
+			min-height: 1px;
+		}
+		.reg .l-side{
+			width: 47%;
+			text-align: right;
+			padding: 0 1% 0 0;
+		}
+		.reg .r-side{
+			width: 50%;
+			text-align: left;
+		}
+		.reg .c-side{
+			width: 100%;
+		}	
+	</style>
+</head>
+<body> 
+	<div class="logo"><img src="images/logo.gif" alt="Логотип"></div>
+	<div class="top-menu-container">
+		<ul class="top-menu">
+			<li><a href="index.html" title="Главная">Главная</a></li>
+			<li><a href="contacts.html" title="Контакты" accesskey="l">Контакты</a></li>
+			<li><a href="about.html" title="О нас" accesskey="k">О нас</a></li>
+		</ul> 
+		<p class="hint"><em>*</em> Для навигации по меню испльзуйте комбинации Alt+K, Alt+L(Opera 15+, Google Chorome), Shift+Alt+K, Shift+Alt+L(Mozilla Firefox)</p>
+	</div>
+		<div class="login-block">
+		<form action="/login" method="POST">
+			<div class="title-login">Авторизация на сайте:</div>
+			<div class="l-side"><label for="userlogin">Имя:</label></div>
+			<div class="r-side"><input type="text" name="login" id="userlogin" placeholder="Введите имя"></div>
+			<div class="l-side"><label for="userpasswd">Пароль:</label></div>
+			<div class="r-side"><input type="password" name="pass" id="userpasswd" placeholder="Введите пароль"></div>
+			<div class="subm-block"><p><input type="submit" name="subbut" value="Вход"></p></div>
+			<div class="registation-block"><a href="registration.html">Регистрация</a></div>
+			<div class="lostpasswd-block"><a href="lostpasswd.html">Забыли пароль?</a></div>
+		</form>
+	</div>
+	<div class="pafe-title"></div>
+	<div class="container">
+		<div class="left-container"></div>
+		<div class="center-container">
+			<div class="content">
+				<h1>Регистрация</h1>
+				<div class="reg">
+					<form action="/echo" method="post" enctype="multipart/form-data">
+						<div class="l-side"><label for="login">Ваш имя:</label></div>
+						<div class="r-side"><input type="text" name="login" id="login"></div>
+						<div class="l-side"><label for="user-email">Ваш email:</label></div>
+						<div class="r-side"><input type="email" name="email" id="user-email"></div>
+						<div class="l-side"><label for="user-passwd"> Пароль:</label></div>
+						<div class="r-side"><input type="password" name="passwd" id="user-passwd"></div>
+						<div class="l-side"><label for="user-passwd2"> Пароль ещё раз:</label></div>
+						<div class="r-side"><input type="password" name="passwd2" id="user-passwd2"></div>
+						<div class="l-side">Ваш пол:</div>
+						<div class="r-side"><label><input type="radio" name="sex" value="man">мужской</label>
+											<label><input type="radio" name="sex" value="woman">женский</label></div>
+						<div class="l-side">Месяц и год рождения:</div>
+						<div class="r-side">
+							<select name="month">
+								<option value="January">Январь</option>
+								<option value="February">Февраль</option>
+								<option value="March">Март</option>
+								<option value="April">Апрель</option>
+								<option value="May" selected>Май</option>
+								<option value="June">Июнь</option>
+								<option value="July">Июль</option>
+								<option value="August">Август</option>
+								<option value="September">Сентябрь</option>
+								<option value="October">Октябрь</option>
+								<option value="November">Ноябрь</option>
+								<option value="December">Декабрь</option>
+							</select>
+							<select name="year">
+								<option value="2010">2010</option>
+								<option value="2009">2009</option>
+								<option value="2008">2008</option>
+								<option value="2007">2007</option>
+								<option value="2006">2006</option>
+								<option value="2005">2005</option>
+								<option value="2004">2004</option>
+								<option value="2003">2003</option>
+								<option value="2002">2002</option>
+								<option value="2001">2001</option>
+								<option value="2000">2000</option>
+								<option value="1999">1999</option>
+								<option value="1998">1998</option>
+								<option value="1997">1997</option>
+								<option value="1996">1996</option>
+								<option value="1995">1995</option>
+								<option value="1994">1994</option>
+								<option value="1993">1993</option>
+								<option value="1992">1992</option>
+								<option value="1991">1991</option>
+								<option value="1990"  selected>1990</option>
+								<option value="1989">1989</option>
+								<option value="1988">1988</option>
+								<option value="1987">1987</option>
+								<option value="1986">1986</option>
+								<option value="1985">1985</option>
+								<option value="1984">1984</option>
+								<option value="1983">1983</option>
+								<option value="1982">1982</option>
+								<option value="1981">1981</option>
+								<option value="1980">1980</option>
+								<option value="1979">1979</option>
+								<option value="1978">1978</option>
+								<option value="1977">1977</option>
+								<option value="1976">1976</option>
+								<option value="1975">1975</option>
+								<option value="1974">1974</option>
+								<option value="1973">1973</option>
+								<option value="1972">1972</option>
+								<option value="1971">1971</option>
+								<option value="1970">1970</option>
+							</select>
+						</div>
+						<div class="l-side">Знакомые технологии:</div>
+						<div class="r-side">
+							<select size="4" multiple name="technology[]">
+								<option value="HTML">HTML</option>
+								<option value="CSS">CSS</option>
+								<option value="JavaScript">JavaScript</option>
+								<option value="PHP">PHP</option>
+							</select><br></div>
+						<div class="l-side"><label for="photo">Фото:</label></div>
+						<div class="r-side"><input type="file" name="foto" id="photo"></div>
+						<div class="l-side"><label for="about">Информация о себе:</label></div>
+						<div class="r-side"><textarea name="about" id="about" cols="50" rows="10"></textarea></div>
+						<div class="c-side"><label for="rss"><input type="checkbox" name="rss" id="rss" value="addrss" checked> Подписаться на рассылку</label></div>
+						<div class="c-side"><label for="license"><input type="checkbox" name="lic" id="license" value="acptlic"> Согласен с политикой конфиденциальности!</label></div>
+						<div class="c-side"><input type="submit" name="button" id="button" value="Зарегистрироваться"> </div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="right-container"></div>
+	</div>
+</body>
+</html>

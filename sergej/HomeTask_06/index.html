@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>HomeTask Ярчук С.А.</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Меню</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo" href="#">HomeTask№6</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<ul class="nav navbar-nav pull-right">
+						<li><a href="login.html">Вход</a></li>
+						<li><a href="registration.html">Регистрация</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>	
+	<div class="container">
+		<div class="row row-offcanvas row-offcanvas-left">
+			<aside>
+				<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Рецепты</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li><a href="recipes/recipe1.html">Кальмары с майонезом</a></li>
+								<li><a href="recipes/recipe2.html">Свиные ребрышки</a></li>
+								<li><a href="recipes/recipe3.html">Квас украинский</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<article>
+				<div class="col-xs-12 col-sm-9">
+					<div class="pull-left visible-xs">
+						<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Рецепты</button>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-lg-12">
+							<h1 class="zoomIn animated">Главная</h1>
+							<hr> 
+						</div>    
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-lg-4">
+							<h4>Кальмары с майонезом</h4>
+							<p>Закуска из кальмаров с майонезом готовится очень быстро, поэтому отлично подойдет для встречи нежданных гостей</p>
+							<p><a class="btn btn-success" href="recipes/recipe1.html" role="button">Подробнее &raquo;</a></p>
+						</div>
+						<div class="col-xs-6 col-lg-4">
+							<h4>Свиные ребрышки</h4>
+							<p>Свиные ребрышки в винной заливке. Запеченные с яблоками. Очень ароматные, сочные, вкусные. Попробуйте.</p>
+							<p><a class="btn btn-success" href="recipes/recipe2.html" role="button">Подробнее &raquo;</a></p>
+						</div>
+						<div class="col-xs-6 col-lg-4">
+							<h4>Квас украинский</h4>
+							<p>Квас - традиционный славянский кислый напиток, который готовят на основе брожения из муки и солода или из сухого ржаного хлеба</p>
+							<p><a class="btn btn-success" href="recipes/recipe3.html" role="button">Подробнее &raquo;</a></p>
+						</div>
+						<div class="col-xs-12 col-lg-8">
+							<h4>UseMap</h4>
+							<p class="use-map"><img src="images/img.jpg" alt="Скачать рисунок ska-punk" usemap="#viki-links"></p>
+							<map name="viki-links" id="viki-links">
+								<area alt="ska" title="ska" href="https://ru.wikipedia.org/wiki/Ска" shape="rect" coords="10,111,153,188" />
+								<area alt="punk" title="punk" href="https://ru.wikipedia.org/wiki/Панк-рок" shape="rect" coords="182,29,328,107" />
+								<area alt="ska-punk" title="ska-punk" href="https://ru.wikipedia.org/wiki/Ска-панк" shape="rect" coords="382,27,593,173" />
+							</map>
+						</div>
+						<div class="col-xs-12 col-lg-4">
+							<h4>Canvas</h4>
+							<canvas id="canvasik">Обновите Ваш браузер</canvas>
+							<script type="text/javascript">
+							var canvasik = document.getElementById("canvasik"),
+							ctx = canvasik.getContext('2d'),
+							cellSize = 32,
+							pic = new Image(),
+							map = 
+							[
+							[{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4}],
+							[{x:1,y:4},{x:1,y:1},{x:2,y:1},{x:3,y:1},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4}],
+							[{x:1,y:4},{x:1,y:2},{x:2,y:2},{x:3,y:2},{x:1,y:4},{x:1,y:3},{x:1,y:3},{x:1,y:3}],
+							[{x:1,y:4},{x:3,y:4},{x:2,y:3},{x:3,y:4},{x:1,y:4},{x:1,y:3},{x:1,y:4},{x:1,y:4}],
+							[{x:1,y:4},{x:3,y:4},{x:2,y:4},{x:3,y:4},{x:1,y:4},{x:1,y:3},{x:1,y:4},{x:1,y:4}],
+							[{x:1,y:4},{x:1,y:4},{x:1,y:3},{x:1,y:4},{x:1,y:4},{x:1,y:3},{x:1,y:4},{x:1,y:4}],
+							[{x:1,y:4},{x:1,y:4},{x:1,y:3},{x:1,y:3},{x:1,y:3},{x:1,y:3},{x:1,y:4},{x:1,y:4}],
+							[{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4}]
+							];
+							canvasik.width = 8 * cellSize;
+							canvasik.height = 8 * cellSize;
+							pic.src = 'images/canvas.png';
+							pic.onload = function () {
+								for (var j = 0; j < 8; j++) {
+									for (var i = 0; i < 8; i++) {
+										ctx.drawImage(pic, (map[i][j].x - 1) * cellSize, (map[i][j].y - 1) * cellSize, 32, 32, j * cellSize, i * cellSize, 32, 32);
+									}
+								}
+							}
+							</script>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<hr>
+		<footer>
+			<p>HomeTask - Ярчук С.А. &copy; LevelUP.Frontend 2014</p>
+		</footer>
+	</div><!--/.container-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+	$(document).ready(function () {
+		$('[data-toggle="offcanvas"]').click(function () {
+			$('.row-offcanvas').toggleClass('active')
+		});
+	});
+	</script>
+</body>
+</html>

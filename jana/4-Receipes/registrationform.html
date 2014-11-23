@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Сайт рецептов</title>
+</head>
+<body>
+  <img src="./img/logo.png" width="192" height="118" alt="logo">
+  <ul>
+    <li>Главная</li>
+    <li><a href="./contacts.html">Контакты</a></li>
+    <li><a href="./aboutus.html">О нас</a></li>      
+  </ul>
+  <h2>Форма регистрации</h2>
+  <form action="confirm.html" method="POST">
+    <label for="firstname">Имя</label><br>
+    <br><input type="text" name="firstname-field" id="firstname" size="20" maxlength="53" value="Введите ваше имя"><br>
+    <br><label for="surname">Фамилия</label><br>
+    <br><input type="text" name="surname-field" id="surname" size="20" maxlength="53" value="Введите вашу фамилию"><br>
+    <br><label for="password">Пароль</label><br>
+    <br><input type="password" name="password-field" id="password" maxlength="10" value="Введите пароль"><br>
+    <br><label for="mail">Адрес электронной почты</label><br>
+    <br><input type="email" name="email1" id="mail" maxlength="45"><br>
+    <br><label for="sex">Укажите ваш пол</label><br>
+    <input type="radio" id="sex" name="gender" value="man"checked>мужской
+    <input type="radio" id="sex" name="gender" value="woman">женский<br>
+    <br><p>Какими языками вы владеете:</p>
+    <input type="checkbox" id="english" name="language"><label for="english">английский</label>
+    <input type="checkbox" id="french" name="language1"><label for="french">французский</label>
+    <input type="checkbox" id="deutch" name="language2"><label for="deutch">немецкий</label>
+    <input type="checkbox" id="italian" name="language3"><label for="italian">итальянский</label><br>
+    <br><p>Выберите страну проживания:</p>
+    <select size="3" multiple name="country">
+      <option value="russia">Россия</option>
+      <option value="ukraine">Украина</option>
+      <option value="england">Англия</option>
+    </select><br>
+    <br><p>Выберите ваш год рождения:</p>
+    <select size="3" multiple name="birth">
+      <option value="1990">1990</option>
+      <option selected value="1983">1983</option>
+      <option value="1987">1987</option>
+    </select><br>
+    <br><p>Ваши пожелания</p>
+    <textarea cols="30" rows="10" wrap="soft"></textarea><br>
+    <br><p>Подписаться на нашу рассылку</p>
+    <input type="checkbox" id="sendspam" name="spam"checked><label for="sendspam"</label>
+    <br>
+    <br><input type="submit" value="Зарегистрироваться">
+  </form>
+</body>
+</html>
