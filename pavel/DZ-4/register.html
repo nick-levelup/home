@@ -6,8 +6,10 @@
 </head>
 <body>
 	<form action="#" method="POST">
-		<input type="text" name="name" value="Имя"><br>
-		<input type="text" name="surname" value="Фамилия"><br>
+		<label for="name">Полное имя</label><br>
+		<input type="text" name="name" id="name" placeholder="Имя"><br>
+		<input type="text" name="surname" placeholder="Фамилия"><br>
+		<label for="day">Дата рождения</label><br>
 		<select name="date" id="day">
 			<option value="День">День</option>
 			<option value="1">1</option>
@@ -74,14 +76,27 @@
 			<option value="1992">1992</option>
 			<option value="1993">1993</option>
 			<option value="1994">1994</option>
-		</select><br>
-		<input type="text" name="city" value="Город"><br>
-		<input type="radio" name="gender" value="Мужской"> Мужской
-		<input type="radio" name="gender" value="Женский"> Женский<br>
-		<input type="text" name="email" value="E-mail"><br>
-		<input type="password" name="password" value="Пароль"><br>
-		<input type="password" name="password" value="Пароль"><br>
-		<input type="button" value="Зарегистрироваться">
+		</select><br>		
+		<label>
+		Город<br>
+		<select>
+			<option>выбрать...</option>
+			<option>Днепропетровск</option>
+			<option>Харьков</option>
+			<option>Запорожье</option>
+			<option>Киев</option>
+		</select>
+		</label><br>
+		Ваш пол<br>
+		<input type="radio" name="gender" id="male">
+		<label for="male"> Мужской</label>
+		<input type="radio" name="gender" id="female">
+		<label for="female"> Женский</label><br>
+		<label>E-mail<br><input type="text" name="email" placeholder="name@mail.com"></label><br>
+		
+		<label>Пароль<br><input type="password" name="password" placeholder="Пароль"></label><br>
+		<label>Пароль еще раз<br><input type="password" name="password" placeholder="Пароль еще раз"></label><br>
+		<input type="submit" value="Зарегистрироваться">
 	</form>
 </body>
 </html>

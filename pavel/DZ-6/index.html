@@ -6,32 +6,31 @@
 </head>
 <body>
 	<form action="#" method="POST">
-		<p>Полное имя:<br>
-		<input type="text" name="name" value="Фамилия"><br>
-		<input type="text" name="name" value="Имя"></p>
-		<p>E-mail:<br>
-		<input type="email" name="email" value="email@mail.com"></p>
-		<p>Пароль:<br>
-		<input type="password" name="password"></p>
-		<p>Страна:<br>
+		<p><label for="surname">Полное имя:</label><br>
+		<input type="text" name="name" placeholder="Фамилия" id="surname" autofocus><br>
+		<input type="text" name="name" placeholder="Имя"></p>
+		<p><label>E-mail:<br>
+		<input type="email" name="email" placeholder="email@mail.com"></label></p>
+		<p><label>Пароль:<br>
+		<input type="password" name="password" placeholder="Ваш пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></label><br>
+		<input type="password" name="password" placeholder="Пароль еще раз" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></p>
+		<p><label>Страна:<br>
 		<select>
 			<option>Австралия</option>
 			<option>Австрия</option>
 			<option>Азербайджан</option>
 			<option>Албания</option>
-		</select></p>
-		<p>Дата рождения:<br>
-		<input type="date" name="date"></p>
-		<p>Пол:<br>
-		<select>
-			<option>выбрать...</option>
-			<option>мужской</option>
-			<option>женский</option>
-			<option>не указан</option>
-		</select>
-		</p>
-		<p>Телефон:<br>
-		<input type="tel" name="tel"></p>
+		</select></label></p>
+		<p><label>Дата рождения:<br>
+		<input type="date" name="date"></label></p>
+		<fieldset>
+		<legend>Пол:</legend>
+		<label><input type="radio" name="gender"> Мужской</label><br>
+		<label><input type="radio" name="gender"> Женский</label>
+		</fieldset>
+		<label>Возраст<br><input type="number" min="16"></label>
+		<p><label>Телефон:<br>
+		<input type="tel" name="tel" pattern="(\+?\d[- .]*){7,13}"></label></p>
 		<input type="submit" value="Зарегистрироваться">
 	</form>
 </body>
