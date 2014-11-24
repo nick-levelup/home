@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>HomeTask Ярчук С.А.</title>
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
+	<link href="http://yastatic.net/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://daneden.github.io/animate.css/animate.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -267,7 +267,6 @@
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-default" data-dismiss="modal">Сохранить</button>
-											
 										</div>
 									</div>
 								</div>
@@ -282,41 +281,9 @@
 			<p>HomeTask - Ярчук С.А. &copy; LevelUP.Frontend 2014</p>
 		</footer>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script>
-	$(document).ready(function () {
-		$('[data-toggle="offcanvas"]').click(function () {
-			$('.row-offcanvas').toggleClass('active')
-		});
-	});
-	</script>
-	<script>
-	$("#reg-form input").keyup(function() {
-		var numValid = 0;
-		$("#reg-form input[required]").each(function() {
-			if (this.validity.valid) {
-				numValid++;
-			}
-		});
-		var progress = $("#inputProgress");
-		if (numValid == 0) {
-			progress.attr("value", "0");
-		}
-		if (numValid == 1) {
-			progress.attr("value", "25");								  
-		}
-		if (numValid == 2) {
-			progress.attr("value", "50");								    
-		}
-		if (numValid == 3) {
-			progress.attr("value", "75");								    
-		}
-		if (numValid == 4) {
-			progress.attr("value", "100");								    
-		}
-
-	});
-	</script>
+	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://yastatic.net/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="js/offcanvas.js"></script>
+	<script src="js/inputprogress.js"></script>
 </body>
 </html>

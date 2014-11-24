@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>HomeTask Ярчук С.А.</title>
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
+	<link href="http://yastatic.net/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://daneden.github.io/animate.css/animate.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -91,33 +91,6 @@
 						<div class="col-xs-12 col-lg-4">
 							<h4>Canvas</h4>
 							<canvas id="canvasik">Обновите Ваш браузер</canvas>
-							<script type="text/javascript">
-							var canvasik = document.getElementById("canvasik"),
-							ctx = canvasik.getContext('2d'),
-							cellSize = 32,
-							pic = new Image(),
-							map = 
-							[
-							[{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4}],
-							[{x:1,y:4},{x:1,y:1},{x:2,y:1},{x:3,y:1},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4}],
-							[{x:1,y:4},{x:1,y:2},{x:2,y:2},{x:3,y:2},{x:1,y:4},{x:1,y:3},{x:1,y:3},{x:1,y:3}],
-							[{x:1,y:4},{x:3,y:4},{x:2,y:3},{x:3,y:4},{x:1,y:4},{x:1,y:3},{x:1,y:4},{x:1,y:4}],
-							[{x:1,y:4},{x:3,y:4},{x:2,y:4},{x:3,y:4},{x:1,y:4},{x:1,y:3},{x:1,y:4},{x:1,y:4}],
-							[{x:1,y:4},{x:1,y:4},{x:1,y:3},{x:1,y:4},{x:1,y:4},{x:1,y:3},{x:1,y:4},{x:1,y:4}],
-							[{x:1,y:4},{x:1,y:4},{x:1,y:3},{x:1,y:3},{x:1,y:3},{x:1,y:3},{x:1,y:4},{x:1,y:4}],
-							[{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4},{x:1,y:4}]
-							];
-							canvasik.width = 8 * cellSize;
-							canvasik.height = 8 * cellSize;
-							pic.src = 'images/canvas.png';
-							pic.onload = function () {
-								for (var j = 0; j < 8; j++) {
-									for (var i = 0; i < 8; i++) {
-										ctx.drawImage(pic, (map[i][j].x - 1) * cellSize, (map[i][j].y - 1) * cellSize, 32, 32, j * cellSize, i * cellSize, 32, 32);
-									}
-								}
-							}
-							</script>
 						</div>
 					</div>
 				</div>
@@ -127,15 +100,10 @@
 		<footer>
 			<p>HomeTask - Ярчук С.А. &copy; LevelUP.Frontend 2014</p>
 		</footer>
-	</div><!--/.container-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script>
-	$(document).ready(function () {
-		$('[data-toggle="offcanvas"]').click(function () {
-			$('.row-offcanvas').toggleClass('active')
-		});
-	});
-	</script>
+	</div>
+	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://yastatic.net/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="js/offcanvas.js"></script>
+	<script src="js/html5canvas.js"></script>
 </body>
 </html>
