@@ -30,13 +30,16 @@
       <td><input type="date" name="dob" id="dob-field"></td>
     </tr>
     <tr>
-      <td><label for="sex-field">Пол</label></td>
-      <td><input type="radio" name="sex" id="sex-field" value="man">мужской<input type="radio" name="sex" id="sex-field" value="woman">женский</td>
+      <td><p>Пол</p></td>
+      <td>
+        <input type="radio" name="sex" id="sex-man-field" value="man"><label for="sex-man-field">мужской</label>
+        <input type="radio" name="sex" id="sex-woman-field" value="woman"><label for="sex-woman-field">женский</label>
+      </td>
     </tr>
     <tr>
       <td><label for="country-field">Страна</label></td>
       <td>
-          <select name="country">
+          <select name="country" id="country-field">
             <option value="Ukraine">Украина</option>
             <option value="Russia">Россия</option>
             <option value="Byelorussia">Белорусь</option>
@@ -47,7 +50,7 @@
     <tr>
       <td><label for="city-field">Город</label></td>
       <td>
-        <select name="city">
+        <select name="city" id="city-field">
           <option value="Kiev">Киев</option>
           <option value="Moscow">Москва</option>
           <option value="Minsk">Минск</option>
@@ -56,12 +59,11 @@
       </td>
     </tr>
     <tr>
-      <td><p><label for="tel-field">Контактный телефон</label><p><p>(в формате 380xx-xxx-xx-xx для Украины)</p></td>
-      <td><input type="tel" name="tel" id="tel-field" pattern="380[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"></td>
+      <td><label for="tel-field">Контактный телефон</label></td>
+      <td><input type="tel" name="tel" id="tel-field" pattern="380[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="(в формате 380xx-xxx-xx-xx для Украины)"></td>
     </tr>
     <tr>
       <td><label for="info-field">Информация о себе:</label></td>
-     <!--<td><input type="text" name="info" id="info-field"></td>-->
       <td><textarea rows="5" cols="35" name="text"></textarea></td>
     </tr>
     <tr>
