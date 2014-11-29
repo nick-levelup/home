@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectors</title>
+	<style>
+		/* стили для задания */
+		.buttons {
+			cursor: pointer;
+			color: blue;
+			text-decoration: underline;
+		}
+		.buttons .is-active {
+			cursor: default;
+			color: red;
+			text-decoration: none;
+		}
+
+		/* пример выполнения */
+		.all * {
+			color: red;
+		}
+		.tag p {
+			color: red;
+		}
+		.li li {
+			color: red;
+		}
+		.classname .list1 {
+			color: red;
+		}
+		.id #selest1 {
+			color: red;
+		}
+		.active a:active {
+			color: red;
+		}
+		.visited a:visited {
+			color: red;
+		}
+		.first-letter li:first-letter {
+			color: red;
+		}
+		.plus h5 + ul {
+			color: red;
+		}
+		.first-child li:first-child {
+			color: red;
+		}
+		.attr [href] {
+			color: red;
+		}
+		.attrname [id="selest3"] {
+			color: red;
+		}
+		.attrname1 [id~="selest3"] {
+			color: red;
+		}
+		.before p + ul > li:before {
+			content: "********";
+			color: red;
+		}
+		.after p + ul > li:after {
+			content: "********";
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<button class="remove-all">Remove all</button>
+
+	<hr>
+	<!-- значения аттрибута data-name будет пременено к тегу main как класс -->
+	<ul class="buttons">
+		<!-- /* пример выполнения */ -->
+		<li data-name="all">* {color: red}</li>
+		<li data-name="tag">p {color: red}</li>
+		<li data-name="li">li {color: red}</li>
+		<li data-name="classname">list1 {color: red}</li>
+		<li data-name="id">#selest1 {color: red}</li>
+		<li data-name="active">a:active {color: red}</li>
+		<li data-name="visited">a:visited {color: red}</li>
+		<li data-name="first-letter">li:first-letter {color: red}</li>
+		<li data-name="plus">h5 + ul {color: red}</li>
+		<li data-name="first-child">li:first-child {color: red}</li>
+		<li data-name="attr">[href] {color: red}</li>
+		<li data-name="attrname">[id="select3"] {color: red}</li>
+		<li data-name="attrname1">[id~="select3"] {color: red}</li>
+		<li data-name="before">p + ul > li:before {content: "********";color: red}</li>
+		<li data-name="after">p + ul > li:after {content: "********";color: red}</li>
+	</ul>
+	<hr>
+
+	<!-- Сюда будут добавляться классы из списка выше (значения аттрибута data-name) -->
+	<main>
+		<!-- тут можно вставить любую разметку -->
+		<h4>Создание маркированного или нумерованного списка</h4>
+		<p>Маркеры или нумерацию к существующим строкам текста можно быстро добавить, а в приложении Word списки создаются автоматически при вводе.
+
+		<ul class="list1">В этой статье:
+			<li id="selest1">Выбор числа уровней в списке</li>
+			<li id="selest2 selest3">Создание одноуровневого маркированного и нумерованного списков</li>
+			<li id="selest3">Преобразование одноуровневого списка в многоуровневый список</li>
+				<ul>
+					<li id="selest3">Вариант №1</li>
+					<li id="selest3">Вариант №2</li>
+				</ul>
+			<li id="selest4">Выбор стиля многоуровневого списка из коллекции</li>
+			<li id="selest5"><a href="https:google.com.ua">Выбор числа уровней в списке</a></li>	
+		</ul>
+		<h5>Развитие CSS</h5>
+		<ul class="list2">
+			<li>
+				<span>3. История создания и развития CSS</span>
+				<ul>
+					<li><span>3.1 Уровень 1 (CSS1)</span></li>
+					<li>
+						<span>3.2 Уровень 2 (CSS2)</span>
+						<ul>
+							<li><span>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</span></li>
+						</ul>
+					</li>
+					<li><span>3.3 Уровень 3 (CSS3)</span></li>
+					<li><span>3.4 Уровень 4 (CSS4)</span></li>
+				</ul>
+			</li>
+		</ul>
+
+		<p>CSS — одна из широкого спектра технологий, одобренных консорциумом W3C и получивших общее название «стандарты Web» В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.</p>
+
+		<p>В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.</p>
+
+		<p>Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS.</p>
+
+		<p>В отличие от многих существовавших на тот момент языков стиля, CSS использует наследование от родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее стилях.</p>
+
+		<p>В середине 1990-х Консорциум Всемирной паутины (W3C) стал проявлять интерес к CSS, и в декабре 1996 года была издана рекомендация CSS1.</p>
+	</main>
+
+	<!-- Сценарий для задания  -->
+	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var $buttons = $('.buttons').find('li'),
+			$main = $('main'),
+			$removeBtn = $('.remove-all');
+
+		$removeBtn.on('click', removeAll);
+
+		$buttons.on('click', function (event) {
+			var dataClass = $(this).data('name');
+
+			removeAll();
+
+			event.preventDefault();
+
+			if(dataClass.split(' ').length > 1) { alert('remove spaces from attr value'); return;}
+			if(dataClass === '') { alert('attr value is empty'); return;}
+
+
+			$main
+				.addClass(dataClass)
+				.addClass('is-active');
+		});
+
+		function removeAll () {
+			$main.removeAttr('class');
+			$buttons.removeClass('is-active');
+		};
+	</script>
+</body>
+</html>
