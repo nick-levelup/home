@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selectors - Task 7</title>
+  <link rel="stylesheet" href="css/styles.css"></head>
+<body>
+  <button class="remove-all">Remove all</button>
+  <hr>
+  <!-- значения аттрибута data-name будет пременено к тегу main как класс -->
+  <ul class="buttons">
+
+    <div id="pseudoClass">
+      <p>Псевдоклассы:</p>
+      <ol>
+        <li data-name="linkPseudoClass">a:link</li>
+        <li data-name="visitedPseudoClass">a:visited</li>
+        <li data-name="hoverPseudoClass">a:hover</li>
+        <li data-name="activePseudoClass">a:active</li>
+        <li data-name="focusPseudoClass">input:focus</li>
+        <li data-name="first-of-typePseudoClass">p:first-of-type</li>
+        <li data-name="last-of-typePseudoClass">p:last-of-type</li>
+        <li data-name="nth-of-typePseudoClass">p:nth-of-type(4)</li>
+        <li data-name="only-of-typePseudoClass">li:only-of-type</li>
+        <li data-name="notPseudoClass">*:not(a)</li>
+        <li data-name="checkPseudoClass">[type="checkbox"]:checked + span:before</li>
+        <li data-name="enabledPseudoClass">[name="text2"]:enabled</li>
+        <li data-name="disabledPseudoClass">[name="text1"]:disabled</li>
+        <li data-name="rootPseudoClass">:root</li>
+        <li data-name="targetPseudoClass">p:target</li>
+        <li data-name="emptyPseudoClass">p:empty</li>
+      </ol>
+    </div>
+
+    <div id="pseudoElements">
+      <p>Псевдоэлементы:</p>
+      <ol start="17">
+        <li data-name="fletterPseudoElements">p:first-letter</li>
+        <li data-name="flinePseudoElements">p:first-line</li>
+        <li data-name="beforePseudoElements">h1:before</li>
+        <li data-name="afterPseudoElements">label:after</li>
+        <li data-name="selectionPseudoElements">*:selection</li>
+        <li data-name="fchildPseudoElements">li:first-child</li>
+        <li data-name="lchildPseudoElements">li:last-child</li>
+        <li data-name="nthchildPseudoElements">li:nth-child(odd)</li>
+      </ol>
+    </div>
+
+    <div id="attr">
+      <p>Селекторы атрибутов:</p>
+      <ol start="25">
+        <li data-name="attr">p[class]</li>
+        <li data-name="attrValue">[id="spanID"]</li>
+        <li data-name="attrValueBegin">a[href^="www"]</li>
+        <li data-name="attrValueEnd">a[href$=".pdf"]</li>
+        <li data-name="attrValueAny">a[href*="google"]</li>
+        <li data-name="attrValueAnySpace">[class~="classname2"]</li>
+        <li data-name="attrValueAnyHyphen">[class|="classname1"]</li>
+      </ol>
+    </div>
+
+    <div id="other">
+      <p>Прочие селекторы:</p>
+      <ol start=32>
+        <li data-name="tag">p</li>
+        <li data-name="class">.pClass</li>
+        <li data-name="id">#spanID</li>
+        <li data-name="group">h1, h2, q</li>
+        <li data-name="all">*</li>
+        <li data-name="descendant">h1 q</li>
+        <li data-name="child">ul.list > li</li>
+        <li data-name="sibling">a + p</li>
+        <li data-name="sibling-any">a ~ p</li>
+      </ol>
+    </div>
+
+    <div id="clear"></div>
+  </ul>
+  <hr>
+  <main>
+    <!-- тут можно вставить любую разметку -->
+    <form action="">
+      <label>
+        Текст:
+        <input type="text" name="text" placeholder="Введите текст"></label>
+      <br>
+      <label for="">
+        Отметить:
+        <input type="checkbox" />
+        <span></span>
+      </label>
+      <br>
+      <label>
+        Активное поле:
+        <input type="text" name="text1" value="Text1" disabled=""></label>
+      <br>
+      <label>
+        Неактивное поле:
+        <input type="text" name="text2" value="Text2"></label>
+      <br></form>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, modi.
+    </p>
+    <p></p>
+    <h3 class="classname1- classname2">Lorem ipsum dolor sit amet.</h3>
+    <br>
+    <a href="#CSS">Перейти к CSS для проверки :target</a>
+    <br>
+    <a href="www.google.com">www.google.com</a>
+    <br>
+    <a href="manual.pdf">manual.pdf</a>
+    <ul class="list">
+      <li>
+        <span id="spanID">3. История создания и развития CSS</span>
+        <ul>
+          <li>
+            <span>3.1 Уровень 1 (CSS1)</span>
+          </li>
+          <li>
+            <span>3.2 Уровень 2 (CSS2)</span>
+            <ul>
+              <li>
+                <span>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>3.3 Уровень 3 (CSS3)</span>
+          </li>
+          <li>
+            <span>3.4 Уровень 4 (CSS4)</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1>
+      Lorem <strong>ipsum
+        <q>1234567</q>
+        dolor</strong> 
+      sit amet.
+    </h1>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <q>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, molestias.
+    </q>
+    <br>
+    <a href="selectors-home.html">Ссылка</a>
+    <p class="pClass" id="CSS">
+      CSS — одна из широкого спектра технологий, одобренных консорциумом W3C и получивших общее название «стандарты Web» В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.
+    </p>
+
+    <p class="pClass">
+      В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.
+    </p>
+
+    <p>
+      Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS.
+    </p>
+
+    <p>
+      В отличие от многих существовавших на тот момент языков стиля, CSS использует наследование от родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее стилях.
+    </p>
+
+    <p>
+      В середине 1990-х Консорциум Всемирной паутины (W3C) стал проявлять интерес к CSS, и в декабре 1996 года была издана рекомендация CSS1.
+    </p>
+  </main>
+
+  <!-- Сценарий для задания  -->
+  <script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    var $buttons = $('.buttons').find('li'),
+      $main = $('main'),
+      $removeBtn = $('.remove-all');
+
+    $removeBtn.on('click', removeAll);
+
+    $buttons.on('click', function (event) {
+      var dataClass = $(this).data('name');
+
+      removeAll();
+
+      event.preventDefault();
+
+      if(dataClass.split(' ').length > 1) { alert('remove spaces from attr value'); return;}
+      if(dataClass === '') { alert('attr value is empty'); return;}
+
+
+      $main
+        .addClass(dataClass)
+        .addClass('is-active');
+    });
+
+    function removeAll () {
+      $main.removeAttr('class');
+      $buttons.removeClass('is-active');
+    };
+  </script>
+</body>
+</html>

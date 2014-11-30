@@ -1,0 +1,277 @@
+/* стили для задания */
+.buttons
+{
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+    text-decoration: underline;
+
+    color: blue;
+}
+.buttons p
+{
+    margin: 0;
+
+    text-decoration: none;
+
+    color: black;
+}
+.buttons .is-active
+{
+    cursor: default;
+    text-decoration: none;
+
+    color: red;
+}
+#pseudoClass
+{
+    float: left;
+
+    width: 300px;
+}
+#pseudoElements
+{
+    float: left;
+
+    width: 300px;
+}
+#attr
+{
+    float: left;
+
+    width: 300px;
+}
+#other
+{
+    float: left;
+
+    width: 300px;
+}
+#clear
+{
+    clear: left;
+}
+
+/*-----Селекторы типов-----*/
+.tag p
+{
+    color: blue;
+    border: 2px solid green;
+}
+
+/*-----Селекторы классов-----*/
+.class .pClass
+{
+    color: blue;
+    border: 2px solid green;
+}
+
+/*-----Селекторы ID-----*/
+.id #spanID
+{
+    color: blue;
+    border: 2px solid green;
+}
+
+/*-----Селекторы групп тегов-----*/
+.group h1,
+.group h2,
+.group q
+{
+    color: blue;
+    border: 2px solid green;
+}
+
+/*-----Универсальный селектор-----*/
+.all *
+{
+    color: blue;
+    border: 2px solid green;
+}
+
+/*-----Селектор потомков-----*/
+.descendant h1 q
+{
+    color: blue;
+    border: 2px solid green;
+}
+
+/*-----Селекторы дочерних элементов------*/
+.child ul.list > li
+{
+    color: blue;
+    border: 2px solid green;
+}
+
+/*-----Селекторы смежных элементов-----*/
+.sibling a + p
+{
+    color: green;
+    border: 2px solid green;
+}
+.sibling-any a ~ p
+{
+    color: green;
+    border: 2px solid green;
+}
+
+/*-----Псевдоклассы-----*/
+.linkPseudoClass a:link
+{
+    font-size: 50px;
+}
+.visitedPseudoClass a:visited
+{
+    font-size: 2px;
+}
+.hoverPseudoClass a:hover
+{
+    color: white;
+    background: #333;
+}
+.activePseudoClass a:active
+{
+    color: white;
+    background: red;
+}
+.first-of-typePseudoClass p:first-of-type
+{
+    color: white;
+    background: red;
+}
+.last-of-typePseudoClass p:last-of-type
+{
+    color: white;
+    background: red;
+}
+.nth-of-typePseudoClass p:nth-of-type(4)
+{
+    color: white;
+    background: red;
+}
+.only-of-typePseudoClass li:only-of-type
+{
+    border: 2px solid green;
+}
+.focusPseudoClass input:focus
+{
+    background-color: yellow;
+}
+.notPseudoClass *:not(a)
+{
+    color: white;
+    background: red;
+}
+.checkPseudoClass [type='checkbox']:checked + span:before
+{
+    content: 'Ok';
+}
+.disabledPseudoClass [name='text1']:disabled
+{
+    color: blue;
+}
+.enabledPseudoClass [name='text2']:enabled
+{
+    color: green;
+}
+/*:root здесь не получилось применить*/
+.rootPseudoClass :root
+{
+    background: red;
+}
+.targetPseudoClass p:target
+{
+    background: green;
+}
+.emptyPseudoClass p:empty
+{
+    height: 10px;
+
+    border: 1px solid red;
+    background: red;
+}
+
+/*-----Псевдоэлементы-----*/
+.fletterPseudoElements p:first-letter
+{
+    font-size: 20px;
+    font-weight: bolder;
+
+    color: red;
+}
+.flinePseudoElements p:first-line
+{
+    font-weight: bold;
+}
+.beforePseudoElements h1:before
+{
+    content: 'Заголовок H1 --> ';
+
+    color: blue;
+}
+.afterPseudoElements label:after
+{
+    font-weight: bold;
+
+    content: ' - обязательное поле';
+
+    color: red;
+}
+.selectionPseudoElements *::selection
+{
+    color: red;
+    background: yellow;
+}
+.fchildPseudoElements li:first-child
+{
+    color: blue;
+    border: 2px solid green;
+}
+.lchildPseudoElements li:last-child
+{
+    color: blue;
+    border: 2px solid green;
+}
+.nthchildPseudoElements li:nth-child(odd)
+{
+    color: blue;
+    border: 2px solid green;
+}
+
+/*-----Селекторы атрибутов-----*/
+.attr p[class]
+{
+    color: blue;
+    border: 2px solid green;
+}
+.attrValue [id='spanID']
+{
+    color: blue;
+    border: 2px solid green;
+}
+.attrValueBegin a[href^='www']
+{
+    color: blue;
+    border: 2px solid green;
+}
+.attrValueEnd a[href$='.pdf']
+{
+    color: blue;
+    border: 2px solid green;
+}
+.attrValueAny a[href*='google']
+{
+    color: green;
+    border: 2px solid green;
+}
+.attrValueAnySpace [class~='classname2']
+{
+    color: green;
+    border: 2px solid green;
+}
+.attrValueAnyHyphen [class|='classname1']
+{
+    color: red;
+    border: 2px solid red;
+}
