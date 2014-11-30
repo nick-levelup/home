@@ -64,6 +64,30 @@
 			content: "********";
 			color: red;
 		}
+		.mainp h4 ~ p {
+			color: red;
+		}
+		.classstart [class^="list"] {
+			color: red;
+		}
+		.idfinish [id$="3"] {
+			color: red;
+		}
+		.idcontains [id*="selest"] {
+			color: red;
+		}
+		.last-child li:last-child {
+			color: red;
+		}
+		.empty :empty {
+			color: red;
+		}
+		.checked [type="checkbox"]:checked + label {
+			color: red;
+		}
+		.nth-child li:nth-child(2n+1)  {
+			color: red;
+		}
 
 	</style>
 </head>
@@ -89,6 +113,14 @@
 		<li data-name="attrname1">[id~="select3"] {color: red}</li>
 		<li data-name="before">p + ul > li:before {content: "********";color: red}</li>
 		<li data-name="after">p + ul > li:after {content: "********";color: red}</li>
+		<li data-name="mainp">h4 ~ p {color: red}</li>
+		<li data-name="idstart">[class^="list"] {color: red}</li>
+		<li data-name="idfinish">[id$="3"] {color: red}</li>
+		<li data-name="idcontains">[id*="selest"] {color: red}</li>
+		<li data-name="last-child">li:last-child {color: red}</li>
+		<li data-name="empty">:empty {color: red}</li>
+		<li data-name="checked">[type="checkbox"]:checked + label {color: red}</li>
+		<li data-name="nth-child">li:nth-child(2n+1) {color: red}</li>
 	</ul>
 	<hr>
 
@@ -127,6 +159,17 @@
 			</li>
 		</ul>
 
+		<input type="checkbox" id="form1">
+		<label for="form1">Lorem1</label>
+		<input type="checkbox" id="form2">
+		<label for="form2">Lorem2</label>
+		<input type="checkbox" id="form3">
+		<label for="form3">Lorem3</label>
+
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
 		<p>CSS — одна из широкого спектра технологий, одобренных консорциумом W3C и получивших общее название «стандарты Web» В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.</p>
 
 		<p>В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.</p>
