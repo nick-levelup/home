@@ -1,0 +1,335 @@
+html,
+body {
+	overflow-x: hidden;
+}
+body {
+	padding-top: 70px;
+}
+footer {
+	padding: 30px 0;
+}
+fieldset {
+	margin: 15px 0 0 0;
+}
+.form-control {
+	margin: 0 0 10px 0;
+}
+.form-meter {
+	width: 100%;
+}
+.logo {
+	float: left;
+	background: url("../images/logo.png") 0 0 no-repeat;
+	padding-left: 50px;
+}
+.use-map img {
+	width: 100%;
+}
+.about img {
+	width: 70%;	
+}
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.form-reg, .form-lostpasswd {
+	padding: 15px;
+	margin: 0 auto;
+}
+.form-reg .form-reg-heading,
+.form-reg .checkbox,
+.form-lostpasswd .form-lostpasswd-heading,
+.form-lostpasswd .checkbox,
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+.form-reg .checkbox, .form-lostpasswd .checkbox, .form-signin .checkbox {
+	font-weight: normal;
+}
+.form-reg .form-control,
+.form-lostpasswd .form-control,
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+.form-reg .form-control:focus,
+.form-lostpasswd .form-control:focus,
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-reg input,
+.form-lostpasswd input,
+.form-signin input {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.feedback-button{
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+.address p {
+	margin: 0 0 0 40px;
+}
+.phones {
+	list-style: none;
+}
+.login-links {
+	margin: 10px 0 0 0;
+}
+/*
+* Меню
+* --------------------------------------------------
+*/
+@media screen and (max-width: 767px) {
+	.row-offcanvas {
+		position: relative;
+		-webkit-transition: all .25s ease-out;
+		-o-transition: all .25s ease-out;
+		transition: all .25s ease-out;
+	}
+	.row-offcanvas-right {
+		right: 0;
+	}
+	.row-offcanvas-left {
+		left: 0;
+	}
+	.row-offcanvas-right
+	.sidebar-offcanvas {
+		right: -50%; 
+	}
+	.row-offcanvas-left
+	.sidebar-offcanvas {
+		left: -50%; 
+	}
+	.row-offcanvas-right.active {
+		right: 50%;
+	}
+	.row-offcanvas-left.active {
+		left: 50%;
+	}
+	.sidebar-offcanvas {
+		position: absolute;
+		top: 0;
+		width: 50%;
+	}
+}
+/* стили для задания */
+.buttons {
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+	list-style: none;
+
+}
+.buttons .is-active {
+	cursor: default;
+	color: red;
+	text-decoration: none;
+}
+.remove-all {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.menu {
+	list-style: none;
+	text-align: center;
+}
+.menu li {
+	display: inline;
+	margin: 0 50px 0 0;
+}
+li {
+	margin: 3px;
+}
+/* пример выполнения */
+.css1 * {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css2 p {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css3 li {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css4 p span {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css5 li.class-name {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css6 p#id-shnik {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css7 p:first-line {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css8 p:first-letter {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css9 a {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css10 a:active {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css11 a:visited{
+	color: red;
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css12 div > ul > li {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css13 li + li {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css14 ul > li:first-child {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css15 a:hover {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css16 [type] {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css17 [type="text"]  {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css18 [class~='btn-lg'] {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css19 p.afbef:before {
+	content: '~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ';
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css19 p.afbef:after {
+	content: ' ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~';
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css20 h2 + p {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css21 h2 + p > span {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css22 ul > li > span + ul {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css23 ul:before {
+	content: 'ul ';
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css23 ul:after {
+	content: ' /ul';
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css24 [class] {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css25 p:hover {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css26 div ~ ul  {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css27 div ~ p > span {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css28 [href^="#"] {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css29 [href$="link1"] {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css30 [href*="link"] {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css31 [class|="form"] {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css32 li:last-child {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css33 p:empty {
+	min-height: 15px;
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css34 div:target {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css35 [type="checkbox"]:checked + label {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css36 p::selection {
+	background-color: lime;
+	border: 1px solid black;
+}
+.css36 p::-moz-selection {
+	background-color: lime;
+	border: 1px solid black;
+}
+.css37 input:enabled {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css37 input:disabled {
+	background-color: lime;
+	border: 1px solid black;
+}
+.css38 li:not(.class-name) {
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css39 p:nth-child(3n) {
+	min-height: 15px;
+	background-color: yellow;
+	border: 1px solid red;
+}
+.css40 li:nth-child(2n+1) {
+	background-color: yellow;
+	border: 1px solid red;
+}

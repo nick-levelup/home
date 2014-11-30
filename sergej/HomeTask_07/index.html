@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>HomeTask Ярчук С.А.</title>
+	<link href="http://yastatic.net/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://daneden.github.io/animate.css/animate.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Меню</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo" href="#">HomeTask№7</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Главная</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>	
+	<div class="container">
+		<div class="row row-offcanvas row-offcanvas-left">
+			<aside>
+				<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+							<h3 class="panel-title">Применить стили CSS</h3>
+						</div>
+						<div class="panel-body">
+							<ul class="buttons">
+								<!-- Сюда будут добавляться классы из списка выше (значения аттрибута data-name) -->
+								<li data-name="css2">p</li>
+								<li data-name="css3">li</li>
+								<li data-name="css4">p span</li>
+								<li data-name="css5">li.class-name</li>
+								<li data-name="css6">p#id</li>
+								<li data-name="css7">p first-line</li>
+								<li data-name="css8">p first-letter</li>
+								<li data-name="css9">a</li>
+								<li data-name="css10">a:active</li>
+								<li data-name="css11">a:visited</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Применить стили CSS 2.1</h3>
+						</div>
+						<div class="panel-body">
+							<ul class="buttons">
+								<!-- Сюда будут добавляться классы из списка выше (значения аттрибута data-name) -->
+								<li data-name="css1">all</li>
+								<li data-name="css12">div>ul>li</li>
+								<li data-name="css13">li without 1.</li>
+								<li data-name="css14">ul > li:first-child</li>
+								<li data-name="css15">a:hover</li>
+								<li data-name="css16">[type]]</li>
+								<li data-name="css17">[type=text] </li>
+								<li data-name="css18">[class~='btn-lg']</li>
+								<li data-name="css19">p.afbef:before p.afbef:after</li>
+								<li data-name="css20">h2 + p</li>
+								<li data-name="css21">h2 + p > span</li>
+								<li data-name="css22">ul > li > span + ul</li>
+								<li data-name="css23">ul:before ul:after</li>
+								<li data-name="css24">[class]</li>
+								<li data-name="css25">p:hover</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Применить стили CSS 3</h3>
+						</div>
+						<div class="panel-body">
+							<ul class="buttons">
+								<!-- Сюда будут добавляться классы из списка выше (значения аттрибута data-name) -->
+								<li data-name="css26">div ~ ul</li>
+								<li data-name="css27">div ~ p > span</li>
+								<li data-name="css28">[href^="#"] </li>
+								<li data-name="css29">[href$="link1"]</li>
+								<li data-name="css30">[href*="link"]</li>
+								<li data-name="css31">[class|="form"]</li>
+								<li data-name="css32">li:last-child</li>
+								<li data-name="css33">p:empty</li>
+								<li data-name="css34">div:target</li>
+								<li data-name="css35">[type="checkbox"]:checked + label</li>
+								<li data-name="css36">p::selection</li>
+								<li data-name="css37">input:enabled/disabled</li>
+								<li data-name="css38">li:not(.class-name)</li>
+								<li data-name="css39">p:nth-child(3n)</li>
+								<li data-name="css40">li:nth-child(2n+1)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="col-xs-12 col-sm-9">
+				<div class="pull-left visible-xs">
+					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Сайдбар</button>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-lg-8">
+						<h1 class="zoomIn animated">Селекторы CSS</h1>
+					</div> 
+					<div class="col-xs-12 col-lg-4">  
+						<button class="remove-all form-control btn btn-success">Очистить стили</button>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-lg-12">
+						<!--===================================================Content==============================================================-->
+						<hr>
+						<article>
+							<!-- тут можно вставить любую разметку -->
+							<div>
+								<ul class="menu">
+									<li><a href="#link1">Link1</a></li>
+									<li><a href="#link2">Link2</a></li>
+									<li><a href="#link3">Link3</a></li>
+									<li><a href="#link4">Link4</a></li>
+									<li><a href="/link5">Link5</a></li>
+									<li><a href="/link6">Link6</a></li>
+									<li><a href="#link7">Link7</a></li>
+								</ul>
+							</div>
+							<form action="/login" method="POST" class="form-signin" role="form">
+								<h4 class="form-signin-heading">Вход на сайт</h4>
+								<label for="inputName" class="sr-only">Имя:</label>
+								<input type="text" id="inputName" class="form-control" placeholder="Ваше имя" required autofocus autocomplete="on">
+								<label for="inputPassword" class="sr-only">Пароль:</label>
+								<input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required>
+								<input type="checkbox" value="remember-me">
+								<label> Запомнить меня</label>
+								<label for="inputCode" class="sr-only">Код проверки:</label>
+								<input type="text" id="inputCode" class="form-control" placeholder="captcha" disabled>
+								<button class="btn btn-lg btn-primary btn-block" type="submit">Войти</button>
+							</form>
+							<ul>
+								<li>
+									<span>3. История создания и развития CSS</span>
+									<ul>
+										<li><span>3.1 Уровень 1 (CSS1)</span></li>
+										<li>
+											<span>3.2 Уровень 2 (CSS2)</span>
+											<ul>
+												<li><span>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</span></li>
+											</ul>
+										</li>
+										<li><span>3.3 Уровень 3 (CSS3)</span></li>
+										<li><span>3.4 Уровень 4 (CSS4)</span></li>
+									</ul>
+								</li>
+								<li>
+									<span>3. История создания и развития CSS</span>
+									<ul>
+										<li><span>3.1 Уровень 1 (CSS1)</span></li>
+										<li>
+											<span>3.2 Уровень 2 (CSS2)</span>
+											<ul>
+												<li><span>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</span></li>
+											</ul>
+										</li>
+										<li><span>3.3 Уровень 3 (CSS3)</span></li>
+										<li><span>3.4 Уровень 4 (CSS4)</span></li>
+									</ul>
+								</li>
+							</ul>
+							<p id="id-shnik">CSS — одна из широкого спектра технологий, одобренных консорциумом W3C и получивших общее название «стандарты Web» В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.</p>
+							<p class="afbef"><span>В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.</span></p>
+							<p>Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS.</p>
+							<p>В отличие от многих существовавших на тот момент языков стиля, <span>CSS использует наследование от родителя к потомку</span>, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее стилях.</p>
+							<p>В середине 1990-х Консорциум Всемирной паутины (W3C) стал проявлять интерес к CSS, и в декабре 1996 года была издана рекомендация CSS1.</p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<h2>Цель создания CSS</h2>
+							<p>CSS используется создателями веб-страниц для задания цветов, шрифтов, расположения отдельных блоков и других аспектов представления внешнего вида этих веб-страниц. Основной целью разработки CSS являлось разделение описания логической структуры веб-страницы (которое производится с помощью HTML или других языков разметки) от описания внешнего вида этой веб-страницы (которое теперь производится с помощью формального языка CSS). <span>Такое разделение может увеличить доступность документа, предоставить большую гибкость и возможность управления его представлением, а также уменьшить сложность и повторяемость в структурном содержимом.</span> Кроме того, CSS позволяет представлять один и тот же документ в различных стилях или методах вывода, таких как экранное представление, печатное представление, чтение голосом (специальным голосовым браузером или программой чтения с экрана), или при выводе устройствами, использующими шрифт Брайля.</p>
+							<h3>Способы подключения CSS к документу</h3>
+							<p>Правила CSS пишутся на формальном языке CSS и располагаются в таблицах стилей, то есть таблицы стилей содержат в себе правила CSS. Эти таблицы стилей могут располагаться как в самом веб-документе, внешний вид которого они описывают, так и в отдельных файлах, имеющих формат CSS. (По сути, формат CSS — это обычный текстовый файл. В файле .css не содержится ничего, кроме перечня правил CSS и комментариев к ним.)</p>
+							<p>То есть, эти таблицы стилей могут быть подключены, внедрены в описываемый ими веб-документ четырьмя различными способами:</p>
+							<div id="link3">
+								<ul>
+									<li class="class-name">когда таблица стилей находится в отдельном файле, она может быть подключена к веб-документу посредством тега &lt;link&gt;, располагающегося в этом документе между тегами &lt;head&gt; и &lt;/head&gt;. (Тег &lt;link&gt; будет иметь атрибут href, имеющий значением адрес этой таблицы стилей). Все правила этой таблицы действуют на протяжении всего документа;</li>
+									<li class="class-name">когда таблица стилей находится в отдельном файле, она может быть подключена к веб-документу посредством директивы @import, располагающейся в том документе между тегами &lt;style&gt; и &lt;/style&gt; (которые, в свою очередь, располагаются в этом документе между тегами &lt;head&gt; и &lt;/head&gt;) сразу после тега &lt;style&gt;, которая также указывает (в своих скобках, после слова url) на адрес этой таблицы стилей. Все правила этой таблицы действуют на протяжении всего документа;</li>
+									<li>когда таблица стилей описана в самом документе, она может располагаться в нём между тегами &lt;style&gt; и &lt;/style&gt; (которые, в свою очередь, располагаются в этом документе между тегами &lt;head&gt; и &lt;/head&gt;). Все правила этой таблицы действуют на протяжении всего документа;</li>
+									<li class="class-name">когда таблица стилей описана в самом документе, она может располагаться в нём в теле какого-то отдельного тега (посредством его атрибута style) этого документа. Все правила этой таблицы действуют только на содержимое этого тега.</li>
+								</ul>
+							</div>
+						</article>
+						<!--=================================================./Content==============================================================-->
+						<!-- 1. Задача перевести selectors-home.html на шаблон bootstrap (ДЗ №6). Время 30 минут  -->
+						<!-- 	Выполнено. Время 12 минут  -->
+						<!-- 2. Задача сделать стили для селекторов css1. Время 10 минут  -->
+						<!-- 	Выполнено. Время 13 минут  -->
+						<!-- 3. Задача сделать стили для селекторов css2. Время 20 минут  -->
+						<!-- 	Выполнено. Время 36 минут  -->
+						<!-- 4. Задача сделать стили для селекторов css3. Время 40 минут  -->
+						<!-- 	Выполнено. Время 51 минут  -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<footer>
+			<p>HomeTask - Ярчук С.А. &copy; LevelUP.Frontend 2014</p>
+		</footer>
+	</div>
+	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://yastatic.net/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="js/offcanvas.js"></script>
+	<script src="js/selectors-core.js"></script>
+</body>
+</html>
