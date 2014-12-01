@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectors</title>
+	<style>
+		/* стили для задания */
+		.buttons {
+			cursor: pointer;
+			color: blue;
+			text-decoration: underline;
+		}
+		.buttons .is-active {
+			cursor: default;
+			color: red;
+			text-decoration: none;
+		}
+		/* пример выполнения */
+		.E h2 {
+			color: red;
+		}
+		.EF li span {
+			color: red;
+		}
+		.CN .class1 {
+			color: red;
+		}
+		.xxx #xxx {
+			color: red;
+		}
+		.acti a:active {
+			color: red;
+		}
+		.visi a:visited {
+			color: red;
+		}
+		.FL h3:first-line {
+			color: red;
+		}
+		.FLet h2:first-letter {
+			color: red;
+		}
+		.unu * {
+			color: red;
+		}
+		.FiCh ul li {
+			color: red;
+		}
+		.Fi-Ch h3+p {
+			color: red; 
+		}
+		.1Ch li:first-child {
+			color: red;
+		}
+		.Hov span:hover {
+			color: red;
+		}
+		.attr [class] {
+			color: red;
+		}
+		.attrN [class="class2"] {
+			color: red;
+		}
+		.attrN2 [class="first"]
+		}
+		.befaft h2:after {
+			content: ***;
+			color: red;
+		}
+		.EfF h3~p {
+			color: blue;
+		}
+		.a_n [type^="text"] {
+			color: red;
+		}
+		.a.n [href$=".com"] {
+			color: green;
+		}
+		.an [class*="first"] {
+			color: green;
+		}
+		.LC li:last-child {
+			color: red;
+		}
+		.emt :empty {
+			color: green;
+			border: 50px;
+			height: 20px
+		}
+		.Ri [type="checkbox"]:checked+label {
+			colorcheckbox: red;
+		}
+		.Not p:not(.class) {
+			color: red;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<button class="remove-all">Remove all</button>
+
+	<hr>
+	<!-- значения аттрибута data-name будет пременено к тегу main как класс -->
+	<ul class="buttons">
+		<!-- /* пример выполнения */ -->
+		<li ="E">h2 {color: red}</li>
+		<li data-name="Edata-nameF">li span {color: red}</li>
+		<li data-name="CN">E.classname {color: red}</li>
+		<li data-name="xxx">E#id {color: red}</li>
+		<li data-name="acti">E:active {color: red}</li>
+		<li data-name="visi">E:visited {color: red}</li>
+		<li data-name="FL">E:first-line {color: red}</li>
+		<li data-name="FLet">E:first-letter {color: red}</li>
+		<li data-name="unu">E* {color: red}</li>
+		<li data-name="FiCh">E>F {color: red}</li>
+		<li data-name="Fi-Ch">E+F {color: red}</li>
+		<li data-name="1Ch">E:first-child {color: red}</li>
+		<li data-name="Hov">E:hover {color: red}</li>
+		<li data-name="attr">E[attr] {color: red}</li>
+		<li data-name="attrN">E[attr="name"] {color: red}</li>
+		<li data-name="attrN2">E[attr~="name"] {color: red}</li>
+		<li data-name="befaft">E:before E:after {color: red}</li>
+		<li data-name="EfF">E~F {color: blue}</li>
+		<li data-name="a_n">E[attr^="name"] {color: red}</li>
+		<li data-name="a.n">E[attr$="name"] {color: green}</li>
+		<li data-name="an">E[attr*="name"] {color: green}</li>
+		<li data-name="LC">E:Last-child {color: red}</li>
+		<li data-name="emt">E:empty {color: green}</li>
+		<li data-name="Ri">E:checked {color: red}</li>
+		<li data-name="Not">E:not(.class) {color: red}</li>
+		</ul>
+	<hr>
+
+	<main>
+		
+		<input type="checkbox" id="L1"><label for="L1">Lorem_1</label>
+		
+		 <h2>Каскадные таблицы стилей</h2>
+
+		<ul>
+			<li>1.Цель создания CSS</li>
+			<li>2Способы подключения CSS</li>
+			<li>
+				<span>3. История создания и развития CSS</span>
+				<ul>
+					<li class="class1"><span>3.1 Уровень 1 (CSS1)</span></li>
+					<li>
+						<span>3.2 Уровень 2 (CSS2)</span>
+						<ul>
+							<li><span>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</span></li>
+						</ul>
+					</li>
+					<li><span>3.3 Уровень 3 (CSS3)</span></li>
+					<li><span>3.4 Уровень 4 (CSS4)</span></li>
+				</ul>
+			</li>
+		</ul>
+
+			
+
+
+		<h3> CSS — одна из широкого спектра технологий. Одобренных консорциумом W3C и получивших общее название «стандарты Web». В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.</h3>
+		<p></p>
+		<p id="xxx">В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.</p>
+
+		<p class="class2">Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS.</p>
+
+		<p class="class first">В отличие от многих существовавших на тот момент языков стиля, CSS использует наследование от родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее стилях.</p>
+
+		<p type="text">В середине 1990-х Консорциум Всемирной паутины (W3C) стал проявлять интерес к CSS, и в декабре 1996 года была издана рекомендация CSS1. </p><br>
+		<a href="https://ru.wikipedia.org/wiki/CSS">Wikipedia</a>
+		<p><a href="google.com">Google</a></p>
+
+	</main>
+
+	
+	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var $buttons = $('.buttons').find('li'),
+			$main = $('main'),
+			$removeBtn = $('.remove-all');
+		$removeBtn.on('click', removeAll);
+		$buttons.on('click', function (event) {
+			var dataClass = $(this).data('name');
+			removeAll();
+			event.preventDefault();
+			if(dataClass.split(' ').length > 1) { alert('remove spaces from attr value'); return;}
+			if(dataClass === '') { alert('attr value is empty'); return;}
+			$main
+				.addClass(dataClass)
+				.addClass('is-active');
+		});
+		function removeAll () {
+			$main.removeAttr('class');
+			$buttons.removeClass('is-active');
+		};
+	</script>
+</body>
+</html>
