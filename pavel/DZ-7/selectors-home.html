@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectors</title>
+	<style>
+		/* стили для задания */
+		.buttons {
+			cursor: pointer;
+			color: blue;
+			text-decoration: underline;
+		}
+		.buttons .is-active {
+			cursor: default;
+			color: red;
+			text-decoration: none;
+		}
+
+		/* пример выполнения */
+		.all * {
+			color: red;
+		}
+		.tag p {
+			color: red;
+		}
+		.li li {
+			color: red;
+		}
+		.span span {
+			color: green;
+		}
+		.sstrong strong {
+			color: red;
+		}
+		.pstrong p strong {
+			color: green;
+		}
+		.h1span h1 span {
+			color: blue;
+		}
+		.h1class h2.class1 {
+			color: red;
+		}
+		.pclass p.class2 {
+			color: blue;
+		}
+		.pid p#id1 {
+			color: red;
+		}
+		.spanid #id2 {
+			color: red;
+		}
+		.liactive li:active {
+			color: red;
+		}
+		.aactive a:active {
+			color: blue;
+		}
+		.avisited a:visited {
+			color: green;
+		}
+		.pfline p:first-line {
+			color: red;
+		}
+		.lifline li:first-line {
+			color: red;
+		}
+		.lifletter li:first-letter {
+			color: blue;
+		}
+		.spanfl span:first-letter {
+			color: green;
+		}
+		.all h2* {
+			color: red;
+		}
+        .allp p* {
+            color: green;
+        }
+        .pstrong p > strong {
+            color: red;
+        }
+        .h1span h1 > span {
+            color: red;
+        }
+        .h2p h2 + p:first-line {
+            color: red;
+        }
+        .pul p + ul {
+            color: blue;
+        }
+        .ulli p + ul li:first-child {
+            color: red;
+        }
+        .mainfch strong:first-child {
+            color: red;
+        }
+        .liahover li > a:hover {
+            color: green;
+        }
+        .pulli p + ul li:hover {
+            color: red;
+        }
+        .atitle a[title] {
+            color: red;
+        }
+        .attrclass [class]:hover {
+            color: red;
+        }
+        .tname2 a[title="name2"] {
+            color: red;
+        }
+        .classname [class="class2"] {
+            color: green;
+        }
+        .aname [title~="name4"] {
+            color: red;
+        }
+        .classname2 p[class~="class4"] {
+            color: red;
+        }
+        .h1before h1:before {
+            content: "Before ";
+            color: blue;
+        }
+        .h2after h2:after {
+            content: " After";
+            color: red;
+        }
+        .divul div.text1 ~ ul {
+            color: red;
+        }
+        .h2p h2 ~ p {
+            color: blue;
+        }
+        .ahref a[href^="#"] {
+            color: green;
+        }
+        .amail a[href^="http"] {
+            color: red;
+        }
+        .acom a[href$="com"] {
+            color: lime;
+        }
+        .aru a[href$="ru"] {
+            color: red;
+        }
+        .ayahoo a[href*="yahoo"] {
+            color: red;
+        }
+        .ayandex a[href*="yandex"] {
+            color: brown;
+        }
+        .lilorem [title|="lorem"] {
+            color: red;
+        }
+        .pclass4 [class|="class4"] {
+            color: red;
+        }
+        .plast p:last-child {
+            color: red;
+        }
+        .lilast li:last-child {
+            color: red;
+        }
+        .pempty p:empty {
+            background: red;
+            width: 10px;
+            height: 10px;
+        }
+        .liempty li:empty {
+            background: red;
+            height: 15px;
+        }
+        .litarget li:target {
+            color: red;
+        }
+        .ptarget p:target {
+            color: green;
+        }
+        .radiocheck input[type="radio"]:checked + span {
+            color: red;
+        }
+        .pselection p::selection {
+            color: red;
+            background: lime;
+        }
+        .disabled input:disabled {
+            color: green;
+        }
+        .enabled input:enabled {
+            color: red;
+        }
+        .pnot p:not(.class1) {
+            color: red;
+        }
+        .nth-child li:nth-child(2n) {
+            color: blue;
+        }
+	</style>
+</head>
+<body>
+	<button class="remove-all">Remove all</button>
+
+	<hr>
+	<!-- значения аттрибута data-name будет пременено к тегу main как класс -->
+	<ul class="buttons">
+		<!-- /* пример выполнения */ -->
+		<li data-name="all">* {color: red}</li>
+		<li data-name="tag">p {color: red}</li>
+		<li data-name="li">li {color: red}</li>
+		<li data-name="span">E(1)</li>
+		<li data-name="sstrong">E(2)</li>
+		<li data-name="pstrong">E F(1)</li>
+		<li data-name="h1span">E F(2)</li>
+		<li data-name="h1class">E.classname(1)</li>
+		<li data-name="pclass">E.classname(2)</li>
+		<li data-name="pid">E#id(1)</li>
+		<li data-name="spanid">E#id(2)</li>
+		<li data-name="liactive">E:active(1)</li>
+		<li data-name="aactive">E:active(2)</li>
+		<li data-name="avisited">E:visited</li>
+		<li data-name="pfline">E:first-line(1)</li>
+		<li data-name="lifline">E:first-line(2)</li>
+		<li data-name="lifletter">E:first-letter(1)</li>
+		<li data-name="spanfl">E:first-letter(2)</li>
+		<li data-name="all">*(1)</li>
+		<li data-name="allp">*(2)</li>
+		<li data-name="pstrong">E > F(1)</li>
+		<li data-name="h1span">E > F(2)</li>
+		<li data-name="h2p">E + F(1)</li>
+		<li data-name="pul">E + F(2)</li>
+		<li data-name="ulli">E:first-child(1)</li>
+		<li data-name="mainfch">E:first-child(2)</li>
+		<li data-name="liahover">E:hover(1)</li>
+		<li data-name="pulli">E:hover(2)</li>
+		<li data-name="atitle">E[attr](1)</li>
+		<li data-name="attrclass">E[attr](2)</li>
+		<li data-name="tname2">E[attr="name"](1)</li>
+		<li data-name="classname">E[attr="name"](2)</li>
+		<li data-name="aname">E[attr~="name"](1)</li>
+		<li data-name="classname2">E[attr~="name"](2)</li>
+		<li data-name="h1before">E:before</li>
+		<li data-name="h2after">E:after</li>
+		<li data-name="divul">E ~ F(1)</li>
+		<li data-name="h2p">E ~ F(2)</li>
+		<li data-name="ahref">E[attr^="name"](1)</li>
+		<li data-name="amail">E[attr^="name"](2)</li>
+		<li data-name="acom">E[attr$="name"](1)</li>
+		<li data-name="aru">E[attr$="name"](2)</li>
+		<li data-name="ayahoo">E[attr*="name"](1)</li>
+		<li data-name="ayandex">E[attr*="name"](2)</li>
+		<li data-name="lilorem">E[attr|="name"](1)</li>
+		<li data-name="pclass4">E[attr|="name"](2)</li>
+		<li data-name="plast">E:last-child(1)</li>
+		<li data-name="lilast">E:last-child(2)</li>
+		<li data-name="pempty">E:empty(1)</li>
+		<li data-name="liempty">E:empty(2)</li>
+		<li data-name="litarget">E:target(1)</li>
+		<li data-name="ptarget">E:target(2)</li>
+		<li data-name="radiocheck">E:checked</li>
+		<li data-name="pselection">E:selection</li>
+		<li data-name="disabled">E:disabled</li>
+		<li data-name="enabled">E:enabled</li>
+		<li data-name="pnot">E:not(s)</li>
+		<li data-name="nth-child">E:nth-child</li>
+	</ul>
+	<hr>
+
+	<!-- Сюда будут добавляться классы из списка выше (значения аттрибута data-name) -->
+	<main>
+	    <label><input type="radio"><span>Lorem</span></label>
+	    
+	    <input type="text" value="lorem">
+	    <input type="text" disabled value="lorem">
+	    
+		<h1>История создания и развития <span>CSS</span></h1>
+		<ul>
+			<li>
+				<span>3. История создания и развития CSS</span>
+				<ul>
+					<li><span id="id2">3.1 Уровень 1 (CSS1)</span></li>
+					<li>
+						<span>3.2 Уровень 2 (CSS2)</span>
+						<ul>
+							<li><span>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</span></li>
+						</ul>
+					</li>
+					<li><span>3.3 Уровень 3 (CSS3)</span></li>
+					<li><span>3.4 Уровень 4 (CSS4)</span></li>
+				</ul>
+			</li>
+		</ul>
+
+		<p title="lorem"><strong>CSS</strong> — одна из широкого спектра технологий, одобренных консорциумом W3C и получивших общее название <strong>«стандарты Web»</strong> В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.</p>
+
+		<p class="class2 class4">В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.</p>
+
+		<p class="class4">Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS.</p>
+
+		<p id="id3">В отличие от многих существовавших на тот момент языков стиля, CSS использует наследование от родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее стилях.</p>
+
+		<p title="lorem ipsum dolor">В середине 1990-х Консорциум Всемирной паутины (W3C) стал проявлять интерес к CSS, и в декабре 1996 года была издана рекомендация CSS1.</p>
+
+		<div class="text1">
+		<h2 class="class1">Уровень 1 (CSS1)</h2>
+
+		<p>Рекомендация W3C, принята <a href="#id3" title="name1 name4 name5">17 декабря</a> <a href="#">1996 года</a>, откорректирована <a href="#id-li">11 января</a> <a href="">1999 года</a><a href="#"><sup>[2]</sup></a>. Среди возможностей, предоставляемых этой рекомендацией:</p>
+		
+		<p></p>
+
+		<ul>
+			<li id="id-li">Параметры шрифтов. Возможности по заданию гарнитуры и размера шрифта, а также его стиля — обычного, курсивного или полужирного.</li>
+			<li>Цвета. Спецификация позволяет определять цвета текста, фона, рамок и других элементов страницы.</li>
+			<li>Атрибуты текста. Возможность задавать межсимвольный интервал, расстояние между словами и высоту строки (то есть межстрочные отступы)</li>
+			<li>Выравнивание для текста, изображений, таблиц и других элементов.</li>
+			<li>Свойства блоков, такие как высота, ширина, внутренние (padding) и внешние (margin) отступы и рамки. Так же в спецификацию входили ограниченные средства по позиционированию элементов, такие как float и clear.</li>
+		</ul>
+        </div>
+		
+		<h2>Уровень 2 (CSS2)</h2>
+
+		Рекомендация W3C, принята <a href="http://yahoo.com">12 мая</a> <a href="#" title="name2">1998 года</a><a href="http://yandex.ru"><sup>[3]</sup></a>. Основана на CSS1 с сохранением обратной совместимости за несколькими исключениями. Добавление к функциональности:
+
+		<ul>
+			<li>Блочная вёрстка. Появились относительное, абсолютное и фиксированное позиционирование. Позволяет управлять размещением элементов по странице без <a href="#">табличной вёрстки</a>.</li>
+			<li>Типы носителей. Позволяет устанавливать разные стили для разных носителей (например <a href="#">монитор</a>, <a href="http://mail.com">принтер</a>, <a href="#" title="name3">КПК</a>).</li>
+			<li>Звуковые таблицы стилей. Определяет голос, громкость и т. д. для звуковых носителей (например для слепых посетителей сайта).</li>
+			<li>Страничные носители. Позволяет, например, установить разные стили для элементов на чётных и нечётных страницах при печати.</li>
+			<li>Расширенный механизм селекторов.</li>
+			<li>Указатели.</li>
+			<li title="dolor lorem ipsum">Генерируемое содержимое. Позволяет добавлять содержимое, которого нет в исходном документе, до или после нужного элемента.</li>
+			<li></li>
+		</ul>
+
+		<p title="ipsum lorem dolor">В настоящее время W3C больше не поддерживает CSS2 и рекомендует использовать CSS2.1</p>
+	</main>
+
+	<!-- Сценарий для задания  -->
+	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var $buttons = $('.buttons').find('li'),
+			$main = $('main'),
+			$removeBtn = $('.remove-all');
+
+		$removeBtn.on('click', removeAll);
+
+		$buttons.on('click', function (event) {
+			var dataClass = $(this).data('name');
+
+			removeAll();
+
+			event.preventDefault();
+
+			if(dataClass.split(' ').length > 1) { alert('remove spaces from attr value'); return;}
+			if(dataClass === '') { alert('attr value is empty'); return;}
+
+
+			$main
+				.addClass(dataClass)
+				.addClass('is-active');
+		});
+
+		function removeAll () {
+			$main.removeAttr('class');
+			$buttons.removeClass('is-active');
+		};
+	</script>
+</body>
+</html>
