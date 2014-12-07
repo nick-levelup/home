@@ -1,0 +1,127 @@
+body {
+    background: #D3D3D3;
+}
+
+.class1 {
+	font-style: italic;
+	font-size: 100%;
+    font-family: sans-serif;
+}
+
+/* стили для задания */
+.buttons {
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+}
+.buttons .is-active {
+	cursor: default;
+	color: red;
+	text-decoration: none;
+}
+
+/* CSS селекторы */
+.elementE h3 {
+    color: red;
+    background: yellow;
+}    
+.elementEF li span {
+    color: red;
+    background: yellow;
+}
+.classnameE .classname1 {
+    color: red;
+    background: yellow;
+}
+.idE #text1-field {
+    color: red;
+    background: yellow;
+}
+.activeE a:active {
+    color: red;
+    background: yellow;
+}
+.visitedE a:visited {
+    color: red;
+    background: yellow;
+}
+.firstlineE p:first-line {
+    color: red;
+    background: yellow;
+}
+.firstletterE p:first-letter {
+    color: red;
+}
+
+/* CSS 2.1 селекторы */
+.all * {
+    color: red;
+}
+.child ul > li {
+	color: red;
+}
+.sibling li li {
+	color: red;
+}
+.firstchildE ul li:first-child {
+	color: red;
+}
+.hoverE li:hover {
+	color: red;
+}
+.attrE [class] {
+	color: red;
+}
+.attrnameE [id="text2-field"] {
+	color: red;
+}
+.attrname1E [name~="lan"] {
+	color: red;
+}
+.beforeE h3:before {
+	content: 'starting';
+	color: red;
+}
+.afterE h3:after {
+	content: 'ending';
+	color: red;
+}
+
+/* CSS 3 селекторы */
+.attrname2E a ~ p {
+	color: red;
+}
+.attrname3E [href^="yandex"] {
+	color: red;
+}
+.attrname4E [href$=".com"] {
+	color: red;
+}
+.attrname5E [href*="google"] {
+	color: red;
+}
+.attrname6E [href|="google"] {
+	color: red;
+}
+.lastchildE li:last-child {
+	color: red;
+}
+.emptyE :empty {
+    border: 2px solid red;
+}
+.targetE h3:target {
+	background: green;
+}
+.checkedE [type="checkbox"]:checked + label {
+	color: red;
+}
+.selectionE p:selection {
+	color: red;
+}
+.notsE h4:not(.class1){
+	color: red;
+}
+.nthchildE li:nth-child(2) {
+	color: red;
+	border: 1px solid black;
+}

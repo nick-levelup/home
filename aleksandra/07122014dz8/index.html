@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашнее задание 8</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--<script src="js/respond.min.js"></script>-->
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<button class="remove-all">Remove all</button>
+
+	<hr>
+	<!-- значения аттрибута data-name будет пременено к тегу main как класс -->
+    <ul class="buttons">
+
+		<!-- CSS селекторы -->
+		<p>CSS Selectors:</p>
+		<li data-name="elementE">h3 {color: red}</li>
+		<li data-name="elementEF">li span {color: red}</li>
+		<li data-name="classnameE">.class1 {color: red}</li>
+		<li data-name="idE">#text1-field {color: red}</li>
+		<li data-name="activeE">a:active {color: red}</li>
+		<li data-name="visitedE">a:visited {color: red}</li>
+		<li data-name="firstlineE">p:first-line {color: red}</li>
+		<li data-name="firstletterE">p:first-letter {color: red}</li>
+
+		<!-- CSS 2.1 селекторы -->
+		<p>CSS 2.1 Selectors:</p>
+		<li data-name="all">* {color: red}</li>
+		<li data-name="child">ul > li {color: red}</li>
+		<li data-name="sibling">li li {color: red}</li>
+		<li data-name="firstchildE">ul li:first-child {color: red}</li>
+		<li data-name="hoverE">li:hover {color: red}</li>
+        <li data-name="attrE">[class] {color: red}</li>
+        <li data-name="attrnameE">[id='text2-field'] {color: red}</li>
+        <li data-name="attrname1E">[class~="class2"] {color: red}</li>
+        <li data-name="beforeE">h3:before {color: red}</li>
+        <li data-name="afterE">h3:after {color: red}</li>
+
+		<!--  CSS 3 селекторы -->
+		<p>CSS 3 Selectors:</p>
+        <li data-name="attrname2E"> a ~ p {color: red}</li>
+        <li data-name="attrname3E">[href^="yandex"]</li>
+        <li data-name="attrname4E">[href$=".com"]</li>
+        <li data-name="attrname5E">[href*="google"]</li>
+        <li data-name="attrname6E">[href|="ru"]</li>
+        <li data-name="lastchildE">li:last-child</li>
+        <li data-name="emptyE">:empty</li>
+        <li data-name="targetE">h3:target</li>
+        <li data-name="checkedE">[type="checkbox"]:checked + label</li>
+        <li data-name="selectionE">p:selection</li>
+        <li data-name="notsE">h4:not(.class1)</li>
+        <li data-name="nthchildE">:li:nth-child(2)</li>
+        
+	</ul>
+	<hr>
+
+	<!-- Сюда будут добавляться классы из списка выше (значения аттрибута data-name) -->
+	<main>
+		<!-- тут можно вставить любую разметку -->
+		<a href="www.google.com">Google</a><br>
+        <a href="yandex.ru">Яндекс</a><br>
+        <a href="mail.ru">Mail</a>
+
+        <form name="forma1">
+            <label for="text1-field">Неактивное поле</label>
+            <input type="text" name="text1" id="text1-field" value="Text1" disabled>
+            <label for="text2-field">Только для чтения</label>
+            <input type="text" name="text2" id="text2-field" value="Text2" readonly><br>
+            <p>Какими языками вы владеете:</p>
+            <input type="checkbox" name="lan1" id="checkbox1-field" value="english" checked>
+            <label for="checkbox1-field">английский</label>
+            <input type="checkbox" name="lan2" id="checkbox2-field"value="german">
+            <label for="checkbox2-field">немецкий</label>
+            <input type="checkbox" name="lan3" id="checkbox3-field"value="spanish">
+            <label for="checkbox3-field">испанский</label>
+            <input type="checkbox" name="lan4" id="checkbox4-field"value="french">
+            <label for="checkbox4-field">французкий</label>
+            <p>Пол:</p>
+            <input type="radio" name="sex" id="sex1-field" value="man" checked>
+            <label for="sex1-field">мужской</label>
+            <input type="radio" name="sex" id="sex2-field" value="woman">
+            <label for="sex2-field">женский</label>
+        </form>
+
+
+        <h3>CSS-вёрстка</h3>
+        <h4 class="class1" title="title CSS">До появления CSS оформление веб-страниц осуществлялось исключительно средствами HTML, непосредственно внутри содержимого документа. Однако с появлением CSS стало возможным принципиальное разделение содержания и представления документа. За счёт этого нововведения стало возможным лёгкое применение единого стиля оформления для массы схожих документов, а также быстрое изменение этого оформления.</h4>
+        <h4 class="class2">Преимущества:</h4>
+	    <ul>
+	        <li>Несколько дизайнов страницы для разных устройств просмотра. Например, на экране дизайн будет рассчитан на большую ширину, во время печати меню не будет выводиться, а на КПК и сотовом телефоне меню будет следовать за содержимым.</li>
+	        <li>Уменьшение времени загрузки страниц сайта за счет переноса правил представления данных в отдельный CSS-файл. В этом случае браузер загружает только структуру документа и данные, хранимые на странице, а представление этих данных загружается браузером только один раз и может быть <span>закэшировано</span>.</li>
+	        <li>Простота последующего изменения дизайна. Не нужно править каждую страницу, а лишь изменить CSS-файл.</li>
+	     	<li>Дополнительные возможности оформления. Например, с помощью CSS-вёрстки можно сделать блок текста, который остальной текст будет обтекать (например для меню) или сделать так, чтобы меню было всегда видно при прокрутке страницы.</li>
+	    </ul>
+	    <h4 class="class3">Недостатки:</h4>
+  	    <ul>
+	        <li>Различное отображение вёрстки в различных браузерах (особенно устаревших), которые по-разному интерпретируют одни и те же данные CSS.</li>
+	        <li>Часто встречающаяся необходимость на практике исправлять не только один CSS-файл, но и теги HTML, которые сложным и ненаглядным способом связаны с селекторами CSS, что иногда сводит на нет простоту применения единых файлов стилей и значительно удлиняет время редактирования и тестирования.</li>
+	    </ul><br>
+		<ul>
+			<li>
+				<span>3. История создания и развития CSS</span>
+				<ul>
+					<li><span>3.1 Уровень 1 (CSS1)</span></li>
+					<li>
+						<span>3.2 Уровень 2 (CSS2)</span>
+						<ul>
+							<li><span>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</span></li>
+						</ul>
+					</li>
+					<li><span>3.3 Уровень 3 (CSS3)</span></li>
+					<li><span>3.4 Уровень 4 (CSS4)</span></li>
+				</ul>
+			</li>
+		</ul>
+
+		<p>CSS — одна из широкого спектра технологий, одобренных консорциумом W3C и получивших общее название «стандарты Web» В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.</p>
+
+		<p>В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.</p>
+
+		<p>Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS.</p>
+
+		<p>В отличие от многих существовавших на тот момент языков стиля, CSS использует наследование от родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее стилях.</p>
+
+		<p>В середине 1990-х Консорциум Всемирной паутины (W3C) стал проявлять интерес к CSS, и в декабре 1996 года была издана рекомендация CSS1.</p>
+	</main>
+
+	<!-- Сценарий для задания  -->
+	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var $buttons = $('.buttons').find('li'),
+			$main = $('main'),
+			$removeBtn = $('.remove-all');
+
+		$removeBtn.on('click', removeAll);
+
+		$buttons.on('click', function (event) {
+			var dataClass = $(this).data('name');
+
+			removeAll();
+
+			event.preventDefault();
+
+			if(dataClass.split(' ').length > 1) { alert('remove spaces from attr value'); return;}
+			if(dataClass === '') { alert('attr value is empty'); return;}
+
+
+			$main
+				.addClass(dataClass)
+				.addClass('is-active');
+		});
+
+		function removeAll () {
+			$main.removeAttr('class');
+			$buttons.removeClass('is-active');
+		};
+	</script>
+	<!-- JS код -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
