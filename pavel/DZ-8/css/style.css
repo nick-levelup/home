@@ -1,0 +1,225 @@
+body {
+    background: #F7F7F7;
+}
+main {
+    padding-top: 10px;
+}
+.row div:first-of-type {
+    background: #fff;
+    margin-top: 15px;
+}
+.buttons {
+    cursor: pointer;
+    color: #0f0f0f;
+    text-decoration: underline;
+}
+.buttons .is-active {
+    cursor: default;
+    color: red;
+    text-decoration: none;
+}
+footer {
+    background: #3A3A3A;
+    margin-top: 20px;
+    color: #fff;
+}
+.footer {
+    padding-top: 20px;
+}
+
+.all * {
+    color: red;
+}
+.tag p {
+    color: red;
+}
+.li li {
+    color: red;
+}
+.span span {
+    color: green;
+}
+.sstrong strong {
+    color: red;
+}
+.pstrong p strong {
+    color: green;
+}
+.h1span h1 span {
+    color: blue;
+}
+.h1class h2.class1 {
+    color: red;
+}
+.pclass p.class2 {
+    color: blue;
+}
+.pid p#id1 {
+    color: red;
+}
+.spanid #id2 {
+    color: red;
+}
+.liactive li:active {
+    color: red;
+}
+.aactive a:active {
+    color: blue;
+}
+.avisited a:visited {
+    color: green;
+}
+.pfline p:first-line {
+    color: red;
+}
+.lifline li:first-line {
+    color: red;
+}
+.lifletter li:first-letter {
+    color: blue;
+}
+.spanfl span:first-letter {
+    color: green;
+}
+.all h2* {
+    color: red;
+}
+.allp p* {
+    color: green;
+}
+.pstrong p > strong {
+    color: red;
+}
+.h1span h1 > span {
+    color: red;
+}
+.h2p h2 + p:first-line {
+    color: red;
+}
+.pul p + ul {
+    color: blue;
+}
+.ulli p + ul li:first-child {
+    color: red;
+}
+.mainfch strong:first-child {
+    color: red;
+}
+.liahover li > a:hover {
+    color: green;
+}
+.pulli p + ul li:hover {
+    color: red;
+}
+.atitle a[title] {
+    color: red;
+}
+.attrclass [class]:hover {
+    color: red;
+}
+.tname2 a[title="name2"] {
+    color: red;
+}
+.classname [class="class2"] {
+    color: green;
+}
+.aname [title~="name4"] {
+    color: red;
+}
+.classname2 p[class~="class4"] {
+    color: red;
+}
+.h1before h1:before {
+    content: "Before ";
+    color: blue;
+}
+.h2after h2:after {
+    content: " After";
+    color: red;
+}
+.divul div.text1 ~ ul {
+    color: red;
+}
+.h2p h2 ~ p {
+    color: blue;
+}
+.ahref a[href^="#"] {
+    color: green;
+}
+.amail a[href^="http"] {
+    color: red;
+}
+.acom a[href$="com"] {
+    color: lime;
+}
+.aru a[href$="ru"] {
+    color: red;
+}
+.ayahoo a[href*="yahoo"] {
+    color: red;
+}
+.ayandex a[href*="yandex"] {
+    color: brown;
+}
+.lilorem [title|="lorem"] {
+    color: red;
+}
+.pclass4 [class|="class4"] {
+    color: red;
+}
+.plast p:last-child {
+    color: red;
+}
+.lilast li:last-child {
+    color: red;
+}
+.pempty p:empty {
+    background: red;
+    width: 10px;
+    height: 10px;
+}
+.liempty li:empty {
+    background: red;
+    height: 15px;
+}
+.litarget li:target {
+    color: red;
+}
+.ptarget p:target {
+    color: green;
+}
+.radiocheck input[type="radio"]:checked + span {
+    color: red;
+}
+.pselection p::selection {
+    color: red;
+    background: lime;
+}
+.disabled input:disabled {
+    color: green;
+}
+.enabled input:enabled {
+    color: red;
+}
+.pnot p:not(.class1) {
+    color: red;
+}
+.nth-child li:nth-child(2n) {
+    color: blue;
+}
+
+.dropdown-menu > li {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.dropdown-menu > li:hover,
+.dropdown-menu > li:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS селекторы</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                <span class="sr-only">Открыть меню</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Селекторы</a>
+        </div>
+        <div class="collapse navbar-collapse" id="responsive-menu">
+            <ul class="buttons nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Core CSS Selectors <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li data-name="all">* {color: red}</li>
+                        <li data-name="tag">p {color: red}</li>
+                        <li data-name="li">li {color: red}</li>
+                        <li data-name="span">E</li>
+                        <li data-name="pstrong">E F</li>
+                        <li data-name="h1class">E.classname</li>
+                        <li data-name="pid">E#id</li>
+                        <li data-name="liactive">E:active</li>
+                        <li data-name="avisited">E:visited</li>
+                        <li data-name="pfline">E:first-line</li>
+                        <li data-name="lifletter">E:first-letter</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS 2.1 Selectors <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li data-name="all">*</li>
+                        <li data-name="pstrong">E > F</li>
+                        <li data-name="h2p">E + F</li>
+                        <li data-name="ulli">E:first-child</li>
+                        <li data-name="liahover">E:hover</li>
+                        <li data-name="atitle">E[attr]</li>
+                        <li data-name="tname2">E[attr="name"]</li>
+                        <li data-name="aname">E[attr~="name"]</li>
+                        <li data-name="h1before">E:before</li>
+                        <li data-name="h2after">E:after</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS3 Selectors <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li data-name="divul">E ~ F</li>
+                        <li data-name="ahref">E[attr^="name"]</li>
+                        <li data-name="acom">E[attr$="name"]</li>
+                        <li data-name="ayahoo">E[attr*="name"]</li>
+                        <li data-name="lilorem">E[attr|="name"]</li>
+                        <li data-name="plast">E:last-child</li>
+                        <li data-name="pempty">E:empty</li>
+                        <li data-name="litarget">E:target</li>
+                        <li data-name="radiocheck">E:checked</li>
+                        <li data-name="pselection">E:selection</li>
+                        <li data-name="disabled">E:disabled</li>
+                        <li data-name="enabled">E:enabled</li>
+                        <li data-name="pnot">E:not(s)</li>
+                        <li data-name="nth-child">E:nth-child</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-lg-8 col-sm-8">
+            <main>
+                <label><input type="radio"><span>Lorem</span></label>
+
+                <input type="text" value="lorem">
+                <input type="text" disabled value="lorem">
+
+                <h1>История создания и развития <span>CSS</span></h1>
+
+                <ul>
+                    <li>
+                        <span>3. История создания и развития CSS</span>
+                        <ul>
+                            <li><span id="id2">3.1 Уровень 1 (CSS1)</span></li>
+                            <li>
+                                <span>3.2 Уровень 2 (CSS2)</span>
+                                <ul>
+                                    <li><span>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</span></li>
+                                </ul>
+                            </li>
+                            <li><span>3.3 Уровень 3 (CSS3)</span></li>
+                            <li><span>3.4 Уровень 4 (CSS4)</span></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p title="lorem"><strong>CSS</strong> — одна из широкого спектра технологий, одобренных консорциумом W3C и получивших общее название <strong>«стандарты Web»</strong> В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.</p>
+
+                <p class="class2 class4">В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.</p>
+
+                <p class="class4">Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS.</p>
+
+                <p id="id3">В отличие от многих существовавших на тот момент языков стиля, CSS использует наследование от родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее стилях.</p>
+
+                <p title="lorem ipsum dolor">В середине 1990-х Консорциум Всемирной паутины (W3C) стал проявлять интерес к CSS, и в декабре 1996 года была издана рекомендация CSS1.</p>
+
+                <div class="text1">
+
+                    <h2 class="class1">Уровень 1 (CSS1)</h2>
+
+                    <p>Рекомендация W3C, принята <a href="#id3" title="name1 name4 name5">17 декабря</a> <a href="#">1996 года</a>, откорректирована <a href="#id-li">11 января</a> <a href="">1999 года</a><a href="#"><sup>[2]</sup></a>. Среди возможностей, предоставляемых этой рекомендацией:</p>
+
+                    <p></p>
+
+                    <ul>
+                        <li id="id-li">Параметры шрифтов. Возможности по заданию гарнитуры и размера шрифта, а также его стиля — обычного, курсивного или полужирного.</li>
+                        <li>Цвета. Спецификация позволяет определять цвета текста, фона, рамок и других элементов страницы.</li>
+                        <li>Атрибуты текста. Возможность задавать межсимвольный интервал, расстояние между словами и высоту строки (то есть межстрочные отступы)</li>
+                        <li>Выравнивание для текста, изображений, таблиц и других элементов.</li>
+                        <li>Свойства блоков, такие как высота, ширина, внутренние (padding) и внешние (margin) отступы и рамки. Так же в спецификацию входили ограниченные средства по позиционированию элементов, такие как float и clear.</li>
+                    </ul>
+                </div>
+
+                <h2>Уровень 2 (CSS2)</h2>
+
+                Рекомендация W3C, принята <a href="http://yahoo.com">12 мая</a> <a href="#" title="name2">1998 года</a><a href="http://yandex.ru"><sup>[3]</sup></a>. Основана на CSS1 с сохранением обратной совместимости за несколькими исключениями. Добавление к функциональности:
+
+                <ul>
+                    <li>Блочная вёрстка. Появились относительное, абсолютное и фиксированное позиционирование. Позволяет управлять размещением элементов по странице без <a href="#">табличной вёрстки</a>.</li>
+                    <li>Типы носителей. Позволяет устанавливать разные стили для разных носителей (например <a href="#">монитор</a>, <a href="http://mail.com">принтер</a>, <a href="#" title="name3">КПК</a>).</li>
+                    <li>Звуковые таблицы стилей. Определяет голос, громкость и т. д. для звуковых носителей (например для слепых посетителей сайта).</li>
+                    <li>Страничные носители. Позволяет, например, установить разные стили для элементов на чётных и нечётных страницах при печати.</li>
+                    <li>Расширенный механизм селекторов.</li>
+                    <li>Указатели.</li>
+                    <li title="dolor lorem ipsum">Генерируемое содержимое. Позволяет добавлять содержимое, которого нет в исходном документе, до или после нужного элемента.</li>
+                    <li></li>
+                </ul>
+
+                <p title="ipsum lorem dolor">В настоящее время W3C больше не поддерживает CSS2 и рекомендует использовать CSS2.1</p>
+            </main>
+        </div>
+        <div class="col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 col-sm-3 col-sm-offset-1">
+
+            <h3>Core CSS Selectors</h3>
+
+            <ol class="buttons">
+                <li data-name="all">* {color: red}</li>
+                <li data-name="tag">p {color: red}</li>
+                <li data-name="li">li {color: red}</li>
+                <li data-name="span">E</li>
+                <li data-name="pstrong">E F</li>
+                <li data-name="h1class">E.classname</li>
+                <li data-name="pid">E#id</li>
+                <li data-name="liactive">E:active</li>
+                <li data-name="avisited">E:visited</li>
+                <li data-name="pfline">E:first-line</li>
+                <li data-name="lifletter">E:first-letter</li>
+            </ol>
+
+            <h3>CSS 2.1 Selectors</h3>
+
+            <ol class="buttons">
+                <li data-name="all">*</li>
+                <li data-name="pstrong">E > F</li>
+                <li data-name="h2p">E + F</li>
+                <li data-name="ulli">E:first-child</li>
+                <li data-name="liahover">E:hover</li>
+                <li data-name="atitle">E[attr]</li>
+                <li data-name="tname2">E[attr="name"]</li>
+                <li data-name="aname">E[attr~="name"]</li>
+                <li data-name="h1before">E:before</li>
+                <li data-name="h2after">E:after</li>
+            </ol>
+
+            <h3>CSS3 Selectors</h3>
+
+            <ol class="buttons">
+                <li data-name="divul">E ~ F</li>
+                <li data-name="ahref">E[attr^="name"]</li>
+                <li data-name="acom">E[attr$="name"]</li>
+                <li data-name="ayahoo">E[attr*="name"]</li>
+                <li data-name="lilorem">E[attr|="name"]</li>
+                <li data-name="plast">E:last-child</li>
+                <li data-name="pempty">E:empty</li>
+                <li data-name="litarget">E:target</li>
+                <li data-name="radiocheck">E:checked</li>
+                <li data-name="pselection">E:selection</li>
+                <li data-name="disabled">E:disabled</li>
+                <li data-name="enabled">E:enabled</li>
+                <li data-name="pnot">E:not(s)</li>
+                <li data-name="nth-child">E:nth-child</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="footer">
+            <div class="col-md-8 col-lg-8 col-sm-8">
+                <address>
+                    <strong>LevelUp</strong><br>
+                    Украина, Днепропетровск<br>
+                    Красная, 21г<br>
+                    <abbr title="Телефон">Тел:</abbr> +38 056 376 9066
+                </address>
+
+                <address>
+                    <strong>Full Name</strong><br>
+                    <a href="mailto:#">first.last@example.com</a>
+                </address>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">Copyright&copy;2014</div>
+        </div>
+    </div>
+</footer>
+<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    var $buttons = $('.buttons').find('li'),
+            $main = $('main'),
+            $removeBtn = $('.remove-all');
+
+    $removeBtn.on('click', removeAll);
+
+    $buttons.on('click', function (event) {
+        var dataClass = $(this).data('name');
+
+        if (dataClass === undefined) {return;}
+
+        removeAll();
+
+        event.preventDefault();
+
+        if(dataClass.split(' ').length > 1) { alert('remove spaces from attr value'); return;}
+        if(dataClass === '') { alert('attr value is empty'); return;}
+
+
+        $main
+                .addClass(dataClass)
+                .addClass('is-active');
+    });
+
+    function removeAll () {
+        $main.removeAttr('class');
+        $buttons.removeClass('is-active');
+    };
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+  </body>
+</html>
