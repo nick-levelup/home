@@ -18,9 +18,29 @@ $buttons.on('click', function (event) {
 	$main
 	.addClass(dataClass)
 	.addClass('is-active');
+
+
+	var selector = getStyleSelector(dataClass),
+			$el = $(selector);
+
+	if (selector && $el.length) {
+    $('html, body').animate({
+			scrollTop: $el.eq(0).offset().top
+    }, 1000);
+	};
 });
 
 function removeAll () {
 	$main.removeAttr('class');
 	$buttons.removeClass('is-active');
+};
+
+function getStyleSelector (dataClass) {
+	for (var i = 0; i < document.styleSheets[2].cssRules.length; i++) {
+		var style = document.styleSheets[2].cssRules[i];
+
+		if (style.selectorText.indexOf('.' + dataClass) === 0) {
+			return style.selectorText
+		};
+	};
 };
