@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Core Selectors</title>
+	<style>
+		.buttons {
+			cursor: pointer;
+			color: blue;
+			text-decoration: underline;
+		}
+		.buttons .is-active {
+			cursor: default;
+			color: red;
+			text-decoration: none;
+		}
+		.all * {
+			color: red;
+		}
+		.tag p {
+			color: red;
+		}
+		.li li {
+			color: red;
+		}
+		.el-p p {
+			color:  #008000;
+		}
+		.el-li li {
+			color:  #008000;
+		}
+		.p-span p strong {
+			color: #4682B4;
+		}
+		.li-em li em {
+			color: #4682B4;
+		}
+		.class1 p.class3 {
+			font-family: serif;
+			font-weight: 700;
+			color: #800080;
+		}
+		.class2 div.class4 {
+			font-family: sans-serif;
+			font-weight: bolder;
+			color: #800080;
+		}
+		.class5 p#class7 {
+			font-family: serif;
+			font-weight: 700;
+			color: #800080;
+		}
+		.class6 div#class8 {
+			font-family: sans-serif;
+			font-weight: bolder;
+			color: #800080;
+		}
+		.class9 a:active {
+			font-family: sans-serif;
+			font-weight: bolder;
+			color: green;
+		}
+		.class10 a:visited {
+			font-family: sans-serif;
+			font-weight: bolder;
+			color: green;
+		}
+		.fili p:first-line {
+			font-family: sans-serif;
+			font-weight: bolder;
+			font-size: 1.2em;
+			color: #FF8C00;
+		}
+		.file p:first-letter {
+			font-family: sans-serif;
+			font-weight: bolder;
+			font-size: 1.5em;
+			color: #FF8C00;
+		}
+	</style>
+</head>
+<body>
+	<h1>Core Selectors</h1>
+	<a href="index.html" title="Главная">Главная</a><br>
+  	<div>
+	  	<a href="coreselectors.html" title="CSS1">CSS1</a>
+	  	<a href="css2.1.html" title="CSS1">CSS2.1</a>
+	  	<a href="css3.html" title="CSS1">CSS3</a>
+  	</div><hr>
+  	<button class="remove-all">Remove all</button><hr>
+	<h3>Пример выполнения</h3>
+	<ul class="buttons">
+		<li data-name="all">* {color: red}</li>
+		<li data-name="tag">p {color: red}</li>
+		<li data-name="li">li {color: red}</li>
+	</ul><hr>
+	<h2>Е (Element)</h2>
+	<ul class="buttons">
+		<li data-name="el-p">p {color: #008000}</li>
+		<li data-name="el-li">li {color: #008000}</li>
+	</ul><hr>
+	<h2>Е F</h2>
+	<ul class="buttons">
+		<li data-name="p-span">p span {color: #4682B4}</li>
+		<li data-name="li-em">li em {color: #4682B4}</li>
+	</ul><hr>
+	<h2>Е.classname</h2>
+	<ul class="buttons">
+		<li data-name="class1">p.class {color: #800080}</li>
+		<li data-name="class2">div.class {color: #800080}</li>
+	</ul><hr>
+	<h2>E#id</h2>
+	<ul class="buttons">
+		<li data-name="class5">p#class {color: #800080}</li>
+		<li data-name="class6">div#class {color: #800080}</li>
+	</ul><hr>
+	<h2>E:active</h2>
+	<ul class="buttons">
+		<li data-name="class9">a:active {color: green}</li>
+	</ul><hr>
+	<h2>E:visited</h2>
+	<ul class="buttons">
+		<li data-name="class10">a:visited {color: #00FF7F}</li>
+	</ul><hr>
+	<h2>E:first-line (Not working)</h2>
+	<ul class="buttons">
+		<li data-name="fili">E:first-line {color: #FF8C00}</li>
+	</ul><hr>
+	<h2>E:first-letter (Not working)</h2>
+	<ul class="buttons">
+		<li data-name="file">E:first-letter {color: #FF8C00}</li>
+	</ul><hr><hr><hr>
+	<main>
+		<p class="class3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque ut vel iure quas accusantium, nemo, officia consectetur natus sapiente, molestias? Iste obcaecati veritatis nihil tenetur ratione assumenda at debitis.</p>
+		<div class="class4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi libero recusandae laborum eligendi commodi obcaecati, consectetur odio nulla consequuntur optio ipsam magni explicabo voluptatibus! Qui vitae dolore sunt vero dignissimos.</div><hr>
+		<p id="class7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque ut vel iure quas accusantium, nemo, officia consectetur natus sapiente, molestias? Iste obcaecati veritatis nihil tenetur ratione assumenda at debitis.</p>
+		<div id="class8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi libero recusandae laborum eligendi commodi obcaecati, consectetur odio nulla consequuntur optio ipsam magni explicabo voluptatibus! Qui vitae dolore sunt vero dignissimos.</div><hr>
+		<div>
+			<a href="http://google.com">Google (a:active) (if you want to work please press the link <code>a:active {color: green}</code></a>
+		</div>
+		<div>
+			<a href="http://yandex.ru">Yandex (a:visited) (if you want to work please press the link <code>a:visited {color: #00FF7F}</code></a>
+		</div><hr>
+		<ul>
+			<li>
+				<span>3. История создания и развития CSS</span>
+				<ul>
+					<li><span>3.1 Уровень 1 (CSS1)</span></li>
+					<li>
+						<span>3.2 Уровень 2 (CSS2)</span>
+						<ul>
+							<li><span><em>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</em></span></li>
+						</ul>
+					</li>
+					<li><span>3.3 Уровень 3 (CSS3)</span></li>
+					<li><span>3.4 Уровень 4 (CSS4)</span></li>
+				</ul>
+			</li>
+		</ul>
+		<p>CSS — <strong>одна из широкого спектра технологий</strong>, одобренных консорциумом W3C и получивших общее название «стандарты Web» В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.</p>
+		<p>В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.</p>
+		<p>Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS.</p>
+		<p>В отличие от многих существовавших на тот момент языков стиля, CSS использует наследование от родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее стилях.</p>
+		<p>В середине 1990-х Консорциум Всемирной паутины (W3C) стал проявлять интерес к CSS, и в декабре 1996 года была издана рекомендация CSS1.</p>
+	</main>
+	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var $buttons = $('.buttons').find('li'),
+			$main = $('main'),
+			$removeBtn = $('.remove-all');
+
+		$removeBtn.on('click', removeAll);
+
+		$buttons.on('click', function (event) {
+			var dataClass = $(this).data('name');
+
+			removeAll();
+
+			event.preventDefault();
+
+			if(dataClass.split(' ').length > 1) { alert('remove spaces from attr value'); return;}
+			if(dataClass === '') { alert('attr value is empty'); return;}
+
+
+			$main
+				.addClass(dataClass)
+				.addClass('is-active');
+		});
+
+		function removeAll () {
+			$main.removeAttr('class');
+			$buttons.removeClass('is-active');
+		};
+	</script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3</title>
+	<style>
+		.buttons {
+			cursor: pointer;
+			color: blue;
+			text-decoration: underline;
+		}
+		.buttons .is-active {
+			cursor: default;
+			color: red;
+			text-decoration: none;
+		}
+		.all * {
+			color: red;
+		}
+		.tag p {
+			color: red;
+		}
+		.li li {
+			color: red;
+		}
+		.ef p ~ blockquote  {
+			color: #2F4F4F;
+		}
+		.ef1 p ~ div  {
+			color: #DC143C;
+		}
+		.attr [href^="http://"] {
+		  	color: #00FF7F;
+		}
+
+		.attr1 [href$=".ru"] {
+		  	color: #FF4500;
+		}
+
+		.attr2 [href*="mail"] {
+		  	color:  #8B0000;
+		}
+
+		.attr3 [title|="doc"] {
+		  	color: #DC143C;
+		}
+		.lc li:last-child {
+		  	color: #2F4F4F;
+		}
+		.lc1 p:last-child {
+		  	color: #DC143C;
+		}
+		.et p:empty {
+		  	border: 2px solid #2F4F4F;
+		  	height: 20px;
+		}
+		.et1 div:empty {
+		  	border: 5px solid #DC143C;
+		  	height: 40px;
+		}
+		.tg p:target {
+		  	color: #2F4F4F;
+		}
+		.tg1 p:target {
+		  	color: #DC143C;
+		}
+		.ch [type="checkbox"]:checked + label {
+			font-family: serif;
+			font-size: 1.4em;
+			color: #2F4F4F;
+		}
+		.ch1 [type="checkbox"]:checked + label {
+			font-family: serif;
+			font-size: 1.4em;
+			color: #DC143C;
+		}
+		.sl p::-moz-selection {
+  		background: #2F4F4F;
+		}
+		.sl1 div::-moz-selection {
+  		background: #DC143C;
+		}
+		.nth-c li:nth-child(1) {
+			font-family: serif;
+			font-size: 1.6em;
+			color: #2F4F4F;
+		}
+		.nth-c1 li:nth-child(2n+1) {
+			font-family: sans-serif;
+			font-size: 1.6em;
+			color: #DC143C;
+		}
+		.nth-lc li:nth-last-child(1) {
+			font-family: serif;
+			font-size: 1.6em;
+			color: #2F4F4F;
+		}
+		.nth-lc1 li:nth-last-child(2n+1) {
+			font-family: sans-serif;
+			font-size: 1.6em;
+			color: #DC143C;
+		}
+		.nth-ot p:nth-of-type(1) {
+			font-family: serif;
+			font-size: 1.6em;
+			color: #2F4F4F;
+		}
+		.nth-ot1 p:nth-of-type(2) {
+			font-family: sans-serif;
+			font-size: 1.6em;
+			color: #DC143C;
+		}
+		.nth-lot p:nth-last-of-type(1) {
+			font-family: serif;
+			font-size: 1.6em;
+			color: #2F4F4F;
+		}
+		.nth-lot1 p:nth-last-of-type(2) {
+			font-family: sans-serif;
+			font-size: 1.6em;
+			color: #DC143C;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS3</h1>
+	<a href="index.html" title="Главная">Главная</a><br>
+	<div>
+	  	<a href="coreselectors.html" title="CSS1">CSS1</a>
+	  	<a href="css2.1.html" title="CSS1">CSS2.1</a>
+	  	<a href="css3.html" title="CSS1">CSS3</a>
+  	</div><hr>
+  	<button class="remove-all">Remove all</button><hr>
+	<h3>Пример выполнения</h3>
+	<ul class="buttons">
+		<li data-name="all">* {color: red}</li>
+		<li data-name="tag">p {color: red}</li>
+		<li data-name="li">li {color: red}</li>
+	</ul><hr>
+	<h2>E ~ F</h2>
+	<ul class="buttons">
+		<li data-name="ef">ef {color: #2F4F4F}</li>
+		<li data-name="ef1">ef {color: #DC143C}</li>
+	</ul><hr>
+	<h2>E[attr^="name"], E[attr$="name"], E[attr*="name"], E[attr|="name"]</h2>
+	<ul class="buttons">
+		<li data-name="attr">attr {color: #00FF7F}</li>
+		<li data-name="attr1">attr {color: #FF4500}</li>
+		<li data-name="attr2">attr {color:  #8B0000}</li>
+		<li data-name="attr3">attr {color: #DC143C}</li>
+	</ul><hr>
+	<h2>E:last-child</h2>
+	<ul class="buttons">
+		<li data-name="lc">lc {color: #2F4F4F}</li>
+		<li data-name="lc1">lc {color: #DC143C}</li>
+	</ul><hr>
+	<h2>E:empty</h2>
+	<ul class="buttons">
+		<li data-name="et">et {color: #2F4F4F}</li>
+		<li data-name="et1">et {color: #DC143C}</li>
+	</ul><hr>
+	<h2>E:target</h2>
+	<ul class="buttons">
+		<li data-name="tg">tg {color: #2F4F4F}</li>
+		<li data-name="tg1">tg {color: #DC143C}</li>
+	</ul><hr>
+	<h2>E:checked</h2>
+	<ul class="buttons">
+		<li data-name="ch">ch {color: #2F4F4F}</li>
+		<li data-name="ch1">ch {color: #DC143C}</li>
+	</ul><hr>
+	<h2>E:selection</h2>
+	<ul class="buttons">
+		<li data-name="sl">sl {color: #2F4F4F}</li>
+		<li data-name="sl1">sl {color: #DC143C}</li>
+	</ul><hr>
+	<h2>E:nth-child? E:nth-last-child, E:nth-of-type, E:nth-last-of-type, E:first-of-type, E:last-of-type, E:only-of-type, E:only-child</h2>
+	<ul class="buttons">
+		<li data-name="nth-c">nth-c {color: #2F4F4F}</li>
+		<li data-name="nth-c1">nth-c {color: #DC143C}</li>
+		<li data-name="nth-lc">nth-lc {color: #2F4F4F}</li>
+		<li data-name="nth-lc1">nth-lc {color: #DC143C}</li>
+		<li data-name="nth-ot">nth-ot {color: #2F4F4F}</li>
+		<li data-name="nth-ot1">nth-ot {color: #DC143C}</li>
+		<li data-name="nth-lot">nth-lot {color: #2F4F4F}</li>
+		<li data-name="nth-lot1">nth-lot {color: #DC143C}</li>
+		<!--И так далее (E:first-of-type, E:last-of-type, E:only-of-type, E:only-child)-->
+	</ul><hr>
+	<main>
+	<input type="checkbox">
+		<label for="">Lorem1</label>
+	<input type="checkbox">
+		<label for="">Lorem2</label>
+	<ul>
+		<li>Lorem ipsum.</li>
+		<li>Ea, ex.</li>
+		<li>Quaerat, velit.</li>
+	</ul>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis excepturi non optio rerum consequuntur tenetur corrupti pariatur repellat quaerat dolore, minima beatae ut et nihil explicabo qui quasi rem aut?</p>
+		<p>Nam deserunt reiciendis a libero magni culpa perspiciatis explicabo voluptates sequi molestias in, minus architecto velit dolorem hic esse quibusdam. Maiores nihil minus vero fugiat aut nemo expedita atque impedit.</p>
+		<p></p>
+		<p>Similique sed placeat excepturi magnam aliquid dignissimos nobis assumenda labore quidem culpa odit tempora, aut ex minima dolor a temporibus eveniet, quibusdam est consequuntur praesentium molestias. Fugit odio, animi consequatur.</p>
+	</div>
+	<div>
+		<a href="#id-1">Link id-1</a>
+		<a href="#id-2">Link id-2</a>
+		<p id="id-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis excepturi non optio rerum consequuntur tenetur corrupti pariatur repellat quaerat dolore, minima beatae ut et nihil explicabo qui quasi rem aut?</p>
+		<p id="id-2">Nam deserunt reiciendis a libero magni culpa perspiciatis explicabo voluptates sequi molestias in, minus architecto velit dolorem hic esse quibusdam. Maiores nihil minus vero fugiat aut nemo expedita atque impedit.</p>
+	</div>
+	<ul>
+		<li>
+			<span>3. История создания и развития CSS</span>
+			<ul>
+				<li><span>3.1 Уровень 1 (CSS1)</span></li>
+				<li>
+					<span>3.2 Уровень 2 (CSS2)</span>
+					<ul>
+						<li><span><em>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</em></span></li>
+					</ul>
+				</li>
+				<li><span>3.3 Уровень 3 (CSS3)</span></li>
+				<li><span>3.4 Уровень 4 (CSS4)</span></li>
+			</ul>
+		</li>
+	</ul>
+	<p>
+		<a href="http://google.com">Google</a>
+	</p>
+	<p>
+		<a href="yandex.ru">Yandex</a>
+	</p>
+	<p>
+		<a href="mail.ru">Mail</a>
+	</p>
+	<p>
+		<a href="plus.mail.ru">Plus.Mail</a>
+	</p>
+	<div title="doc">Lorem ipsum dolor sit amet.</div>
+	<div title="doc toc">Lorem ipsum dolor sit amet.</div>
+	<div title="toc doc">Lorem ipsum dolor sit amet.</div>
+	<p>CSS — <strong>одна из широкого спектра технологий</strong>, одобренных консорциумом W3C и получивших общее название «стандарты Web» В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.</p>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique illum, assumenda? Nam, sunt animi ad amet debitis! Hic, animi excepturi perferendis delectus sint repellat quas reprehenderit ipsa aut, saepe! Molestias.</div>
+	<div></div>
+	<p>В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.</p><blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit</blockquote>
+	<p>Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS.</p>
+	<p>В отличие от многих существовавших на тот момент языков стиля, CSS использует наследование от родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее стилях.</p>
+	<p>В середине 1990-х Консорциум Всемирной паутины (W3C) стал проявлять интерес к CSS, и в декабре 1996 года была издана рекомендация CSS1.</p><blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit</blockquote>
+	</main>
+	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var $buttons = $('.buttons').find('li'),
+			$main = $('main'),
+			$removeBtn = $('.remove-all');
+
+		$removeBtn.on('click', removeAll);
+
+		$buttons.on('click', function (event) {
+			var dataClass = $(this).data('name');
+
+			removeAll();
+
+			event.preventDefault();
+
+			if(dataClass.split(' ').length > 1) { alert('remove spaces from attr value'); return;}
+			if(dataClass === '') { alert('attr value is empty'); return;}
+
+
+			$main
+				.addClass(dataClass)
+				.addClass('is-active');
+		});
+
+		function removeAll () {
+			$main.removeAttr('class');
+			$buttons.removeClass('is-active');
+		};
+	</script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 2.1</title>
+	<style>
+		.buttons {
+			cursor: pointer;
+			color: blue;
+			text-decoration: underline;
+		}
+		.buttons .is-active {
+			cursor: default;
+			color: red;
+			text-decoration: none;
+		}
+		.all * {
+			color: red;
+		}
+		.tag p {
+			color: red;
+		}
+		.li li {
+			color: red;
+		}
+		.ef p > strong {
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #FF8C00;
+		}
+		.ef1 ul > li > ul > li > ul > li {
+			font-family: serif;
+			font-size: 1.4em;
+			color: #006400;
+		}
+		.ef2 p + p {
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #FF8C00;
+		}
+		.ef3 li + li {
+			font-family: serif;
+			font-size: 1.4em;
+			color: #006400;
+		}
+		.fc ul li:first-child {
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #FF8C00;
+		}
+		.fc1 li li:first-child {
+			font-family: serif;
+			font-size: 1.4em;
+			color: #006400;
+		}
+		.hv p:hover {
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #FF8C00;
+		}
+		.hv1 li:hover {
+			font-family: serif;
+			font-size: 1.4em;
+			color: #006400;
+		}
+		.attr [title] {
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #FF8C00;
+		}
+		.attr1 [href] {
+			font-family: serif;
+			font-size: 1.4em;
+			color: #006400;
+		}
+		.attrn [title="qwerty"] {
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #FF8C00;
+		}
+		.attrn1 [href="http://ya.ru"] {
+			font-family: serif;
+			font-size: 1.4em;
+			color: #006400;
+		}
+		.attrnt [title~="ui"] {
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #FF8C00;
+		}
+		.attrnt1 [href~="w"] {
+			font-family: serif;
+			font-size: 1.4em;
+			color: #006400;
+		}
+		.ab a:before {
+			content: "123";
+			font-family: serif;
+			font-size: 1.4em;
+			color: #006400;
+		}
+		.ab1 a:after {
+			content: "345";
+			font-family: serif;
+			font-size: 1.4em;
+			color: #006400;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS2.1</h1>
+	<a href="index.html" title="Главная">Главная</a><br>
+	<div>
+	  	<a href="coreselectors.html" title="CSS1">CSS1</a>
+	  	<a href="css2.1.html" title="CSS1">CSS2.1</a>
+	  	<a href="css3.html" title="CSS1">CSS3</a>
+  	</div><hr>
+  	<button class="remove-all">Remove all</button><hr>
+	<h3>Пример выполнения</h3>
+	<ul class="buttons">
+		<li data-name="all">* {color: red}</li>
+		<li data-name="tag">p {color: red}</li>
+		<li data-name="li">li {color: red}</li>
+	</ul><hr>
+	<h2>E > F</h2>
+	<ul class="buttons">
+		<li data-name="ef">E > F {color: #FF8C00}</li>
+		<li data-name="ef1">E > F {color: #006400}</li>
+	</ul><hr>
+	<h2>E + F</h2>
+	<ul class="buttons">
+		<li data-name="ef2">E + F {color: #FF8C00}</li>
+		<li data-name="ef3">E + F {color: #006400}</li>
+	</ul><hr>
+	<h2>E:first-child</h2>
+	<ul class="buttons">
+		<li data-name="fc">fc {color: #FF8C00}</li>
+		<li data-name="fc1">fc {color: #006400}</li>
+	</ul><hr>
+	<h2>E:hover</h2>
+	<ul class="buttons">
+		<li data-name="hv">hv {color: #FF8C00}</li>
+		<li data-name="hv1">hv {color: #006400}</li>
+	</ul><hr>
+	<h2>E[attr]</h2>
+	<ul class="buttons">
+		<li data-name="attr">attr {color: #FF8C00}</li>
+		<li data-name="attr1">attr {color: #006400}</li>
+	</ul><hr>
+	<h2>E[attr="name"]</h2>
+	<ul class="buttons">
+		<li data-name="attrn">attrn {color: #FF8C00}</li>
+		<li data-name="attrn1">attrn {color: #006400}</li>
+	</ul><hr>
+	<h2>E[attr~="name"]</h2>
+	<ul class="buttons">
+		<li data-name="attrnt">attrnt {color: #FF8C00}</li>
+		<li data-name="attrnt1">attrnt {color: #006400}</li>
+	</ul><hr>
+	<h2>E:before E:after</h2>
+	<ul class="buttons">
+		<li data-name="ab">ab {color: #FF8C00}</li>
+		<li data-name="ab1">ab {color: #006400}</li>
+	</ul><hr>
+	<main>
+		<ul>
+			<li title="qwerty ui po">
+				<span>3. История создания и развития CSS</span>
+				<ul>
+					<li><span>3.1 Уровень 1 (CSS1)</span></li>
+					<li>
+						<span>3.2 Уровень 2 (CSS2)</span>
+						<ul>
+							<li><span><em>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</em></span></li>
+						</ul>
+					</li>
+					<li><span>3.3 Уровень 3 (CSS3)</span></li>
+					<li><span>3.4 Уровень 4 (CSS4)</span></li>
+				</ul>
+			</li>
+		</ul>
+		<a href="http://google.com">Google</a>
+		<a href="http://ya.ru">Yandex</a>
+		<a href="http://bing.com w">Bing</a>
+		<p title="attr">CSS — <strong>одна из широкого спектра технологий</strong>, одобренных консорциумом W3C и получивших общее название «стандарты Web» В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.</p>
+		<p title="qwerty">В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.</p>
+		<p>Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS.</p>
+		<p>В отличие от многих существовавших на тот момент языков стиля, CSS использует наследование от родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее стилях.</p>
+		<p>В середине 1990-х Консорциум Всемирной паутины (W3C) стал проявлять интерес к CSS, и в декабре 1996 года была издана рекомендация CSS1.</p>
+	</main>
+	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var $buttons = $('.buttons').find('li'),
+			$main = $('main'),
+			$removeBtn = $('.remove-all');
+
+		$removeBtn.on('click', removeAll);
+
+		$buttons.on('click', function (event) {
+			var dataClass = $(this).data('name');
+
+			removeAll();
+
+			event.preventDefault();
+
+			if(dataClass.split(' ').length > 1) { alert('remove spaces from attr value'); return;}
+			if(dataClass === '') { alert('attr value is empty'); return;}
+
+
+			$main
+				.addClass(dataClass)
+				.addClass('is-active');
+		});
+
+		function removeAll () {
+			$main.removeAttr('class');
+			$buttons.removeClass('is-active');
+		};
+	</script>
+</body>
+</html>
