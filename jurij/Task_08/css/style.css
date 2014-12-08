@@ -1,0 +1,133 @@
+.linkPseudoClass a:link {
+  background-color: yellow;
+}
+.visitedPseudoClass a:visited {
+  background-color: green;
+}
+.hoverPseudoClass a:hover {
+  background-color: blue;
+} 
+.activePseudoClass a:active {
+  background-color: red;
+}
+.inputPseudoClass input:focus {
+  border: 2px solid blue;
+}
+.first-of-typePseudoClass p:first-of-type {
+  background-color: yellow;
+}
+.last-of-typePseudoClass p:last-of-type {
+  background-color: yellow;
+}
+.nth-of-typePseudoClass p:nth-of-type(2) {
+  background-color: yellow;
+}
+.only-of-typePseudoClass strong:only-of-type {
+  border: 2px solid blue;
+}
+.notPseudoClass *:not(a) {
+  background-color: yellow;
+}
+.checkedPseudoClass [type="checkbox"]:checked + label{
+  color: green;
+  font-weight: bold;
+}
+.enabledPseudoClass input:enabled {
+  background-color: yellow;
+}
+.disabledPseudoClass input:disabled {
+  background-color: yellow;
+}
+.rootPseudoClass :root {
+  background-color: yellow;
+}
+.targetPseudoClass p:target {
+  background-color: yellow;
+}
+.emptyPseudoClass p:empty {
+  background-color: yellow;
+  border: 1px solid yellow;
+  height: 15px;
+}
+
+/*Pseudo Elements*/
+.fletterPseudoElements p:first-letter {
+  color: red;
+  font-weight: bolder;
+}
+.flinePseudoElements p:first-line {
+  color: green;
+  font-weight: bolder;
+}
+.beforePseudoElements h2:before {
+  content: "+++";
+  color: blue;
+}
+.afterPseudoElements h2:after {
+  content: "+++";
+  color: blue;
+}
+.selectionPseudoElements *::selection {
+  background-color: yellow;
+}
+.fchildPseudoElements li:first-child {
+  border: 2px solid blue;
+}
+.lchildPseudoElements li:last-child {
+  border: 2px solid blue;
+}
+.nthchildPseudoElements li:nth-child(odd) {
+  border: 2px solid blue;
+}
+
+/*Attr*/
+.attr p[class] {
+  background-color: yellow;
+}
+.attrValue [id="target"] {
+  background-color: yellow;
+}
+.attrValueBegin a[href^="www"] {
+  background-color: yellow;
+}
+.attrValueEnd a[href$="com"] {
+  background-color: green;
+}
+.attrValueAny a[href*="goo"] {
+  background-color: blue;
+}
+.attrValueAnySpace p[class~="classname2"] {
+  background-color: yellow;
+}
+.attrValueAnyHyphen p[class|="classname1"] {
+  background-color: green;
+}
+
+/*Other*/
+.tag p {
+  background-color: yellow;
+}
+.class .pClass {
+  background-color: yellow;
+}
+.id #spanID {
+  background-color: yellow;
+}
+.group h2, .group h3 {
+  background-color: yellow;
+}
+.all * {
+  background-color: yellow;
+}
+.descendant p q {
+  background-color: yellow;
+}
+.child ul.list-group > li {
+  background-color: yellow;
+}
+.sibling h3 + p {
+  background-color: yellow;
+}
+.sibling-any h3 ~ p {
+  background-color: yellow;
+}

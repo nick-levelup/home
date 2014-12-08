@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selectors</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css"></head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Main</a>
+        </div>
+        <div>
+          <p class="navbar-text">Селекторы CSS с применением Bootstrap</p>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-user"></span>
+                Sign Up
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-log-in"></span>
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-10">
+        <ul class="nav nav-tabs">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Псевдоклассы
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#content" data-toggle="tab" data-name="linkPseudoClass">a:link</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="visitedPseudoClass">a:visited</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="hoverPseudoClass">a:hover</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="activePseudoClass">a:active</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="inputPseudoClass">input:focus</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="first-of-typePseudoClass">p:first-of-type</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="last-of-typePseudoClass">p:last-of-type</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="nth-of-typePseudoClass">p:nth-of-type(2)</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="only-of-typePseudoClass">strong:only-of-type</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="notPseudoClass">*:not(a)</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="checkedPseudoClass">[type="checkbox"]:checked + label</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="enabledPseudoClass">input:enabled</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="disabledPseudoClass">input:disabled</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="rootPseudoClass">:root</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="targetPseudoClass">p:target</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="emptyPseudoClass">p:empty</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Псевдоэлементы
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#content" data-toggle="tab" data-name="fletterPseudoElements">p:first-letter</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="flinePseudoElements">p:first-line</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="beforePseudoElements">h2:before</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="afterPseudoElements">h2:after</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="selectionPseudoElements">*::selection</a>
+              </li>
+              <li>
+                <a href="#content2" data-toggle="tab" data-name="fchildPseudoElements">li:first-child</a>
+              </li>
+              <li>
+                <a href="#content2" data-toggle="tab" data-name="lchildPseudoElements">li:last-child</a>
+              </li>
+              <li>
+                <a href="#content2" data-toggle="tab" data-name="nthchildPseudoElements">li:nth-child(odd)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Атрибуты
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#content" data-toggle="tab" data-name="attr">p[class]</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="attrValue">[id="target"]</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="attrValueBegin">a[href^="www"]</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="attrValueEnd">a[href$="com"]</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="attrValueAny">a[href*="goo"]</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="attrValueAnySpace">[class~="classname2"]</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="attrValueAnyHyphen">[class|="classname1"]</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Прочие
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#content" data-toggle="tab" data-name="tag">p</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="class">.pClass</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="id">#spanID</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="group">h2, h3</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="all">*</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="descendant">p q</a>
+              </li>
+              <li>
+                <a href="#content2" data-toggle="tab" data-name="child">ul.list > li</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="sibling">h3 + p</a>
+              </li>
+              <li>
+                <a href="#content" data-toggle="tab" data-name="sibling-any">h3 ~ p</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn">Сбросить</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10">
+        <div class="tab-content">
+          <div class="tab-pane fade" id="content">
+            <div class="panel panel-default">
+              <main>
+                <a href="#">Ссылка 1</a>
+                <br>
+                <a href="#target" title="для проверки :target">Ссылка 2</a>
+                <br>
+                <a href="www.google.com" title="для проверки :target">www.google.com</a>
+                <form action="" class="form-inline" role="form">
+                  <div class="form-group">
+                    <label class="sr-only" for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Эл. почта"></div>
+                  <div class="form-group">
+                    <label class="sr-only" for="inputPass">Email</label>
+                    <input type="password" class="form-control" id="inputPass" placeholder="Пароль"></div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="inputCheck">
+                    <label for="inputCheck">Запомнить</label>
+                  </div>
+                  <button type="submit" class="btn">Войти</button>
+                </form>
+                <br>
+                <form action="" role="form">
+                  <input type="text" class="form-control" name="disabledInput" value="Неактивное поле ввода" disabled=""></form>
+                <h2>Heading2</h2>
+                <h3>Heading4</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officiis <strong>totam similique</strong>
+                  veritatis nobis reprehenderit sapiente nostrum distinctio quam, temporibus commodi, mollitia, dolore voluptas placeat, consectetur eos officia maiores dolorem.
+                </p>
+                <p></p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vero, molestias adipisci asperiores excepturi nemo nihil eligendi sapiente numquam quae, magnam deserunt id necessitatibus.
+                </p>
+                <p class="classname1- classname2">
+                  Lorem ipsum <strong>dolor sit amet</strong>
+                  , consectetur adipisicing elit. Aperiam officia, quas impedit ab, cumque autem!
+                </p>
+                <span id="spanID">Lorem ipsum dolor sit amet.</span>
+                <p class="pClass">
+                  Lorem ipsum dolor sit amet,
+                  <q>consectetur adipisicing</q>
+                  elit. Facere labore iste aliquid ipsum velit libero eum corporis sapiente id illum architecto, omnis rem quisquam, magni
+                  <q>voluptates eaque</q>
+                  doloremque, iure, earum! Vero provident fugiat explicabo quisquam numquam debitis illum ipsam perspiciatis.
+                </p>
+                <p id="target">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, eveniet quia quisquam cupiditate adipisci. Numquam explicabo, deserunt eius. Qui consectetur, earum quisquam libero modi iste rerum autem, incidunt vero quae dignissimos fuga quasi illum cum?
+                </p>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="tab-content">
+          <div class="tab-pane fade" id="content2">
+            <div class="panel panel-default">
+              <main>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-success">Success</li>
+                  <li class="list-group-item list-group-item-info">Info</li>
+                  <li class="list-group-item list-group-item-warning">Warning</li>
+                  <li class="list-group-item list-group-item-danger">Danger</li>
+                </ul>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="js/task7.js"></script>
+</body>
+</html>
