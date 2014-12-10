@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+h1
+{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.625em;                        /*26px/16px(основной шрифт)=1.625em*/
+    font-weight: 400;
+    line-height: 1.3077em;                     /*34px - измерил в PS; 34px/26px(основной шрифт был задан выше через font-size)=1.3077em*/
+
+    margin-top: .7308em;                       /*19px/26px=0.7308em*/
+
+    letter-spacing: -.0261em;/*0.68px*/
+
+    color: #252525;
+}
+.author
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875em;                         /*14px/16px=.875em*/
+    font-weight: 400;
+
+    margin-bottom: .7857em;                    /*11px/14px=0.7857em*/
+
+    color: #89898b;
+}
+.author span
+{
+    color: #252525;
+}
+.author a
+{
+    text-decoration: none;
+
+    color: #252525;
+}
+body
+{
+    line-height: 1.75em;                       /*28px/16px=1.75em*/
+
+    width: 40.625em;                           /*650px/16px=40.625em*/
+    margin-left: 4.5625em;                     /*73px/16px=4.5625em*/
+}
+.main p
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;                            /*16px/16px=1em*/
+    font-weight: 400;
+
+    margin-bottom: .9375em;                    /*15/px/16px=0.9375em*/
+
+    text-align: justify;
+
+    color: #252525;
+}
+.main a
+{
+    text-decoration: none;
+
+    color: #f24b4f;
+}
+p.ref
+{
+    text-align: center;
+}
