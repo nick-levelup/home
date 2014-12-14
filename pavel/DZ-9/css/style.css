@@ -1,0 +1,55 @@
+@font-face {
+    font-family: RobotoSlab;
+    src: url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(http://fonts.googleapis.com/css?family=Open+Sans);
+}
+
+article {
+    border: 1px solid #DDDDDD;
+    color: #252525;
+    width: 600px;
+}
+
+article > div {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    padding: 3%;
+}
+
+h1 {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: -0.02em;
+    margin-bottom: 0;
+}
+
+h1 + div {
+    font-size: 14px;
+}
+
+h1 + div span {
+    color: #8E8FAB;
+}
+
+h1 + div a {
+    color: #252525;
+    text-decoration: none;
+}
+
+a {
+    color: #F2514B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #252525;
+}
+
+p[title="Download"] {
+    text-align: center;
+}
