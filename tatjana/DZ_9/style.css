@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  padding: 0;
+  margin: 0;
+ }
+body {
+  width: 650px; 
+  padding: 31 41 13 73;
+}
+h2 {
+  font: 26px "Roboto Slab"; 
+  letter-spacing: -0.75px;
+}
+.down {
+  text-align: center;
+  color: #f44b4b ;
+}
+p {
+  font: 16px "Open Sans";
+  line-height: 43px;
+  text-align: justify;
+}
+.number {
+  font: 14px "Open Sans";
+  line-height: 26px;
+}
+.gray {
+  color: #8b8989;
+}
+.red {
+  color: #f44b4b;
+}
