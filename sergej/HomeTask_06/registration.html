@@ -68,13 +68,13 @@
 						<div class="col-xs-12 col-lg-6 flip animated">
 							<form action="/echo" method="post" enctype="multipart/form-data" class="form-reg" role="form" id="reg-form">
 								<label for="login">Ваш имя:</label>
-								<input type="text" name="login" id="login" class="form-control" autofocus required>
+								<input type="text" name="login" id="login" placeholder="Имя" class="form-control" autofocus required>
 								<label for="user-email">Ваш email:</label>
-								<input type="email" name="email" id="user-email" class="form-control" required>
+								<input type="email" name="email" id="user-email" placeholder="Email" class="form-control" required>
 								<label for="inputePass"> Пароль:</label>
-								<input type="password" name="passwd" id="inputePass" class="form-control" required>
+								<input type="password" name="passwd" id="inputePass" placeholder="Пароль" class="form-control" required>
 								<label for="validatePass"> Пароль ещё раз:</label>
-								<input type="password" name="passwd2" id="validatePass" class="form-control" required>
+								<input type="password" name="passwd2" id="validatePass" placeholder="Пароль, еще раз" class="form-control" required>
 								<label>Заполнение формы</label>
 								<meter min="0" max="100" value="0" class="form-meter" id="inputProgress"></meter><br>
 								<div class="login-links"></div>
@@ -111,7 +111,7 @@
 													</div>
 													<div class="col-xs-4">
 														<label for="inputeNumber">Любимая цифра</label>
-														<input type="number" name="number" min="0" max="9" step="1" id="inputeNumber" class="form-control" form="reg-form">
+														<input type="number" name="number" min="0" max="9" step="1" id="inputeNumber" placeholder="Введите Вашу любимую цифру" class="form-control" form="reg-form">
 													</div>
 													<div class="col-xs-4">
 														<label>Месяц и год рождения:</label>
@@ -213,31 +213,31 @@
 												<div class="row">
 													<div class="col-xs-4">
 														<label for="inputeIndex">Индекс</label>
-														<input type="text" name="postindex" id="inputeIndex" pattern="[0-9]{6}" class="form-control" form="reg-form">
+														<input type="text" name="postindex" id="inputeIndex" pattern="[0-9]{6}" placeholder="Введите Ваш почтовый индекс" class="form-control" form="reg-form">
 													</div>	
 													<div class="col-xs-4">
 														<label for="inputeCountry">Страна</label>
-														<input type="text" name="country" id="inputeCountry" class="form-control" value="Украина" readonly form="reg-form">
+														<input type="text" name="country" id="inputeCountry" class="form-control" placeholder="Введите Вашу страну" value="Украина" readonly form="reg-form">
 													</div>	
 													<div class="col-xs-4">
 														<label for="inputeTown">Город</label>
-														<input type="text" name="town" id="inputeTown" class="form-control" form="reg-form">
+														<input type="text" name="town" id="inputeTown" placeholder="Введите Ваш город" class="form-control" form="reg-form">
 													</div>
 													<div class="col-xs-8">
 														<label for="inputeStreet">Улица</label>
-														<input type="text" name="street" id="inputeStreet" class="form-control" form="reg-form">
+														<input type="text" name="street" id="inputeStreet" placeholder="Введите Вашу улицу" class="form-control" form="reg-form">
 													</div>
 													<div class="col-xs-4">
 														<label for="inputeHouse">Дом</label>
-														<input type="text" name="house" id="inputeHouse" class="form-control" form="reg-form">
+														<input type="text" name="house" id="inputeHouse" placeholder="Введите Ваш номер дома" class="form-control" form="reg-form">
 													</div>	
 													<div class="col-xs-6">
 														<label for="inputeTel">Телефон</label>
-														<input type="tel" name="tel" id="inputeTel" class="form-control" form="reg-form">
+														<input type="tel" name="tel" id="inputeTel" placeholder="Введите Ваш номер телефона" class="form-control" form="reg-form">
 													</div>	
 													<div class="col-xs-6">
 														<label for="inputeSite">Сайт</label>
-														<input type="url" name="site" id="inputeSite" class="form-control" form="reg-form">
+														<input type="url" name="site" id="inputeSite" placeholder="Введите адрес Вашего сайта" class="form-control" form="reg-form">
 													</div>	
 												</div>	
 											</fieldset>
