@@ -1,0 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400&subset=cyrillic-ext);
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: normal 400 14px/22px 'Roboto', sans-serif;
+	color: #222;
+	min-width: 330px;
+	max-width: 2100px;
+	margin: 0 auto;
+}
+a {
+	color: #f44b4b;
+	text-decoration: none;
+}
+h2 {
+	font: normal 300 23px/28px 'Roboto', sans-serif;
+	color: #5b90f8;
+	margin-top: 5px;
+}
+
+section {
+	width: 100%;
+	margin: 0 auto;
+}
+p {
+	margin-top: 19px;
+	padding-right: 18px;
+}
+.block {
+	width: 330px;
+	height: 100%;			/*Для того чтобы блоки выглядели адекватно. С overflow вид ужасен:)*/
+	min-height: 180px;
+	float: left;
+	margin: .5px 32px;
+}
+.ico1, 
+.ico2,
+.ico3,
+.ico4,
+.ico5,
+.ico6 {
+	width: 110px;
+	height: 98px;
+	float: left;
+}
+.ico1 {
+	background: url('../images/sprite.png') 0 0 no-repeat;
+}
+.ico2 {
+	background: url('../images/sprite.png') -110px 0 no-repeat;
+}
+.ico3 {
+	background: url('../images/sprite.png') -220px 0 no-repeat;
+}
+.ico4 {
+	background: url('../images/sprite.png') -330px 0 no-repeat;
+}
+.ico5 {
+	background: url('../images/sprite.png') -440px 0 no-repeat;
+}
+.ico6 {
+	background: url('../images/sprite.png') -550px 0 no-repeat;
+}
+.desc {
+	float: left;
+	width: 220px;
+}
