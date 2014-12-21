@@ -1,45 +1,42 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic-ext);
-* h3 {
-  padding: 0;
-  margin: 0;
-}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic-ext);
 div {
-  max width:1100px;
   padding: 25px;
+  margin: 10px;
 }
 h3 {
-  font: 300 23px Roboto; 
+  font: 300 23px/28px Roboto; 
   color: #5b90f8;
-  line-height: 28px;
-
+  padding-top: 5px;
+  margin-top: 0px;
 }
 p {
-  font: 400 14px Roboto;
-  line-height: 22px;
-  padding-top: 7px;
+  font: 400 14px/22px Roboto;
 }
 span {
   float:left;
   margin-right:80px;
-  padding-left:110px;
+  padding-left:112px;
   width:205px;
   height:180px;
 }
+.sprite {
+  background: no-repeat url("sprite.jpg");
+}
 .sprite1 {
-  background: no-repeat url("sprite.jpg") 0px 0px/102px;
+  background-position:0px 0px;
 }
 .sprite2 {
-  background: no-repeat url("sprite.jpg") 0px -194px/102px;
+  background-position:0px -194px;
 }
 .sprite3 {
-  background: no-repeat url("sprite.jpg") 0px -388px/102px;
+  background-position:0px -388px;
 }
 .sprite4 {
-  background: no-repeat url("sprite.jpg") 0px -582px/102px;
+  background-position:0px -582px;
 }
 .sprite5 {
-  background: no-repeat url("sprite.jpg") 0px -776px/102px;
+  background-position:0px -776px;
 }
 .sprite6 {
-  background: no-repeat url("sprite.jpg") 0px -970px/102px;
+  background-position:0px -970px;
 }
