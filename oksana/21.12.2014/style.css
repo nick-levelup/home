@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
-font-family: 'Roboto', sans-serif;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -25,75 +24,65 @@ ul {
 	list-style-type: none;
 }
 
-p {
-	font-family: 'Roboto 400', sans-serif;
+span {
+	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	color: #4D3D2D;
+	margin-top: 10px;
+	display: block;
+	line-height: 24px;
+	font-weight: 400;
 }
 
 li {
 	float: left;
-	background:url("sprites.png");
-	background-repeat: no-repeat;
+	width: 340px;
+	height: 110px;
+	margin: 15px;
 }
-.image {
+.pic {
 	width: 107px;
 	height: 99px;
 	background:url("sprites.png");
-	background-position:0 0; 
 	background-repeat: no-repeat;
 	float: left;
+}
+
+.image {
+	background-position:0 0; 
 }
 .image2 {
-	width: 107px;
-	height: 99px;
-	background:url("sprites.png");
 	background-position:0 -100px; 
-	background-repeat: no-repeat;
-	float: left;
 }
 .image3 {
-	width: 107px;
-	height: 99px;
-	background:url("sprites.png");
-	background-position:0 -200px; 
-	background-repeat: no-repeat;
-	float: left;
+	background-position:0 -195px; 
 }
 .image4 {
-	width: 107px;
-	height: 99px;
-	background:url("sprites.png");
-	background-position:0 -300px; 
-	background-repeat: no-repeat;
-	float: left;
+	background-position:0 -283px; 
 }
 .image5 {
-	width: 107px;
-	height: 99px;
-	background:url("sprites.png");
 	background-position:0 -400px; 
-	background-repeat: no-repeat;
-	float: left;
 }
 .image6 {
-	width: 107px;
-	height: 99px;
-	background:url("sprites.png");
-	background-position:0 -500pv; 
-	background-repeat: no-repeat;
-	float: left;
+	background-position:0 -500px; 
 }
 a {
 	text-decoration: none;
-	font-family: 'Roboto 300', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 23px;
 	color: #7480F6;
+	font-weight: 300;
 }
-/*.contains {
-	width: 150px;
+.contains {
+	width: 198px;
 	float: left;
-}*/
-.block {
+	margin-left: 15px;
+}
+
+.block:after {
+	content: " ";
+	display: block;
+	height: 0;
 	clear: both;
+	visibility: hidden;
 }
