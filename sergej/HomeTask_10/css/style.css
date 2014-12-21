@@ -4,7 +4,7 @@
 	padding: 0;
 }
 body {
-	font: normal 400 14px/22px 'Roboto', sans-serif;
+	font: 400 14px/22px 'Roboto', sans-serif;
 	color: #222;
 	min-width: 330px;
 	max-width: 2100px;
@@ -15,13 +15,12 @@ a {
 	text-decoration: none;
 }
 h2 {
-	font: normal 300 23px/28px 'Roboto', sans-serif;
+	font: 300 23px/28px 'Roboto', sans-serif;
 	color: #5b90f8;
 	margin-top: 5px;
 }
 
 section {
-	width: 100%;
 	margin: 0 auto;
 }
 p {
@@ -35,7 +34,10 @@ p {
 	float: left;
 	margin: .5px 32px;
 }
-.ico1, 
+.clearfix {
+	clear: both;
+}
+.ico1,
 .ico2,
 .ico3,
 .ico4,
@@ -44,26 +46,26 @@ p {
 	width: 110px;
 	height: 98px;
 	float: left;
+	background: url('../images/sprite.png') no-repeat;
 }
 .ico1 {
-	background: url('../images/sprite.png') 0 0 no-repeat;
+	background-position: 0 0;
 }
 .ico2 {
-	background: url('../images/sprite.png') -110px 0 no-repeat;
+	background-position: -110px 0;
 }
 .ico3 {
-	background: url('../images/sprite.png') -220px 0 no-repeat;
+	background-position: -220px 0;
 }
 .ico4 {
-	background: url('../images/sprite.png') -330px 0 no-repeat;
+	background-position: -330px 0;
 }
 .ico5 {
-	background: url('../images/sprite.png') -440px 0 no-repeat;
+	background-position: -440px 0;
 }
 .ico6 {
-	background: url('../images/sprite.png') -550px 0 no-repeat;
+	background-position: -550px 0;
 }
 .desc {
-	float: left;
-	width: 220px;
+	margin: 0 0 0 110px;
 }
