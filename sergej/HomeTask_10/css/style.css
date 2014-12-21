@@ -19,10 +19,6 @@ h2 {
 	color: #5b90f8;
 	margin-top: 5px;
 }
-
-section {
-	margin: 0 auto;
-}
 p {
 	margin-top: 19px;
 	padding-right: 18px;
@@ -37,12 +33,7 @@ p {
 .clearfix {
 	clear: both;
 }
-.ico1,
-.ico2,
-.ico3,
-.ico4,
-.ico5,
-.ico6 {
+.ico {
 	width: 110px;
 	height: 98px;
 	float: left;
