@@ -7,51 +7,45 @@
 }
 
 body {
-  width:651px;
+  width: 651px;
+  font: 400 16px 'Open Sans';
   padding: 26px 41px 9px 67px;
   color: #252525;
 }
 
 h1 {
-  font-family: 'Roboto Slab';
-  font-weight: 400;
-  font-size: 26px;
+  font: 400 26px 'Roboto Slab';
 	letter-spacing: -0.7px;
 }
 
-.class1 {
-  font-family: 'Open Sans';
-  font-weight: 400;
+.subtitle {
   font-size: 14px;
-  padding-top: 5px;
+  padding-top: 2px;
 }
 
-.class2 {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  padding-top: 7px;
+.style_website {
+  padding-top: 9px;
 }
 
 p {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
   text-align: justify;
   line-height: 28px;
-  padding-top: 15px;
-  color: #252525;
+  padding-top: 16px;
 }
 
-.span1 {
+
+.span {
   color: #8f8c89;
 }
 
-.span2 {
+.download {
   color: #f24b4b;
 }
 
-.center {
-  text-align: center;
+.span, .download {
   color: #f24b4b;
+}
+
+.download {
+  text-align: center;
 }
