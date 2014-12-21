@@ -20,12 +20,14 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+body {
+	font-family: "Roboto", sans-serif;
+}
 ul {
 	list-style-type: none;
 }
 
 span {
-	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	color: #4D3D2D;
 	margin-top: 10px;
@@ -43,14 +45,10 @@ li {
 .pic {
 	width: 107px;
 	height: 99px;
-	background:url("sprites.png");
-	background-repeat: no-repeat;
+	background:url("sprites.png") no-repeat;
 	float: left;
 }
 
-.image {
-	background-position:0 0; 
-}
 .image2 {
 	background-position:0 -100px; 
 }
@@ -68,7 +66,6 @@ li {
 }
 a {
 	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
 	font-size: 23px;
 	color: #7480F6;
 	font-weight: 300;
