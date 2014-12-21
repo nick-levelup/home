@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic-ext);
+* h3 {
+  padding: 0;
+  margin: 0;
+}
+div {
+  max width:1100px;
+  padding: 25px;
+}
+h3 {
+  font: 300 23px Roboto; 
+  color: #5b90f8;
+  line-height: 28px;
+
+}
+p {
+  font: 400 14px Roboto;
+  line-height: 22px;
+  padding-top: 7px;
+}
+span {
+  float:left;
+  margin-right:80px;
+  padding-left:110px;
+  width:205px;
+  height:180px;
+}
+.sprite1 {
+  background: no-repeat url("sprite.jpg") 0px 0px/102px;
+}
+.sprite2 {
+  background: no-repeat url("sprite.jpg") 0px -194px/102px;
+}
+.sprite3 {
+  background: no-repeat url("sprite.jpg") 0px -388px/102px;
+}
+.sprite4 {
+  background: no-repeat url("sprite.jpg") 0px -582px/102px;
+}
+.sprite5 {
+  background: no-repeat url("sprite.jpg") 0px -776px/102px;
+}
+.sprite6 {
+  background: no-repeat url("sprite.jpg") 0px -970px/102px;
+}
