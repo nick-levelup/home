@@ -1,0 +1,50 @@
+
+h2 {
+	width: 200px;
+	margin-left: 112px;
+ 	color: #5B90F8;
+	font: 400 23px "Roboto", sans-serif;
+}
+p {
+	width: 200px;
+	margin-left: 112px;
+ 	color: #444;
+ 	font: 300 14px "Roboto", sans-serif;
+}
+a {
+ 	text-decoration: none;
+ 	width: 394px;
+	height: 180px;
+	float: left;
+	list-style-type: none;	
+}
+#produce {
+	width: 100px;
+	height: 97px;
+	background: url(../image/sprite.png) no-repeat 16px 0;
+}
+#startap {
+	width: 100px;
+	height: 81px;
+	background: url(../image/sprite.png) no-repeat 0 -97px;
+}
+#games {
+	width: 100px;
+	height: 70px;
+	background: url(../image/sprite.png) no-repeat 0 -178px;
+}
+#mobile {
+	width: 100px;
+	height: 84px;
+	background: url(../image/sprite.png) no-repeat 0 -248px;
+}
+#monet {
+	width: 100px;
+	height: 90px;
+	background: url(../image/sprite.png) no-repeat 0 -332px;
+}
+#design {
+	width: 100px;
+	height: 90px;
+	background: url(../image/sprite.png) no-repeat 0 -422px;
+}
