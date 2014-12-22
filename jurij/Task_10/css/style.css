@@ -25,6 +25,10 @@ span
 
     color: #444;
 }
+.clear
+{
+    clear: both;
+}
 .container
 {
     float: left;
