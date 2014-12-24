@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 400 12px/16px Arial, sans-serif; 
+}
+a {
+	text-decoration: none;
+}
+.container {
+	height: 39.5px;
+	background: #2a3744;
+}
+nav {
+	width: 450px;
+	margin: 0 auto;
+}
+.top-menu {
+	list-style: none;
+	position: relative; /*контейнер для сабменю*/
+	top: 12px;
+}
+.top-menu > li {
+	float: left;
+}
+.top-menu:after {
+	clear: both;
+}
+.top-menu > li > a {
+	color: #c0ccdb;
+	height: 40px;
+	padding: 13px 12px;
+}
+.top-menu > li > a.active {
+	background: #344454;
+	color: #fff;
+	font-weight: 700;
+}
+.top-menu > li > a.active + i.arrow-down.color {
+	background: url(../img/arrow-down-black.png) no-repeat;
+}
+.top-menu > li:hover .top-sub-menu {
+	display: block;
+	background: #fff;
+}
+.top-menu > li:hover > a,
+.top-menu > li:hover > a:hover {
+	background: #fff;
+	color: #000;
+}
+.top-sub-menu {
+	list-style: none;
+	display: none;
+	position: absolute;
+	top: 28px;
+	width: 190px;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+}
+.top-sub-menu > li {
+	font-size: 14px;
+	padding: 10px;
+	color: #999;
+}
+.top-sub-menu > li > a {
+	color: #999;
+}
+.top-sub-menu > li:hover,
+.top-sub-menu > li:hover a,
+.top-sub-menu > li:hover a:hover {
+	background: #005d50;
+	color: #fff;
+	font-weight: 700;	
+}
+.arrow-down {
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 12px;
+}
+.color {
+	background: url(../img/arrow-down-white.png) no-repeat;
+}
+.top-menu > li:hover .color {
+	background: url(../img/arrow-down-black.png) no-repeat;
+}
