@@ -1,55 +1,64 @@
-@font-face {
-    font-family: RobotoSlab;
-    src: url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-@font-face {
-    font-family: OpenSans;
-    src: url(http://fonts.googleapis.com/css?family=Open+Sans);
-}
-
-article {
-    border: 1px solid #DDDDDD;
+body {
     color: #252525;
-    width: 600px;
-}
-
-article > div {
-    font-family: 'OpenSans', sans-serif;
-    font-size: 16px;
-    padding: 3%;
+    padding: 19px 0 0 73px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-    font-family: 'RobotoSlab', serif;
-    font-weight: 400;
+    font-family: "Roboto Slab",serif;
     font-size: 26px;
-    letter-spacing: -0.02em;
-    margin-bottom: 0;
+    font-weight: 400;
+    letter-spacing: -0.026em;
+    line-height: 1.3em;
 }
 
-h1 + div {
-    font-size: 14px;
+h2 {
+    margin: 17px 0 18px;
 }
 
-h1 + div span {
-    color: #8E8FAB;
-}
-
-h1 + div a {
-    color: #252525;
-    text-decoration: none;
+h2,
+p {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 a {
-    color: #F2514B;
+    color: #F34B66;
     text-decoration: none;
 }
 
-a:hover {
-    color: #252525;
+article {
+    width: 650px;
 }
 
-p[title="Download"] {
+h1+div {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+h1+div span {
+    color: #89898B;
+}
+
+h1+div a {
+    color: #252525;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.74em;
+}
+
+.download {
     text-align: center;
+    margin-top: 15px;
 }
