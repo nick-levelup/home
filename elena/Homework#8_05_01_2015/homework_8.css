@@ -1,0 +1,241 @@
+* {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	}
+a {
+	text-decoration: none;
+}
+@font-face {
+		font-family: georgia;
+		src: url(fonts/georgia.ttf);
+	}
+@font-face {
+		font-family: verdana;
+		src: url(fonts/verdana.ttf);
+}
+
+body {
+	font: 400 16px georgia;
+	background-color: #e0e0e0;
+	width: 1000px;
+	padding-left: 20px;
+
+}
+.header {
+	background-color: #2d2928;
+	height: 35px;
+	padding-top: 17px;
+	margin-left: -20px;
+	background-image: url('data:image/png;base64,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');	background-repeat: repeat-x, space;
+	background-position: 98% 50%;
+	background-repeat: no-repeat;
+	margin-right: 25px;
+}
+.header li {
+	float: left;
+	font-size:12px;
+	color:#c4c4c4; 
+	padding-right: 5px;
+}
+ul.header {
+	padding-left: 20px;
+}
+h1,h2 {
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 100px;
+	line-height: 125px;
+	color: #282828;
+	letter-spacing: 0.2px;
+	padding-top: 5px;
+	padding-left: 70px;
+}
+h2 {
+	font-size: 20px;
+	line-height: 46px;
+	color: #4a4a4a;
+	letter-spacing: 0.8px;
+	padding-left: 187px;
+	padding-bottom: 12px;
+}
+h3 {
+	font-size: 22px;
+	line-height: 34px;
+	color: #444444;
+}
+.nav li{
+	float: left;
+	padding: 9px 38px 9px 0;
+}
+.nav a {
+	font-size: 14px;
+	color: #333333;
+	text-transform: uppercase;
+}
+section.article1 {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.clearfix {
+	content: " ";
+	clear: both;
+	display: table;
+}
+.article1 article {
+	float: left;
+	padding-top: 20px;	
+}
+.art {
+	width: 500px;
+}
+.art1 {
+	padding-left: 35px;
+	width: 430px;
+}
+.article1 img {
+	float: left;
+	padding: 5px 10px 5px 0px;
+}
+.art h3 {
+	line-height: 40px;
+}
+.section1 {
+	float: left;
+	width: 620px;
+	padding-top: 23px;
+}
+.sidebar {
+	display: inline-block;
+	vertical-align: text-top;
+	padding: 5px;
+	padding-top: 35px;
+}
+section.section2 {
+	float: left;
+	width: 310px;
+	padding-bottom: 18px;
+}
+.section2 h3 {
+	text-transform: uppercase;
+	color: #666666;
+	font-size: 16px;
+	border-bottom: 1px solid;
+	padding-bottom: 3px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+.article3 img{
+	float: left;
+	padding:10px 13px 5px 5px;
+}
+.article3 p{
+	font-size: 12px;
+	color: #666666;
+	padding-right: 15px;
+	letter-spacing: 0.5px;
+	margin-right: 5px;
+}
+.link a{
+	font-size: 11px;
+	letter-spacing: 0;
+	line-height: 18px;
+	color: #982115;
+	text-transform: uppercase;
+}
+.link {
+	text-align: right;
+	padding-bottom: 5px;
+}
+.article3 h5{
+	font: 600 12px; 
+	padding-top: 5px;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+}
+.menu2 li {
+	float: left;
+	background-color: #2d2928;
+	color: #ffffff;
+	width: 138px;
+	padding: 10px 8px;
+	margin: 30px 1px 18px 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+}
+.menu2 h5 {
+	font: 600 12px;
+	color: #982115;
+	width: 130px;
+	margin-bottom: 15px;
+}
+.menu2 p {
+	font-size: 12px;
+	color: #666666;
+	width: 130px;
+	padding-top: 14px;
+}
+.menu2 article {
+	float: left;
+	padding-right: 25px;
+}
+footer ul {
+	float: left;
+	margin-top: 20px;
+	margin-right: 64px;
+	margin-bottom: 32px;
+}
+footer h5 {
+	font-family: verdana;
+	font-size: 13px;
+	color: #666666;
+	padding-bottom: 5px;
+	padding-top: 11px;
+}
+footer li {
+	font-family: verdana;
+	padding-top: 5px;
+	font-size: 12px;
+	color: #982216;
+	letter-spacing: 0.2px;
+	line-height: 14px;
+}
+footer p {
+	font-size: 12px;
+	color: #787878;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+span+span {
+	padding-left: 510px;
+}
+.sidebar {
+	margin-bottom: 40px;
+}
+.sidebar h4 {
+	font-size: 13px;
+	color: #666666;
+	border-top: 5px solid #999999;
+	line-height: 17px;
+	padding: 3px 0 10px;
+}
+.sidebar a {
+	font-size: 13px;
+	color: #982216;
+	line-height: 21px;
+	letter-spacing: 0.6px;
+}
+.sidebar ul{
+	padding-bottom: 10px;
+}
+aside.sidebar {
+	padding-left: 0;
+}
+.sidebar img {
+	padding-top: 5px;
+}
+.menu2 a {
+	color: #982216;
+}
