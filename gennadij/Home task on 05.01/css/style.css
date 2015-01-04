@@ -1,0 +1,159 @@
+
+* {
+	font-family: 'Georgia' serif;
+	margin: 0;
+}
+.body {
+	background: #e0e0e0;
+	width: 1000px;
+	height: 100%;
+	margin-left: -500px;
+	left: 50%;
+	position: relative;
+}
+@font-face {
+    font-family: Georgia;
+    src: local(Georgia.woff, Georgia.ttf, Georgia.otf, Georgia.svg);
+} 
+.top-bar a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #c4c4c4;
+}
+header {
+	background: #2d2928;
+	width: 1000px;
+	height: 52px;
+	margin-left: -500px;
+	left: 50%;
+	position: relative;
+	top: 0;
+}
+.ico {
+	position: absolute;
+	width: 155px;
+	height: 32px;
+	right: 23px;
+	bottom: 10px;
+}
+.ico a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	border-radius: 15px;
+}
+.sprite_twit,
+.sprite_drible,
+.sprite_face,
+.sprite_vk {
+	width: 32px;
+	height: 32px;
+	border-radius: 15px;
+	background: #fff;
+	position: absolute;
+	top: 0;
+}
+.sprite_drible {
+	left: 41px;
+}
+.sprite_face {
+	left: 82px;
+}
+.sprite_vk {
+	left: 123px;
+}
+.logo {
+	color: #282828;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+}
+.logo h1 {
+	font-size: 100px;
+	padding-top: 52px;
+	padding-bottom: 42px;
+}
+.logo p {
+	font-size: 20px;
+}
+nav {
+	width: 960px; /*1000px-2*20px(margin)*/
+	border-top: 3px double #999;
+	border-bottom: 3px double #999;
+	margin: 0 20px;
+	padding: 12px 0;
+}
+nav a {
+	color: #282828;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 0 19px;
+}
+nav a:first-child {
+	margin-left: 1px; 
+}
+nav a:hover {
+	color: #999;
+}
+.featured {
+	display: block;
+	color: #444;
+	width: auto;
+	height: 500px;
+	margin: 20px;
+	position: relative;
+	border-bottom: 3px double #999;
+}
+/*Featured left*/
+.f-left {
+	display: block;
+	width: 500px;
+	margin-right: 10px;
+	position: absolute;
+}
+h2 a {
+	color: #444;
+	font-size: 22px;
+	height: 26px;
+	overflow: hidden;
+	text-decoration: none;
+}
+h2 a:hover {
+	color: #999;
+}
+.f-left p {
+	font-size: 16px;
+	height: 110px;
+	overflow: hidden;
+}
+/*Featured right*/
+.f-right {
+	display: block;
+	width: 430px;
+	margin-left: 20px;
+	position: absolute;
+	left: 500px;
+}
+.clearfix {
+	content: " ";
+	clear: both;
+	display: table;
+}
+.f-right img {
+	float: left;
+}
+.f-right div {
+	height: 120px;
+	overflow: hidden;
+	padding: 0;
+}
+div .no_image {
+	height: 100px;
+}
+img[src="image/100_100.png"], 
+img[src="image/60_60.png"], 
+img[src="image/122_80.png"] {
+	padding: 4px;
+	border: 1px solid #999;
+}
