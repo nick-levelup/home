@@ -1,0 +1,324 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body {
+	font: 400 16px/19.2px 'Georgia', Serif;
+}
+a {
+	text-decoration: none;
+}
+h2 {
+	font-size: 22px;
+	font-weight: 400;
+	margin: 9px 0 13px;
+	letter-spacing: .1px;
+}
+h3 {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+	letter-spacing: -.6px;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	background: #e0e0e0;
+}
+.topBar {
+	box-sizing: border-box;
+	height: 52px;
+	padding: 0 20px;
+	color: #c4c4c4;
+	background: #2d2928;
+}
+.topLinks {
+	font: 12px/14.4px 'Georgia', Serif;
+	float: left;
+	padding: 19px 2px;
+	color: #c4c4c4;
+}
+.topLinks li {
+	float: left;
+	margin-right: 5px;
+	padding-right: 5px;
+	border-right: 1px solid;
+}
+.topLinks li:last-child {
+	border-right: none;
+}
+.topLinks a {
+	color: #c4c4c4;
+}
+.topSocial {
+	float: right;
+	padding: 10px 0;
+}
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: ' ';
+}
+.round {
+	display: block;
+	float: right;
+	width: 32px;
+	height: 32px;
+	margin: 0 3px 0 6px;
+	border-radius: 16px;
+	background: #fff;
+}
+.logo {
+	height: 165px;
+	margin: 0 20px;
+	padding: 11px 0;
+	border-bottom: 1px solid #999;
+}
+.logo p {
+	text-align: center;
+	text-transform: uppercase;
+}
+.logo .title {
+	font: 100px/120px 'Georgia', Serif;
+	margin: -5px 0 0 3px;
+	letter-spacing: 2.7px;
+}
+.logo .slogan {
+	font: 20px/24px 'Georgia', Serif;
+	margin: 14px 0 0 -13px;
+	letter-spacing: .55px;
+}
+.topNavigation {
+	height: 35px;
+	margin: 1px 20px 0;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+.topNavigation ul {
+	padding: 10px 0;
+}
+.topNavigation li {
+	font: 14px/14px 'Georgia', Serif;
+	float: left;
+	margin-right: 40px;
+	letter-spacing: .15px;
+	text-transform: uppercase;
+}
+.topNavigation a {
+	color: #333;
+}
+.topNavigation a:hover,
+.topNavigation a:focus {
+	color: #999;
+}
+.featured {
+	height: 477px;
+	margin: 1px 20px 0;
+	padding: 35px 0;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+.featured p {
+	margin: 0 0 18px;
+}
+.block {
+	float: left;
+}
+.fl-size {
+	width: 500px;
+}
+.fr-size {
+	width: 430px;
+	margin-left: 30px;
+}
+.cl-size {
+	width: 600px;
+}
+.cll-size {
+	width: 290px;
+}
+.clr-size {
+	width: 290px;
+	margin-left: 20px;
+}
+.bl-size {
+	width: 130px;
+	margin-right: 26px;
+}
+.cr-size {
+	width: 160px;
+	margin-left: 10px;
+	padding: 10px 0;
+}
+.cm-size {
+	width: 160px;
+	margin-left: 30px;
+	padding: 10px 0;
+}
+.f-size {
+	width: 180px;
+	margin-right: 15px;
+}
+.last {
+	margin-right: 0;
+}
+.big-image {
+	width: 500px;
+	height: 320px;
+	margin: 0 0 4px;
+}
+.middle-image {
+	width: 100px;
+	height: 100px;
+}
+.middle2-image {
+	width: 122px;
+	height: 80px;
+}
+.small-image {
+	width: 60px;
+	height: 60px;
+}
+.lg-image {
+	width: 160px;
+	height: 600px;
+	margin: 5px 0;
+}
+.img-block {
+	box-sizing: border-box;
+	padding: 4px;
+	border: 1px solid #999;
+}
+.sm {
+	width: 70px;
+	height: 70px;
+	margin: 0 8px 19px 0;
+}
+.md {
+	width: 110px;
+	height: 110px;
+	margin: 0 12px 11px 0;
+}
+.lg {
+	width: 132px;
+	height: 90px;
+	margin: 0 8px 14px 0;
+}
+.pp-fix {
+	margin-top: 9px;
+}
+.pp-fix2 {
+	margin-top: -4px;
+}
+.content {
+	height: 689px;
+	margin: 1px 20px 0;
+	padding: 14px 0;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+.content h2 {
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 15px;
+	padding: 10px 0 12px;
+	text-transform: uppercase;
+	color: #666;
+	border-bottom: 1px solid #999;
+}
+.content p {
+	font: 12px/14.4px 'Georgia', Serif;
+}
+.top-content {
+	height: 345px;
+	margin-bottom: 1px;
+	border-bottom: 1px solid #999;
+}
+.bottom-content {
+	border-top: 1px solid #999;
+}
+.bottom-content h3{
+	line-height: 14.4px;
+	margin-bottom: 10px;
+	color: #982115;
+}
+.ad li {
+	font-size: 12px;
+	float: left;
+	margin: 30px 1px 20px 0;
+	padding: 10px 19px 6px 10px;
+	vertical-align: middle;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	color: #c0c0c0;
+	background: #2d2928;
+}
+.cll-size a,
+.clr-size a {
+	font-size: 11px;
+	float: right;
+	padding: 1px 3px;
+	text-transform: uppercase;
+	color: #9d362d;
+}
+.cll-size a:after,
+.clr-size a:after {
+	content: ' »';
+}
+.list {
+	margin: 11px 0;
+}
+.list a {
+	letter-spacing: -.3px;
+	color: #982115;
+}
+.list a:after {
+	content: ' »';
+}
+.r-title {
+	font: 700 13px/13px 'Georgia', Serif;
+	margin: 11px 0;
+	padding-top: 6px;
+	letter-spacing: -.6px;
+	color: #666;
+	border-top: 5px solid #999;
+}
+.right-menu a {
+	font: 13px/20.8px 'Georgia', Serif;
+	letter-spacing: .6px;
+	color: #982115;
+}
+.right-menu a:before {
+	content: '» ';
+}
+footer {
+	height: 166px;
+	margin: 1px 20px 0;
+	padding: 20px 0;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+footer h3 {
+	font: 13px/13px 'Georgia', Serif;
+	margin-bottom: 7px;
+	padding: 14px 0 7px;
+	color: #666;
+	border-bottom: 1px solid #999;
+	letter-spacing: .4px;
+}
+.f-list {
+	font: 400 12px/19.2px Verdana, sans-serif;
+}
+.f-list a {
+	color: #982115;
+}
+.copyright {
+	font: 12px/12px 'Georgia', Serif;
+	margin: 1px 20px 0;
+	padding: 35px 0;
+	border-top: 1px solid #999;
+}
+.cr-right {
+	float: right;
+}
