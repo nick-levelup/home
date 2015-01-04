@@ -14,12 +14,14 @@ h2 {
 	font-weight: 400;
 	margin: 9px 0 13px;
 	letter-spacing: .1px;
+	color: #444;
 }
 h3 {
 	font-size: 12px;
 	font-weight: 700;
 	line-height: 18px;
 	letter-spacing: -.6px;
+	color: #444;
 }
 .container {
 	width: 1000px;
@@ -121,6 +123,7 @@ h3 {
 }
 .featured p {
 	margin: 0 0 18px;
+	color: #666;
 }
 .block {
 	float: left;
@@ -160,7 +163,8 @@ h3 {
 	width: 180px;
 	margin-right: 15px;
 }
-.last {
+.last,
+.ad li:last-child {
 	margin-right: 0;
 }
 .big-image {
@@ -229,6 +233,7 @@ h3 {
 }
 .content p {
 	font: 12px/14.4px 'Georgia', Serif;
+	color: #666;
 }
 .top-content {
 	height: 345px;
@@ -247,12 +252,24 @@ h3 {
 	font-size: 12px;
 	float: left;
 	margin: 30px 1px 20px 0;
-	padding: 10px 19px 6px 10px;
+	padding: 10px 0 6px 10px;
 	vertical-align: middle;
 	letter-spacing: .5px;
 	text-transform: uppercase;
 	color: #c0c0c0;
 	background: #2d2928;
+}
+.ad-elem1 {
+	width: 140px;
+}
+.ad-elem2 {
+	width: 115px;
+}
+.ad-elem3 {
+	width: 107px;
+}
+.ad-elem4 {
+	width: 195px;
 }
 .cll-size a,
 .clr-size a {
@@ -300,12 +317,12 @@ footer {
 	border-bottom: 1px solid #999;
 }
 footer h3 {
-	font: 13px/13px 'Georgia', Serif;
+	font: 700 13px/13px 'Georgia', Serif;
 	margin-bottom: 7px;
 	padding: 14px 0 7px;
 	color: #666;
 	border-bottom: 1px solid #999;
-	letter-spacing: .4px;
+	letter-spacing: -.8px;
 }
 .f-list {
 	font: 400 12px/19.2px Verdana, sans-serif;
@@ -318,6 +335,7 @@ footer h3 {
 	margin: 1px 20px 0;
 	padding: 35px 0;
 	border-top: 1px solid #999;
+	color: #787878;
 }
 .cr-right {
 	float: right;
