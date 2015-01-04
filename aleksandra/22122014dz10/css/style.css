@@ -1,75 +1,84 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400);
 
-* {
-	margin: 0;
-	padding: 0;
-}
 
 .body {
-  width: 753px;
-  height: 586px; 
+  width: 757px;
+  height: 582px; 
   min-width: 500px;
   max-width: 1575px;
-  font: 400 16px 'Roboto', sans-serif; 
   color: #252525;
-  margin: 30px 22px 40px 28px;
+}
+
+section  {
+  padding: 32px 31px 41px 34px;
 }
 
 .block {
   width: 310px;
-  height: 155px; 
+  height: 169px;
+  margin-right: 80px;
   float: left;
-  margin-right: 70px;
 }
 
-span {
-  font-weight: bold;
+.block:after {
+  display: block;
+  content: " ";
+  clear: both;
 }
 
-.block h1 {
-  font: 500 23px 'Roboto', sans-serif; 
+.block h2 {
+  font: 300 23px/28px 'Roboto';
   color: #5b90f8;
-  padding-top: 16px;
+  padding-top: 8px;
+  padding-left: 7px;
+  letter-spacing: -0.5px;
 }
 
 .block p {
-  font: 400 14px 'Roboto', sans-serif;
-  width: 201px;
-  color: #444444;
-  padding-top: 24px;
-  line-height: 22px;
+  font: 400 14px/22px 'Roboto';
+  color: #444;
+  padding-top: 18px;
+  padding-left: 6px;
+  word-spacing: -1.5px;
 }
 
 .block .class {
-  width: 201px;
-  height: 173px; 
-  overflow: visible;
+  width: 204px;
+  height: 173px;
   float: left; 
 }
 
-.image1, .image2, .image3, .image4, .image5, .image6 {
-  width: 106px;
-  height: 91px;
-  float: left;
-  padding-top: 32px;
+.row2 {
+  padding-top: 10px;
 }
 
-.image1 {
-background: no-repeat url('../images/sprite.png') 0 0;
+.row3 {
+  padding-top: 20px;
 }
+
+.image {
+  width: 106px;
+  height: 125px;
+  float: left;
+  background: no-repeat url('../images/sprite.png');
+}
+
 .image2 {
-background: no-repeat url('../images/sprite.png') 0 -125px;
+  background-position: 0 -125px;
 }
+
 .image3 {
-background: no-repeat url('../images/sprite.png') 0 -250px;
+  background-position: 0 -250px;
 }
+
 .image4 {
-background: no-repeat url('../images/sprite.png') 0 -375px;
+  background-position: 0 -375px;
 }
+
 .image5 {
-background: no-repeat url('../images/sprite.png') 0 -500px;
+  background-position: 0 -500px;
 }
+
 .image6 {
-background: no-repeat url('../images/sprite.png') 0 -625px;
+  background-position: 0 -625px;
 }
