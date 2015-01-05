@@ -1,0 +1,76 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+	font: 400 14px "Roboto", sans-serif;
+}
+.block{
+	width: 880px; 
+	margin: 0 auto;
+}
+.block>li{
+	list-style-type: none;
+	width: 40%; 
+	margin: 3%;
+	float: left;
+	height: 120px;
+}
+
+.block>li>div:first-child{
+	height: 99px;
+	width: 107px;
+	float: left;
+	margin: 7px 20px;
+}
+
+.block>li>.product{
+	background: url('sprites.png') #fff no-repeat 0 0;
+}
+.block>li>.startup{
+	background: url('sprites.png') #fff no-repeat 0 -99px;
+}
+.block>li>.games{
+	background: url('sprites.png') #fff no-repeat 0 -192px;
+}
+.block>li>.mobile{
+	background: url('sprites.png') #fff no-repeat 0 -290px;
+}
+.block>li>.money{
+	background: url('sprites.png') #fff no-repeat 0 -402px;
+}
+.block>li>.webdesign{
+	background: url('sprites.png') #fff no-repeat 0 -494px;
+}
+.block>li>h3{
+	margin:12px;
+}
+.block>li>h3>a{
+	color: #5B90F8;
+	text-decoration: none;
+	font-size: 22px 
+}	
+.block>li>span{
+	color: #4D3D2D;
+	margin-top: 10px;
+	display: block;
+	line-height: 24px;
+	padding-left: 150px;
+}

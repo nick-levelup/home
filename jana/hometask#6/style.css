@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body{
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 651px;
+  font: 16px 'Open Sans';
+  padding: 26px 41px 9px 67px;
+  color: #252525;
+ }
+p{
+  padding: 2px 0;
+  text-align:justify;
+}
+
+h1{
+  font: 26px 'Roboto Slab';
+  letter-spacing: -0.7px;
+  margin-bottom:4px;
+}
+.views{
+ margin-top:0;
+  font-size: 14px;
+}
+.pub{
+  color: #8f8c89;
+}
+.link{
+  color: #f24b4b;
+}
+
+.download {
+  text-align: center;
+}
