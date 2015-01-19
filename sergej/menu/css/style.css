@@ -25,7 +25,9 @@ nav {
 	float: left;
 }
 .top-menu:after {
+	display: block;
 	clear: both;
+	content: " ";
 }
 .top-menu > li > a {
 	color: #c0ccdb;
@@ -55,19 +57,17 @@ nav {
 	position: absolute;
 	top: 28px;
 	width: 190px;
-	box-shadow: 0 4px 5px rgba(0,0,0,0.5);
-}
-.top-sub-menu > li {
-	font-size: 14px;
-	padding: 10px;
-	color: #999;
+	box-shadow: 0 4px 5px rgba(0,0,0,.5);
 }
 .top-sub-menu > li > a {
 	color: #999;
+	display: inline-block;
+	width: 170px;
+	font-size: 14px;
+	padding: 10px;
 }
-.top-sub-menu > li:hover,
-.top-sub-menu > li:hover a,
-.top-sub-menu > li:hover a:hover {
+.top-sub-menu > li:hover a:hover 
+{
 	background: #005d50;
 	color: #fff;
 	font-weight: 700;	
@@ -80,8 +80,8 @@ nav {
 	margin-right: 12px;
 }
 .color {
-	background: url(../img/arrow-down-white.png) no-repeat;
+	background: url(../img/sprite72.png) no-repeat;
 }
 .top-menu > li:hover .color {
-	background: url(../img/arrow-down-black.png) no-repeat;
+	background: url(../img/sprite72.png) 100% 0 no-repeat;
 }
