@@ -19,8 +19,7 @@ a {
 .top_bar {
   height: 42px;
   background-color: #2d2928;
-  padding-left: 23px;
-  padding-top: 10px;
+  padding: 10px 0 0 23px;
 }
 
 .top_bar_menu {
@@ -57,9 +56,9 @@ a {
 .circle {
   display: block;
   float: right;
-	width:32px;
-	height:32px;
-	background:#fff;
+	width: 32px;
+	height: 32px;
+	background: #fff;
 	border-radius: 16px;
   margin: 0 3px 0 6px;
 }
@@ -71,7 +70,7 @@ a {
 
 .logo h1 {
   height: 133px;
-  padding-top:7px;
+  padding-top: 7px;
   font: 100px/120px Georgia, serif;
   text-align: center;	
   text-transform: uppercase;
@@ -82,9 +81,9 @@ a {
 .logo h2 {
   font: 20px/24px Georgia, serif;
   text-transform: uppercase;
-  padding-bottom: 23px;	
   word-spacing: 3px;
-  padding-left: 204px;
+  padding: 0 0 23px 204px;
+  color: #4a4a4a;
 }
 /*header*/
 
@@ -151,6 +150,7 @@ section {
 
 h3 {
   font-size: 22px;
+  color: #444;
 }
 
 p {
@@ -162,7 +162,8 @@ p {
 }
 
 .featured_columnleft p {
-  padding-top: 7px;   
+  padding-top: 7px; 
+  color: #666;  
 }
 
 .featured_columnright {
@@ -176,7 +177,7 @@ p {
 	height: 320px;
 	background-color: #333;
 	line-height: 320px;
-	text-align:center;
+	text-align: center;
   vertical-align: middle;
   font-size: 36px;
   color: #fff;
@@ -185,9 +186,9 @@ p {
 .block100 {
 	width: 100px;
 	height: 100px;
-	background-color: #333333;
+	background-color: #333;
 	line-height: 100px;
-	text-align:center;
+	text-align: center;
   vertical-align: middle;
   font-size: 16px;
   color: #fff;
@@ -211,13 +212,17 @@ p {
   padding-left: 122px;
 }
 
+.block_text p {
+  color: #666;
+}
+
 .featured-block2 {
   padding-top: 27px;  
 }
 
 .featured-block2 p {
-  padding-top: 11px;  
-  padding-bottom: 20px;
+  padding: 11px 0 20px;
+  color: #666;
 }
 
 .featured-block3 {
@@ -258,8 +263,7 @@ p {
   height: 717px;
   float: left;
   background-color: #e0e0e0;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
 /*section content_left*/
@@ -295,20 +299,17 @@ p {
 .content_left_column1 h4, .content_left_column2 h4 {
   font: 500 16px/16px Georgia, serif;
   text-transform: uppercase;
-  padding-top: 33px;      
-  padding-bottom: 11px; 
+  padding: 33px 0 11px; 
   color: #666;
   border-bottom: 1px solid #666;
 }
 
 .content_left_column1_row1, .content_left_column2_row1 {
-  padding-top: 17px;
-  padding-bottom: 16px;
+  padding: 17px 0 16px; 
 }
 
 .content_left_column1_row3, .content_left_column2_row3 {
-  padding-top: 12px;
-  padding-bottom: 35px;
+  padding: 12px 0 35px; 
 } 
 
 .content_left_column1_row1 .block_text2, .content_left_column2_row1 .block_text2 {
@@ -319,17 +320,14 @@ p {
   padding-top: 1px;
 }
 
-.block_text4 p {
-  padding-top: 3px;
-}
-
-.block_text3 p {
+.block_text4 p, .block_text3 p {
   padding-top: 3px;
 }
 
 .block_text2 .read_link, .block_text4 .read_link, .block_text3 .read_link {
   padding-top: 5px;
 }
+
 .content_left_column1 h5, .content_left_column2 h5 {
   font: 600 12px/12px Georgia, serif;
   letter-spacing: 0.5px; 
@@ -346,18 +344,16 @@ p {
   color: #666;
 }
 
-.block_text2 {
+.block_text2, .block_text3, .block_text4 {
  padding-left: 77px; 
+}
+
+.block_text2 {
  padding-top: 18px;
 }
 
 .block_text4 {
- padding-left: 77px; 
  padding-top: 13px;
-}
-
-.block_text3 {
- padding-left: 77px; 
 }
 
 .block60 {
@@ -422,7 +418,7 @@ p {
 }
 
 .link_header1 {
-  margin-top: 25px;
+  margin-top: 12px;
   padding-bottom: 1px;
 }
 
@@ -442,7 +438,7 @@ p {
 }
 
 .spacing2 {
-  padding-bottom: 5px;
+  padding-bottom: 12px;
 }
 
 .content_right_column_row1 {
@@ -541,8 +537,7 @@ p {
 
 .content_left_center_column p {
   font: 12px/14.4px 'Georgia', serif;
-  padding-top: 16px;
-  padding-bottom: 11px;
+  padding: 16px 0 11px;
   letter-spacing: .4px;
   color: #666;
 }
@@ -592,21 +587,20 @@ p {
 .footer_columns h3 {
   font: 700 13px/13px Georgia, serif;
   color: #666;
-  padding-top: 33px;
-  padding-bottom: 7px;
+  padding: 33px 0 7px;
   border-bottom: 1px solid #999;
   word-spacing: 1px;
   letter-spacing: 0.1px;
 }
 
 .footer_column {
-  width: 138px;
+  /*width: 138px;*/
   font: 400 12px/19.2px Verdana, sans-serif;
   padding-top: 8px;
   word-spacing: 0.4px;
   letter-spacing: 0.4px;
-
 }
+
 .footer_column a {
   color: #982115;
 }
@@ -615,12 +609,11 @@ p {
 
 /*footer copyright*/
 .copyright {
+  height: 46px;
   font: 12px/12px Georgia, serif;
   color: #787878;
   background: #e0e0e0;
-  padding-left: 20px;
-  padding-top: 35px;
-  padding-bottom: 34px;
+  padding: 35px 0 0 20px;
   word-spacing: 0.3px;
   letter-spacing: 0.4px;
 }
@@ -634,5 +627,3 @@ p {
   padding-left: 806px;
 }
 /*footer copyright*/
-
-
