@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="resposive.css">
+	<script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+    var $menu = $('.js-menu'),
+        $menuBtn = $('.js-menu-btn'),
+        activeCls = 'is-active';
+
+    $menuBtn.on('click', function (event) {
+      var $this = $(this);
+
+      event.preventDefault();
+
+      if ($this.hasClass(activeCls)) {
+        $menu.removeClass(activeCls);
+        $this.removeClass(activeCls);
+      } else {
+        $menu.addClass(activeCls);
+        $this.addClass(activeCls);
+      };
+    });
+  </script>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li> <a href=""> psd websites</a></li>
+			<li> <a href=""> ui kits</a></li>
+			<li> <a href=""> premium psd files</a></li>
+			<li> <a href=""> about</a></li>
+			<li> <a href=""> blog</a></li>
+		</ul>
+	</nav>
+	<section class="clearfix">
+		<article class="tablet1">
+			<h1>Awesome Free PSD templates &#38; Resources</h1>
+			<a href="">www.BlazRobar.com </a>
+			<img src="img/arr.png">
+		</article>
+		<article class="article2">
+			<h3 class="tablet2">I'm like the Robin Hood of PSD files.</h3>
+			<a class="tablet3" href=""><img src="img/arr.png"></a>
+		</article>
+		<article class="article3 clearfix">
+			<a href="">
+				<img src="img/article3.jpg">
+			</a>
+			<img src="img/2_small.jpg">
+			<img src="img/3_small.jpg">
+		</article>
+	</section>
+	<section class="section2 ">
+		<article class="article4 clearfix">
+			<h4><a href="">BlazRobar.com<a></h4>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
+				<p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+			</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
+				<p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+			</div>
+		</article>
+	</section>
+	
+</body>
+</html>

@@ -1,0 +1,195 @@
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+a {
+	text-decoration: none;
+}
+
+/* end Reset CSS */
+
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+	width: 100%;
+	max-width: 1024px;
+	min-width: 320px;
+	margin: 0 auto;
+	font: 400 62.5% 'Montserrat' sans-serif;
+}
+
+.clearfix {
+	clear: both;
+	content: " ";
+	display: block;
+}
+nav ul {
+	padding: 40px 0 35px 50px;
+	background: #515151;
+}
+nav li {
+	float: left;
+	padding-right: 20px;
+}
+nav a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	line-height: 0;
+}
+nav a:hover {
+	color: #afa9a9;
+}
+
+.tablet1 {
+	background: #10a9be;
+	padding: 200px 200px 225px 50px;
+}
+.tablet1 h1 {
+	color: #fff;
+	font-size: 6em;
+}
+.tablet1 a{
+	display: block;
+	color: #87d2dd;
+	font-size: 3.4em;
+	padding-top: 40px;
+	letter-spacing: 0.05em;
+	float: left;	
+
+}
+.tablet1 img {
+	width: 15px;
+	height: 25px;
+	padding: 50px 0 0 300px;
+}
+.article2 {
+	width: 100%;
+	background: #27212c;
+	position: relative;
+}
+.article2 img {
+	width: 22px;
+	height: 35px;
+}
+.tablet2 {
+	color: #9282a0;
+	font-size: 3em;
+	margin-left: 75px;
+	padding: 106px 0 105px 0;
+}
+.tablet3 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #bc3183;
+	width: 20%;
+	padding: 123px 0 122px 50px;
+}
+.tablet3 img {
+	position: absolute;
+	top: 45%;
+	left: 45%;
+}
+
+.article3 {
+	float: left;
+	font-size: 0;
+}
+.article3 a img{
+	width: 30%;
+	height: auto;
+}
+.article3 a{
+	font-size: 0;
+}
+.article3 img {
+	width: 35%;
+	height: auto;
+}
+.section2 {
+	background: #ebebeb;
+	padding: 200px 0 100px 78px;
+	height: 500px;
+}
+.section2 div {
+	width: 50%;
+	float: left;
+}
+.section2 p {
+	padding: 35px 85px 10px 0;
+	font-size: 1.4em;
+	line-height: 1.785714em;
+	color: #515151;
+	letter-spacing: 0.05em;
+
+}
+.article4 {
+	padding-top: 50px;
+}
+.article4 h4 a{
+	color: #088ca5;
+	font-size: 3em;
+}
+
+@media screen  and (max-width: 940px) {
+	.tablet1 h1 {
+		font-size: 4.5em;
+		padding-right: 60px;
+	}
+	.tablet1 img{
+		padding-left: 100px;
+	}
+	.tablet2 {
+		font-size: 2.5em;
+		padding-bottom: 110px;
+	}
+}
+
+@media screen  and (max-width: 770px) {
+	.tablet1 {
+		padding-right: 0;
+	}
+	.tablet1 h1 {
+		font-size: 5em;
+	}
+	.tablet1 img{
+		padding-left: 220px;
+	}
+	.tablet1 a{
+		font-size: 2.5em;
+	}
+	.tablet2 {
+		font-size: 2em;
+		padding-bottom: 116px;
+	}
+	.article3 img{
+		float: none;
+		width: 100%;
+	}
+	.article3 a img{
+		width: 100%;
+	}
+	.section2 div {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen  and (max-width: 630px) {
+	nav ul {
+	padding-left: 20px;
+	}
+	.tablet1 {
+		padding-left: 20px;
+		padding-right: 30px;
+	}
+	.tablet1 h1 {
+		font-size: 4em;
+	}
+	.tablet2 {
+		margin-left: 20px;
+	}
+}
