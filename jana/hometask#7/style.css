@@ -23,12 +23,18 @@ body{
 	font: 400 14px "Roboto", sans-serif;
 }
 .block{
-	width: 880px; 
+	width: 70%;
+	max-width:800px;
 	margin: 0 auto;
+}
+.block:after{
+	content:''; 
+	clear: both; 
+	display: block;
 }
 .block>li{
 	list-style-type: none;
-	width: 40%; 
+	width: 340px; 
 	margin: 3%;
 	float: left;
 	height: 120px;
@@ -40,24 +46,23 @@ body{
 	float: left;
 	margin: 7px 20px;
 }
-
-.block>li>.product{
-	background: url('sprites.png') #fff no-repeat 0 0;
+.block>li>div{
+	background: url('sprites.png') #fff no-repeat;
 }
 .block>li>.startup{
-	background: url('sprites.png') #fff no-repeat 0 -99px;
+	background-position: 0 -99px;
 }
 .block>li>.games{
-	background: url('sprites.png') #fff no-repeat 0 -192px;
+	background-position: 0 -192px;
 }
 .block>li>.mobile{
-	background: url('sprites.png') #fff no-repeat 0 -290px;
+	background-position: 0 -290px;
 }
 .block>li>.money{
-	background: url('sprites.png') #fff no-repeat 0 -402px;
+	background-position: 0 -402px;
 }
 .block>li>.webdesign{
-	background: url('sprites.png') #fff no-repeat 0 -494px;
+	background-position: 0 -494px; 
 }
 .block>li>h3{
 	margin:12px;
