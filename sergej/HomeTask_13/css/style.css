@@ -1,6 +1,5 @@
 @import url(reset.css);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400);
 
 /*-----------------------general rules------------------------------*/
 body {
@@ -16,110 +15,109 @@ header {
 .clearfix:after {
 	display: block;
 	clear: both;
-	content: ' ';
+	content: " ";
 }
+::-moz-selection,
 ::selection {
 	color: #a8d5de;
 	background: #79a8b2;
 }
 .preloader-bg {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    z-index: 99999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	z-index: 99999;
 }
 .preloader {
-    display: block;
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    left: 50%;
-    top: 50%;
-    margin: -35px 0 0 -35px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #19b4c6;
-    -webkit-animation: spin 2s linear infinite; 
-            animation: spin 2s linear infinite; 
+	display: block;
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	left: 50%;
+	top: 50%;
+	margin: -35px 0 0 -35px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #19b4c6;
+	-webkit-animation: spin 2s linear infinite; 
+	animation: spin 2s linear infinite; 
 }
 .preloader:before {
-    content: " ";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #cf4697;
-    -webkit-animation: spin 3s linear infinite; 
-            animation: spin 3s linear infinite; 
+	content: " ";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #cf4697;
+	-webkit-animation: spin 3s linear infinite; 
+	animation: spin 3s linear infinite; 
 }
 .preloader:after {
-    content: " ";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #f9c922;
-    -webkit-animation: spin 1.5s linear infinite;
-            animation: spin 1.5s linear infinite; 
+	content: " ";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #f9c922;
+	-webkit-animation: spin 1.5s linear infinite;
+	animation: spin 1.5s linear infinite; 
 }
 @-webkit-keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg); 
-            -ms-transform: rotate(0deg);  
-                transform: rotate(0deg); 
-    }
-    100% {
-        -webkit-transform: rotate(360deg); 
-            -ms-transform: rotate(360deg);  
-                transform: rotate(360deg); 
-    }
+	0%   {
+		-webkit-transform: rotate(0deg); 
+		-ms-transform: rotate(0deg);  
+		transform: rotate(0deg); 
+	}
+	100% {
+		-webkit-transform: rotate(360deg); 
+		-ms-transform: rotate(360deg);  
+		transform: rotate(360deg); 
+	}
 }
 @keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);  
-            -ms-transform: rotate(0deg); 
-                transform: rotate(0deg); 
-    }
-    100% {
-        -webkit-transform: rotate(360deg); 
-            -ms-transform: rotate(360deg); 
-                transform: rotate(360deg);  
-    }
+	0%   {
+		-webkit-transform: rotate(0deg);  
+		-ms-transform: rotate(0deg); 
+		transform: rotate(0deg); 
+	}
+	100% {
+		-webkit-transform: rotate(360deg); 
+		-ms-transform: rotate(360deg); 
+		transform: rotate(360deg);  
+	}
 }
 .nav-message {
 	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
 	color: #ebebeb;
-	font-size: 18px;
-	margin: 25px 0 0 40px;
+	font-size: 1.29em;
+	margin: 4% 0 0 7%;
+	float: left;
+}
+.is-active .nav-message {
+	border-bottom: 1px solid #ccc;
 }
 .mobile-button {
 	display: none;
-	position: absolute;
+	float: right;
 	width: 74px;
 	height: 74px;
-	top: 0;
-	right: 0;
 	background: #202529;
 	text-align: center;
 	padding: 24px 17px;
 	box-sizing: border-box;
 	cursor: pointer;
 	-webkit-transition: all .5s linear;
-	     -o-transition: all .5s linear;
-		    transition: all .5s linear;
-
+	-o-transition: all .5s linear;
+	transition: all .5s linear;
 }
 .mobile-icon {
 	display: block;
@@ -147,19 +145,15 @@ header {
 	background: #ebebeb;
 	overflow: hidden;
 }
-nav {
-	padding: 37px 0 34px;
-	min-height: 26px;
-}
 nav ul {
 	list-style: none;
-	margin-left: 54px;
+	padding: 4% 7%;
 }
 nav li {
 	display: inline-block;
 }
 nav li a {
-	font-size: 15px;
+	font-size: 1.07em;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #ebebeb;
@@ -168,24 +162,24 @@ nav li a:hover {
 	color: #fff;
 } 
 nav li:not(:last-of-type) {
-	margin-right: 24px;
+	margin-right: 2.52%;
 }
 nav .active {
 	color: #fff;
 }
 .featured {
 	background: #19b4c6;
-	padding: 193px 82px 162px;
+	padding: 18.85% 8% 15.8%;
 }
 .featured h2 {
-	font-size: 62px;
+	font-size: 4.43em;
 	line-height: 1.1;
 	color: #fff;
 	letter-spacing: .4px;
-	margin: 0 0 46px;
+	margin: 0 0 5.35%;
 }
 .featured a {
-	font-size: 35px;
+	font-size: 2.5em;
 	color: #a8d5de;
 	text-decoration: none;
 	margin: 0 0 0 2px;
@@ -206,21 +200,21 @@ nav .active {
 	width: 77.65%;
 	background: #27212c;
 	color: #9484a3;
-	padding: 112px 0 108px;
-	font-size: 31px;
-	letter-spacing: .2px;
+	padding: 10.6% 0;
 }
 .like p {
-	margin: 0 0 0 85px;
+	font-size: 2.21em;
+	letter-spacing: .2px;
+	margin: 0 0 0 10.68%;
 }
 .pink {
 	width: 22.35%;
-	padding: 99px 0px 100px;
+	padding: 9.5% 0;
 	background: #bc3183;
 	text-align: center;
 	-webkit-transition: all .5s linear;
-	     -o-transition: all .5s linear;
-		    transition: all .5s linear;
+	-o-transition: all .5s linear;
+	transition: all .5s linear;
 }
 .pink:hover {
 	background: #CF4697;
@@ -230,12 +224,12 @@ nav .active {
 }
 .purple {
 	width: 33.33%;
-	padding: 128px 0;
+	padding: 12.48% 0;
 	background: #5b0fa1;
 	text-align: center;
 	-webkit-transition: all .5s linear;
-	     -o-transition: all .5s linear;
-		    transition: all .5s linear;
+	-o-transition: all .5s linear;
+	transition: all .5s linear;
 }
 .purple:hover {
 	background: #6A13BA;
@@ -249,27 +243,27 @@ nav .active {
 .img img {
 	width: 100%;
 	-webkit-transition: all .5s linear;
-	     -o-transition: all .5s linear;
-		    transition: all .5s linear;
+	-o-transition: all .5s linear;
+	transition: all .5s linear;
 }
 .img img:hover {
 	opacity: .8;
 }
 .posts {
-	padding: 51px 83px;
+	padding: 5% 8.1%;
 }
 .posts-title {
 	width: 100%;
-	font-size: 30px;
-	line-height: 34px;
+	font-size: 2.14em;
+	line-height: 1.31em;
 	color: #088ca5;
 }
 .block {
 	width: 46.5%;
-	margin-top: 32px;
+	margin-top: 3.73%;
 }
 .block:nth-child(2n) {
-	margin-right: 60px;
+	margin-right: 4%;
 }
 /*-----------------------/common blocks------------------------------*/
 
@@ -280,58 +274,31 @@ nav .active {
 	}
 }
 @media screen and (min-width: 980px) and (max-width: 1024px) {
-	.featured {
-		padding: 170px 75px 100px;
-	}
 	.featured h2 {
-		font-size: 59px;
+		font-size: 4.21em;
 	}
 	.featured a {
-		font-size: 33px;
+		font-size: 2.36em;
 	}
-	.purple {
-		padding: 121px 0;
-	}
-	.block:nth-child(2n) {
-		margin-right: 50px;
-}
 }
 @media screen and (min-width: 750px) and (max-width: 979px) {
-	.featured {
-		padding: 150px 60px 80px;
-	}
 	.featured h2 {
-		font-size: 52px;
+		font-size: 3.57em;
 	}
 	.featured a {
-		font-size: 30px;
-	}
-	.like {
-		font-size: 28px;
-		padding: 65px 0;
-	}
-	.like p {
-		margin: 0px 0 0 25px;
+		font-size: 2.14em;
 	}
 	.pink {
-		padding: 54px 0 55px;
+		padding: 9.1% 0;
 	}
-	.purple {
-		padding: 85px 0;
-	}
-	.posts {
-		padding: 51px 30px;
-	}
-	.block:nth-child(2n) {
-		margin-right: 20px;
+	.like p {
+		font-size: 2em;
 	}
 	.block {
 		width: 48%;
-		margin-top: 20px;
 	}
 }
-
-@media screen and (min-width: 640px) and (max-width: 749px) {
+@media screen and (min-width: 50px) and (max-width: 749px) {
 	body {
 		overflow: hidden;
 	}
@@ -339,8 +306,8 @@ nav .active {
 	.mobile-button {
 		display: block;
 	}
-	nav {
-		padding: 26px 0 22px;
+	.nav-message {
+		margin: 7% 0 0 7%;
 	}
 	nav ul {
 		display: none;
@@ -350,106 +317,68 @@ nav .active {
 	}
 	.is-active ul {
 		display: block;
-		margin: 47px 0 0 0;
 		background: #202529;
 	}
 	.is-active ul li {
 		width: 100%;
-		padding: 10px 20px;
+		padding: 2.15% 4.3%;
 	}
 	.is-active ul li:hover {
 		background: #5e6366;
 	}
-	.featured {
-		padding: 150px 60px 80px;
+}
+@media screen and (min-width: 640px) and (max-width: 749px) {
+	.nav-message {
+		margin: 4% 0 0 7%;
 	}
 	.featured h2 {
-		font-size: 42px;
-		margin: 0 0 30px;
+		font-size: 3em;
 	}
 	.featured a {
-		font-size: 24px;
+		font-size: 1.71em;
 	}
 	.like {
-		font-size: 22px;
-		padding: 60px 0;
+		padding: 11% 0;
 	}
 	.like p {
-		margin: 0px 0 0 30px;
-	}
-	.pink {
-		padding: 56px 0 43px;
+		font-size: 1.57em;
 	}
 	.purple {
 		width: 100%;
-		padding: 250px 0;
+		padding: 40% 0;
 	}
 	.img {
 		width: 100%;
 	}
 	.block:nth-child(2n) {
 		margin-right: 0;
-		}
+	}
 	.block {
 		width: 100%;
 	}
 }
-
-
 @media screen and (min-width: 480px) and (max-width: 639px) {
-	body {
-		overflow: hidden;
-	}
-	.nav-message,
-	.mobile-button {
-		display: block;
-	}
-	nav {
-		padding: 26px 0 22px;
-	}
-	nav ul {
-		display: none;
-	}
-	nav.is-active {
-		padding-bottom: 0;
-	}
-	.is-active ul {
-		display: block;
-		margin: 47px 0 0 0;
-		background: #202529;
-	}
-	.is-active ul li {
-		width: 100%;
-		padding: 10px 20px;
-	}
-	.is-active ul li:hover {
-		background: #5e6366;
-	}
-	.featured {
-		padding: 150px 60px 80px;
+	.nav-message {
+		margin: 5% 0 0 7%;
 	}
 	.featured h2 {
-		font-size: 30px;
-		margin: 0 0 30px;
+		font-size: 1.86em;
 	}
-	.featured a {
-		font-size: 18px;
+	.featured a,
+	.like p {
+		font-size: 1.14em;
 	}
 	.featured .arrow {
-		margin-left: 35%;
+		margin-left: 30%;
 		background-size: 20px 20px;
 		vertical-align: bottom;
 		background-position: 2px 15px;
 	}
 	.like {
-		font-size: 16px;
-		padding: 35px 0;
-	}
-	.like p {
-		margin: 0px 0 0 30px;
+		padding: 10.6% 0;
 	}
 	.pink {
-		padding: 28px 0 21px;
+		padding: 8.3% 0;
 	}
 	.pink .arrow {
 		background-position: 5px 2px;
@@ -457,75 +386,42 @@ nav .active {
 	}
 	.purple {
 		width: 100%;
-		padding: 220px 0;
+		padding: 40% 0;
 	}
 	.img {
 		width: 100%;
 	}
 	.block:nth-child(2n) {
 		margin-right: 0;
-		}
+	}
 	.block {
 		width: 100%;
 	}
-	.posts {
-		padding: 35px 45px;
-	}
 }
 @media screen and (min-width: 50px) and (max-width: 479px) {
-	body {
-		overflow: hidden;
-	}
-	.nav-message,
-	.mobile-button {
-		display: block;
-	}
-	nav {
-		padding: 26px 0 22px;
-	}
-	nav ul {
-		display: none;
-	}
-	nav.is-active {
-		padding-bottom: 0;
-	}
-	.is-active ul {
-		display: block;
-		margin: 47px 0 0 0;
-		background: #202529;
-	}
-	.is-active ul li {
-		width: 100%;
-		padding: 10px 20px;
-	}
-	.is-active ul li:hover {
-		background: #5e6366;
-	}
 	.featured {
-		padding: 50px 40px 50px;
+		padding: 10.85% 15%;
 	}
 	.featured h2 {
-		font-size: 16px;
-		margin: 0 0 25px;
+		font-size: 1.57em;
 	}
 	.featured a {
-		font-size: 12px;
+		font-size: 0.86em;
 	}
 	.featured .arrow {
-		margin-left: 28%;
+		margin-left: 35%;
 		background-size: 15px 15px;
 		vertical-align: bottom;
 		background-position: 0px 20px;
 	}
 	.like {
-		font-size: 12px;
-		padding: 35px 0;
+		padding: 12.35% 0;
 	}
 	.like p {
-		margin: 0px 0px 0px 15px;
+		font-size: 0.79em;
 	}
 	.pink {
-		padding: 29px 0px 20px
+		padding: 8.3% 0;
 	}
 	.pink .arrow {
 		background-position: 10px 10px;
@@ -533,20 +429,16 @@ nav .active {
 	}
 	.purple {
 		width: 100%;
-		padding: 135px 0;
+		padding: 40% 0;
 	}
 	.img {
 		width: 100%;
 	}
 	.block:nth-child(2n) {
 		margin-right: 0;
-		}
+	}
 	.block {
 		width: 100%;
 	}
-	.posts {
-		padding: 35px 15px;
-	}
 }	
-
 /*-----------------------/media styles------------------------------*/	

@@ -7,9 +7,9 @@ $(window).on('load', function () {
 	$preloaderbg.delay(350).fadeOut('slow');
 
 });
-/*------------------preloader----------------------------*/
+/*------------------/preloader----------------------------*/
 
-/*------------------preloader----------------------------*/
+/*------------------mobile-menu----------------------------*/
 var $menu = $('.js-menu'),
 	$menuBtn = $('.js-menu-btn'),
 	activeCls = 'is-active';
@@ -27,4 +27,4 @@ $menuBtn.on('click', function (event) {
 		$this.addClass(activeCls);
 	};
 });
-/*------------------preloader----------------------------*/
+/*------------------/mobile-menu----------------------------*/
