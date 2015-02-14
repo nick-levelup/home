@@ -103,11 +103,9 @@
 
 
       <div class="col-md-5">      
-        <ul class="list-group">   
-          <li class="list-group-item">
-            <span class="badge">3</span>
-            Inbox Messages</li>
-        </ul>
+        <div class="well">Inbox Messages
+          <span class="badge pull-right">3</span>
+        </div>
         <hr>
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -258,7 +256,7 @@
         <hr>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">Submit Request <i class="glyphicon glyphicon-wrench"></i></h3> <!-- Как отодвинуть символ в право, не знаю -->
+              <h3 class="panel-title">Submit Request <i class="glyphicon glyphicon-wrench pull-right"></i></h3> <!-- Как отодвинуть символ в право, не знаю -->
             </div>
             <div class="panel-body">
               <div class="list-group">
@@ -293,9 +291,15 @@
               <h3 class="panel-title">Engagement</h3>
             </div>
             <div class="panel-body">
-              <div class="circle" style="background: #777; color: #fff">80 x 80</div> <!-- Понимаю, что не прав, но другого пути решения проблем с кругами я не нашел. Поэтому создал три дивака и добавил соответствующие классы в начале документа. И выровнять у меня их не получилось -->
-              <div class="circle" style="background: #eee;">80 x 80</div>
-              <div class="circle" style="background: #eee;">80 x 80</div>
+             <div class="col-xs-4 text-justify">
+               <img class="img-circle img-responsive" src="http://placehold.it/80/BBBBBB/FFF">
+             </div>
+              <div class="col-xs-4 text-center">
+                <img class="img-circle img-responsive" src="http://placehold.it/80/EFEFEF/555">
+              </div>
+              <div class="col-xs-4 text-center">
+                <img class="img-circle img-responsive" src="http://placehold.it/80/EFEFEF/555">
+              </div>
             </div>
           </div>
 
