@@ -1,0 +1,15 @@
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+body { 
+	padding-top: 70px; 
+}
+i {
+	font-size: 18px;
+}
+p.bg-info{
+	padding: 10px;
+}
