@@ -8,7 +8,7 @@ userAge = +userAge; //численное преобразование
 if ((userAge >= AGE_MIN) && (userAge <= AGE_MAX)) {
   alert('Добро пожаловать на наш сайт!');
 } else {
-  alert('Пока!');
+    alert('Пока!');
 }
 
 
