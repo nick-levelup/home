@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name = "viewport" content = "width=device-width, minimum-scale=1, maximum-scale=1" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" media="screen and (max-width: 499px)" href="css/phone320.css" type="text/css" />
+		<link rel="stylesheet" media="screen and (min-width:500px) and (max-width: 880px)" href="css/phone640.css" type="text/css" />
+		<link rel="stylesheet" media="screen and (min-width:880px) and (max-width: 1023px)" href="css/table.css" type="text/css" />
+		<link rel="stylesheet" media="screen and (min-width:1024px)" href="css/full.css" type="text/css" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/fontello.css" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script >
+		<![endif]-->
+		<!--[if IE 7]>
+			<link rel="stylesheet" type="text/css" href="css/fontello-ie7.css" />
+		<![endif]-->
+		<title>Responsive Design</title>
+		<script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+		<script type='text/javascript'>
+			$(function(){
+				$('.icon-menu').on('click',function(){
+					$('nav>ul').slideToggle();
+				
+				});
+			
+			})
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class='clearfix mob'>
+				<h2>Navigation</h2>
+				<i class='icon-menu'></i>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Psd websites</a></li>
+					<li><a href="#">UI kits</a></li>
+					<li><a href="#">Premium PSD files</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</nav>	
+		</header>
+		<section class="blue">
+			<div>
+				<h2>Awesome Free PSD<br>template & Ressources</h2>
+				<p><a href="#">www.BlazRobar.com</a><i class='icon-angle-right'></i></p>
+			</div>
+		</section>
+		<section class="black">
+			<div class="text">I'm like the Robin Hood of PSD file.</div>
+			<div class="but"><a href='#'><i class='icon-angle-right'></i></a></div>
+		</section>
+		<div class="img clearfix">
+			<div><a href="#"><i class='icon-angle-right'></i></a></div>
+			<div><a href="#"><img src="images/bridge.png" alt="" /></a></div>
+			<div><a href="#"><img src="images/face.png" alt="" /></a></div>
+		</div>
+
+		<article class='clearfix'>
+			<h3>BlazRobar.com</h3>
+			<div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
+				<p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+			</div><div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
+				<p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+			</div>
+		</article>
+
+	</body>
+</html>

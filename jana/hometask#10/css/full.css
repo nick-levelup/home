@@ -1,0 +1,62 @@
+.icon-menu{display:none;}
+header {
+line-height: 97px;
+padding-left: 5.37%; 
+height: 97px; 
+text-transform: uppercase;
+}
+header li{
+border-top:1px solid #666; 
+font-size:96%; 
+float:left; 
+padding-right:2.95%;
+}
+header li:first-child>a{
+color:#fff;
+}
+header .mob{
+display:none;
+}
+
+.blue{
+padding-left: 7.3%;
+}
+.blue>div{
+width:750px;
+}
+.blue h2{
+font-size:47pt;
+line-height:71px;
+margin-bottom:46px; 
+padding-top:191px;
+}
+
+.black{
+height: 250px;
+}
+
+.black>div{
+line-height:250px;
+font-size: 2em;
+}
+
+.black .text{padding-left: 8.3%;}
+
+article {
+padding: 52px 79px 0;
+}
+
+article .col{
+padding-left: 0; 
+padding-right:0;
+}
+article p{	
+line-height: 25px;
+}
+article .col:first-child{float:left;}
+
+article .col:last-child{float:right;}
+
+
+
+

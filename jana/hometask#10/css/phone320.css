@@ -1,0 +1,91 @@
+body{margin-top: 37px;}
+
+header { height: 37px;}
+
+header lim{
+	border-top:1px solid #666; 
+	padding: 2% 0; 
+	display: block; 
+	padding-left:8%;
+	}
+	
+header li:hover{
+background: #474C4F;
+}
+
+header .full{
+display:none;
+}
+header  .mob>h2{
+padding:2% 4.5%; 
+font-size: 11pt;  
+float:left; 
+line-height:18pt;
+}
+header .icon-menu{
+font-size:15pt; 
+padding:2.6%;
+}
+header nav>ul{
+display: none;
+}
+.blue{
+	padding-left: 7.3%; 
+	height: 180px;
+	}
+.blue>div{
+	width:242px;
+	}
+.blue h2{
+	font-size: 14.5pt;
+	line-height: 21px;
+	margin-bottom: 16px; 
+	padding-top:50px;
+	}
+.blue a{ 
+	font-size:12pt;
+	}
+.blue i{
+	font-size:16pt;
+	line-height:10pt;
+	}
+
+.black{
+height: 73px;
+}
+.black>div{
+	line-height: 73px;
+	font-size: 12pt;
+	}
+
+.black .text{
+	padding-left: 8.3%; 
+}
+.black>.but{
+	font-size:16pt
+	}
+.img>div{
+	width:100%; 
+	display:block; 
+	height:275px;
+	}
+.img>div:first-child{
+	line-height:200pt; 
+	height:275px;
+	}
+
+article {
+	padding: 40px 35px 0;
+}
+article  h3{
+	font-size:14pt;
+	padding-bottom:15px;
+	}
+article .col{
+	width: auto; 
+	font-size:11pt; 
+	padding:2% 0 22px;
+	}
+article p{
+	line-height: 22px;
+	}
