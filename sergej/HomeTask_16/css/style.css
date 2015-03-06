@@ -1,0 +1,38 @@
+header,
+footer,
+.logo {
+	background: #d9edf7;
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.inform {
+	height: 630px;
+	overflow-y: auto;
+}
+.inform h3 {
+	color: #f00;
+}
+.panel-danger {
+	visibility: hidden;
+}
+.panel-danger.show{
+	visibility: visible;
+}
+.modal-dialog {
+	margin: 20% auto;
+}
+.good {
+	color: #00f;
+}
+.clearfix {
+	margin-bottom: 15px;
+} 
+.willbe,
+.game-canceled {
+	text-align: center;
+	padding: 250px 0; 
+}
+.game-canceled {
+	color: #f00;
+}

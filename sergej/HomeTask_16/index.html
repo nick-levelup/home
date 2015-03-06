@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>HomeTask №16 - The Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>HomeTask №16</h3>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 logo text-center">
+				<h3>The Game</h3>
+				<p>Simple JavaScript game.</p>
+			</div>
+		</div>
+	</div>
+	<main class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="panel panel-info">
+					<div class="panel-heading">Progress</div>
+					<div class="panel-body inform" id="inform">
+						<h1 class="willbe">There will be game data</h1>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">Points</div>
+					<div class="panel-body text-center">
+						<h3>Total <span id="pnts">0</span> Points</h3>
+					</div>
+				</div>
+				<div class="panel panel-info">
+					<div class="panel-heading">Settings</div>
+					<div class="panel-body">
+						<form name="settingsForm">
+							<label for="inputeMin">Min</label>
+							<input type="text" name="inputeMin" class="form-control" value="1"><br>
+							<label for="inputeMax">Max</label>
+							<input type="text" class="form-control" name="inputeMax" value="20"><br>
+							<label for="inputePoints">Points</label>
+							<input type="text" class="form-control" name="inputePoints" value="50">
+						</form>
+					</div>
+				</div>
+				<div class="clearfix">
+					<button type="button" class="btn btn-primary pull-right" onclick="startGame()" id="newGameButton">Start New Game</button>
+				</div>
+				<div id="pdng" class="panel panel-danger">
+					<div class="panel-heading">Game Over</div>
+					<div class="panel-body text-center">
+						<h3>Your result <span id="trcnt">0</span> try counts</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h4>Created by ~Fo0LM@N~</h4>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/game.js"></script>
+</body>
+</html>
