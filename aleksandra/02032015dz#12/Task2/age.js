@@ -1,11 +1,11 @@
 // Вариант №1
-var Age;
+var age;
 
-Age = prompt("Укажите свой возвраст?",'');
-Age = +Age;
+age = prompt("Укажите свой возвраст?",'');
+age = +age;
 
 
-if (Age >= 14 && Age <= 90) {
+if (age >= 14 && age <= 90) {
 	alert("Добро пожаловать на наш сайт!");
 } else {
 	alert("Пока!");
@@ -13,13 +13,13 @@ if (Age >= 14 && Age <= 90) {
 
 
 // Вариант №2
-/*var Age;
+/*var age;
 
-Age = prompt("Укажите свой возвраст?",'');
-Age = +Age;
+age = prompt("Укажите свой возвраст?",'');
+age = +age;
 
-if (Age < 14 || Age > 90) {
-	alert('Пока!');
-} else {
+if !(age < 14 || age > 90) {
 	alert('Добро пожаловать на наш сайт!');
+} else {
+	alert('Пока!');
 }*/
