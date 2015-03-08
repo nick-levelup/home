@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Enter number</title>
 	<script type="text/javascript">
-	var numb = prompt('Введите число');
-if(numb > 1)
-    alert('больше 1');
-else if(numb == 1)
-    alert('равно 1');
-else
-   alert('меньше 1');
+	var numb = ParseInt(prompt('Введите число'));
+	if(numb > 1){
+		alert('больше 1');
+	}else if(numb === 1){
+		alert('равно 1');
+	}else{
+	   alert('меньше 1');
+	}
 	</script>
 </head>
 <body>

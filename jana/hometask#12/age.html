@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Подсчет возраста</title>
 	<script type="text/javascript">
-	var numb = prompt('Введите возраст');
-if(numb >=14 && numb <=90)
- alert('Добро пожаловать!');
-else
-   alert('Пока!');
+	var numb = ParseInt(prompt('Введите возраст'));
+	if(numb >=14 && numb <=90){
+		alert('Добро пожаловать!');
+	}else{
+		alert('Пока!');
+	}
 	</script>
 </head>
 <body>
