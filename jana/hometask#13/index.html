@@ -4,35 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Game</title>
 	<script type='text/JavaScript'>
+	
+		var Limit = 50, MaxRand = 20, MaxPoint = 20; //max win//max diopazon//max kol-vo ochkov za tochnoe ugadivanie
+
+		var Step = 0, Point = 0, PointStep = 0; //counter of step // our score //nabrannie ochki za 1 shag
+		
+		function getPoints(num, EnterNum){
+			if(num === EnterNum){
+				alert("yeahh");
+				return MaxPoint;
+			}
+			pr = [0.05, 0.1, 0.25, 0.5]; //procent pogreshnosti
+			ret = [0.75, 0.5, 0.15, 0.1]; // procent-ochki za pogreshnost 
+			for(var i=0; i<4; i++){
+				if(num+MaxRand*pr[i]>=EnterNum && num-MaxRand*pr[i]<=EnterNum)
+					return MaxPoint*ret[i];
+			
+			}
+			
+			return 0;
+		}
+		function getRandomInt(min, max) {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
 		function game(){
-			var Limit = 50; //max win
-			var MaxRand = 20; //max diopazon
-			var MaxPoint = 20; //max kol-vo ochkov za tochnoe ugadivanie
-
-			var Step = 0; //counter of step
-			var Point = 0; // our score
-			var PointStep = 0;//nabrannie ochki za 1 shag
-
-
-			function getRandomInt(min, max) {
-				return Math.floor(Math.random() * (max - min + 1)) + min;
-			}
-			function getPoints(num, EnterNum){
-				if(num === EnterNum){
-					alert("yeahh");
-					return MaxPoint;
-				}
-				pr = [0.05, 0.1, 0.25, 0.5]; //procent pogreshnosti
-				ret = [0.75, 0.5, 0.15, 0.1]; // procent-ochki za pogreshnost 
-				for(var i=0; i<4; i++){
-					if(num+MaxRand*pr[i]>=EnterNum && num-MaxRand*pr[i]<=EnterNum)
-						return MaxPoint*ret[i];
-				
-				}
-				
-				return 0;
-			}
-
 
 			while(1){
 				if(Point>=Limit){
@@ -59,6 +54,7 @@
 				console.log("Point: "+PointStep+" and have to: "+Math.max(0,(Limit-Point)));
 			}
 		}
+
 	</script>
 </head>
 <body>
