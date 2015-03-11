@@ -1,43 +1,22 @@
-/* ---------------------------------------------- /*
- * Variable declaration
-/* ---------------------------------------------- */
-var min, max, userAnswer, points, Points, tryCount, exGame;
+'use strict';
+var min, max, userAnswer, points, Points, adpoints, tryCount, exGame, panelFix, intface, intfaceText;
 
-
-/* ---------------------------------------------- /*
- * Interface variable declaration
-/* ---------------------------------------------- */
-var intface, intfaceText, panelFix;
-
-
-/* ---------------------------------------------- /*
- * Random function
-/* ---------------------------------------------- */
 function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
-/* ---------------------------------------------- /*
- * Enter user number function
-/* ---------------------------------------------- */
 function getUserAnsver() {
 	userAnswer = prompt('Enter your number: ');
 	if (userAnswer !== null) {
-		return parseInt(userAnswer);			//return user number
+		return parseInt(userAnswer);			
 	} else {
-		return null;							//return null if user clicked Cancel button
+		return null;							
 	}
 }
 
-
-/* ---------------------------------------------- /*
- * Calculate reward points function
-/* ---------------------------------------------- */
 function calcUserPoints(userNum, randomNum) {
 	var result, key;
-
-	key = userNum - randomNum;				//subtraction for use switch construction
+	key = userNum - randomNum;				
 
 	switch (key) {
 		case 0:
@@ -74,78 +53,68 @@ function calcUserPoints(userNum, randomNum) {
 		default:
 			result = 0;
 	}
-	// console.log('add Points - ' + result + ';')
 	return result;
 }
 
-
-/* ---------------------------------------------- /*
- * Game function
-/* ---------------------------------------------- */
-function startGame () {
-
-	min = parseInt(document.settingsForm.inputeMin.value);    			// take user min value
-	max = parseInt(document.settingsForm.inputeMax.value);				// take user max value
-	Points = parseInt(document.settingsForm.inputePoints.value);		// take user total points value
+function getSettings () {
+	min = parseInt(document.settingsForm.inputeMin.value);    			
+	max = parseInt(document.settingsForm.inputeMax.value);				
+	Points = parseInt(document.settingsForm.inputePoints.value);		
 
 	points = 0;
 	adpoints = 0;
 	tryCount = 0;
+}
 
-	document.getElementById('inform').innerHTML = '';		// 
-	panelFix = document.getElementById('pdng');					// interface fix
-	panelFix.className = 'panel panel-danger'; 					// 
+function clearInterface (place) {
+	document.getElementById(place).innerHTML = '';
+	return true;
+}
 
-	while (points <= Points) {												//
-		tryCount++;															// 
-		exGame = getUserAnsver();											//
-		if (exGame === null) {												// 
-			document.getElementById('inform').innerHTML = '';				// stop game if user canceled inpute 
-			intface = document.createElement('h2');							// +
-			intface.className = 'game-canceled';                 			// interface message about that					
-			intfaceText = document.createTextNode('Game canceled!!!');     	//
-			intface.appendChild(intfaceText);                               //        					
-			document.getElementById('inform').appendChild(intface);			//
-			break;															//
-		}																	//
+function genIntElement (place, element, className, text, value) {
+	intface = document.createElement(element);							
+	intface.className = className;                 						
+	intfaceText = document.createTextNode(text + value);     
+	intface.appendChild(intfaceText);                                     					
+	document.getElementById(place).appendChild(intface);
+}
 
-		adpoints = calcUserPoints(exGame, getRandomInt(min, max));  		// variable for show in interface
-		points += adpoints;													// calculate total user points
-	// console.log('Left points = ' + (POINTS - points));
+function generateInterface () {
+		adpoints = calcUserPoints(exGame, getRandomInt(min, max));  		
+		points += adpoints;													
+		genIntElement('inform', 'h3', 'text-center', 'Try № ', tryCount);
+		genIntElement('inform', 'hr', '', '', '');	
+		if (adpoints === 20) {																		 
+			genIntElement('inform', 'h4', 'good', 'Very good!!! Added points - ', adpoints);
+		} else {																					
+			genIntElement('inform', 'h4', '', ' Added points - ', adpoints);				
+		}																							 
+		genIntElement('inform', 'h4', '', 'Left points - ', (Points - points));
+	intface = document.getElementById('pnts');			
+	intface.innerHTML = points;	
+}
 
-	intface = document.createElement('h3');							//                 
-	intfaceText = document.createTextNode('Try № ' + tryCount);   	//
-	intface.className = 'text-center';								// interface try count information 
-	intface.appendChild(intfaceText);                             	//        
-	document.getElementById('inform').appendChild(intface);			//
+function resultGame () {
+	intface = document.getElementById('trcnt');			
+	intface.innerHTML = tryCount;						
+	panelFix.className += ' show'; 
+}
 
-	intface = document.createElement('hr');							// interface spacer
-	document.getElementById('inform').appendChild(intface);			//	
-
-	intface = document.createElement('h4');                 									// 
-	if (adpoints === 20) {																		// 
-		intface.className = 'good';	//another color for message if added 20 points 				//  
-		intfaceText = document.createTextNode('Very good!!! Added ' + adpoints + ' Points');   // 
-	} else {																					// interface added reward points information 
-		intfaceText = document.createTextNode('Added ' + adpoints + ' Points'); 				// 
-	}																							//  
-	intface.appendChild(intfaceText);                                         					//  
-	document.getElementById('inform').appendChild(intface); 									// 
-	intface = document.createElement('h4');                 									//
-	intfaceText = document.createTextNode('Left ' + (Points - points) + ' Points');     		// interface left points inforation
-	intface.appendChild(intfaceText);                                         					//
-	document.getElementById('inform').appendChild(intface);										//
-
-	intface = document.getElementById('pnts');		// interface total reward points in right side							
-	intface.innerHTML = points;						//
-
+function startGame () {
+	getSettings();
+	clearInterface('inform');		
+	panelFix = document.getElementById('pdng');					
+	panelFix.className = 'panel panel-danger'; 					 
+	while (points <= Points) {												
+		tryCount++;															 
+		exGame = getUserAnsver();											
+		if (exGame === null) {												 
+			clearInterface('inform');												
+			genIntElement('inform', 'h2', 'game-canceled', 'Game canceled!!!', '');
+			break;															
+		}	
+		generateInterface();					
 	}
-
-intface = document.getElementById('trcnt');			// interface user result after game
-intface.innerHTML = tryCount;						//
-
-panelFix.className += ' show'; 						//show user result block 
-
+resultGame();
 return true;
-
 }
