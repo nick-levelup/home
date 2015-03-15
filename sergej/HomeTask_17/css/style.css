@@ -1,0 +1,67 @@
+body {
+	background: #000;
+	color: #ddd;
+}
+header h1, 
+header .new-game-block {
+	padding: 40px 0;
+}
+.logo {
+	display: block;
+	background: url(../images/logo.jpg) 0 0 no-repeat;
+	width: 300px;
+	height: 150px;
+}
+.well {
+	margin: 10px 5px 15px;
+}
+#baraban {
+  width: 100%;
+  cursor: pointer;
+    -webkit-transition: -webkit-transform 2s ease-out;
+       -moz-transition:    -moz-transform 2s ease-out;
+            transition:         transform 2s ease-out;
+}
+.arrow {
+	width: 32px;
+	height: 32px;
+	margin-bottom: 10px;
+}
+.letters {
+	list-style: none;
+	padding: 0;
+	margin: 25px 0;
+}
+.letters li {
+	display: inline-block;
+	width: 46px;
+	height: 57px;
+	background: #fff;
+	text-align: center;
+	font-size: 42px;
+	color: #333;
+	text-transform: uppercase;
+	border: 1px solid #000;
+	margin: 5px;
+	-webkit-transition: background 2s linear;
+       -moz-transition: background 2s linear;
+            transition: background 2s linear;
+}
+
+.letters li.is-closed {
+	text-indent: -9999px;
+	background: url(../images/close.gif) 0 0 no-repeat;
+	border: 1px solid #ddd;
+}
+.total-points {
+	color: #333;
+	margin-top: 25px;
+}
+
+#question p {
+	padding: 10px 50px;
+}
+
+#question p {
+	font-size: 24px;
+}

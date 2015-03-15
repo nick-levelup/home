@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>HomeTask №17 - The Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<a href="#"><i class="logo"></i></a>
+			</div>
+			<div class="col-md-6">
+				<h1>Игра «Аля Поле Чудес»</h1>
+			</div>
+			<div class="col-md-2 new-game-block">
+				<button class="btn btn-success btn-lg" onclick="startGame();">Новая игра</button> 
+			</div>
+		</div>
+	</header>
+	<main> 
+		<div class="container-fluid well">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<ul id="lettersList" class="letters">
+						<li>т</li>
+						<li>а</li>
+						<li>б</li>
+						<li>л</li>
+						<li>о</li>
+						<li>&nbsp;</li>
+						<li>д</li>
+						<li>л</li>
+						<li>я</li>
+						<li>&nbsp;</li>
+						<li>с</li>
+						<li>л</li>
+						<li>о</li>
+						<li>в</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-8 text-center">
+					<img src="images/arrow.png" class="arrow" alt="arrow">
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						
+						<div class="col-md-12">
+							<h2 class="text-center">Вопрос:</h2>
+							<div id="question"><p>В этом месте вы сможете найти будущий вопрос к загаданному системой слову. Для продолжения можете нажать кнопку "Новая Игра". Желаем удачи и крепкого ума.</p></div>
+						</div>
+						<div class="col-md-8 col-md-offset-2">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Введите букву или слово целиком..." id="inputeUser">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button" id="inputeBtn" onclick="openLetters();">Проверить</button>
+								</span>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-4">
+					<img src="images/baraban.png" id="baraban" alt="baraban">
+					<div class="alert alert-success text-center total-points">У Вас <span id="totalPoints">0</span> баллов</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+				<h4>Created by ~Fo0LM@N~</h4>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/words-db.js"></script>
+	<script src="js/fieldofwonders.js"></script>
+</body>
+</html>
