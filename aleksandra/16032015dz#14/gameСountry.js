@@ -28,7 +28,7 @@ function getStart() {
 
   var hiddenWord = arrayCountry[randomCountry]; //получаем загаданное слово
 
-  var hiddenWord = hiddenWord.toUpperCase();  // получаем строку с загаданным словом большие символы
+  hiddenWord = hiddenWord.toUpperCase();  // получаем строку с загаданным словом большие символы
 
   //alert(hiddenWord);
 
