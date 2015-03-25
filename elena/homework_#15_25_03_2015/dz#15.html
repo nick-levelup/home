@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Использование фрейма</title>
+ </head>
+ <body>
+
+ <script>
+
+/*1. Напишите программу, создающую строку, содержащую решётку 8х8, в
+которой линии разделяются символами новой строки. На каждой позиции
+либо пробел, либо #. В результате должна получиться шахматная доска. Сделайте размер доски переменным, чтобы можно было
+создавать доски любого размера.*/
+function getChess2(x,y) {
+var str1 = "#";
+var str2 = " ";
+var string1 = str1 + str2;
+
+/* построение нечетной строки по количеству символов x */
+for(var i=1; i<x; i++) {
+	if(i%2===0) {
+		string1 = string1 + str2;
+	}
+	else {
+		string1 = string1 + str1;
+	}
+}
+
+/* построение четной строки*/
+var string2 = string1.substring(1) + " ";
+
+/* построение строк в столбец по количеству строк y */
+var string = string1 + "\n";
+for(var j=1; j<y; j++) {
+	
+	if(j%2===0) {
+		string = string + string2 + "\n";
+	}
+	else {
+		string = string + string1 + "\n";
+	}
+}
+return string;
+}
+
+
+
+
+
+/*2. Напишите функцию countBs, которая принимает строку в качестве аргумента,
+и возвращает количество символов “B”, содержащихся в строке.
+Затем напишите функцию countChar, которая работает примерно как countBs,
+только принимает второй параметр — символ, который мы будем искать в
+строке (вместо того, чтобы просто считать количество символов “B”). Для
+этого переделайте функцию countBs.*/
+
+
+
+function countBs(string, letter) {
+	string = string.toLowerCase();
+	var countB = 0;
+	for(var i=0; i<string.length; i++) {
+		if(string.charAt(i) === letter) {
+			countB ++;
+		} 
+	} 
+	
+	return countB;
+}
+
+
+
+/*3. У массивов есть метод reverse, меняющий порядок элементов в массиве на
+обратный. В качестве упражнения напишите две функции, reverseArray и
+reverseArrayInPlace. Первая получает массив как аргумент и выдаёт новый
+массив, с обратным порядком элементов. Вторая работает как оригинальный
+метод reverse – она меняет порядок элементов на обратный в том массиве,
+который был ей передан в качестве аргумента. Не используйте стандартный
+метод reverse.*/
+
+function reverseArray(array) {
+	var arrayRev = [];
+	for(var i=array.length; i>0; i--) {
+		arrayRev.unshift(array.shift());
+	}
+	return arrayRev;
+}
+
+
+/*4. Используйте метод reduce в комбинации с concat для свёртки массива массивов в один массив, у которого есть все элементы входных массивов.*/
+
+var arrays = [[1, 2, 3], [4, 5], [6]];
+var newAr;
+function getAll(prev, current, i) {
+	newAr = prev + ',' + current;
+	return newAr;
+}
+var result= arrays.reduce(getAll);
+var arr = result.split(',');
+console.log(result);
+console.log(arr);
+
+</script>
+ 
+ </body>
+</html>
+
+
