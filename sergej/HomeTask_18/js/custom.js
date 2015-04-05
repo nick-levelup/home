@@ -105,12 +105,12 @@ function getLastDayInMonth(year, month) {
 /* ---------------------------------------------- /*
  * Вызовы функций через консоль
 /* ---------------------------------------------- */
-// getBoard(5,5);
-// countBs('aBcdBefBghByti');
-// countChars('agcdGefGghGytgi', 'g');
-// reverseArray(['A','B','C','D','E','F']);
-// reverseArrayInPlace([7,6,5,4,3,2,1]);
-// concatArray([[1, 2, 3], [4, 5], [6]]);
-// getWeekDay(date);
-// getHundredDayAgo();
-// getLastDayInMonth(2015,3);
+console.log(getBoard(5,5));
+console.log(countBs('aBcdBefBghByti'));
+console.log(countChars('agcdGefGghGytgi', 'g'));
+console.log(reverseArray(['A','B','C','D','E','F']));
+console.log(reverseArrayInPlace([7,6,5,4,3,2,1]));
+console.log(concatArray([[1, 2, 3], [4, 5], [6]]));
+console.log(getWeekDay(date));
+console.log(getHundredDayAgo());
+console.log(getLastDayInMonth(2015,3));
