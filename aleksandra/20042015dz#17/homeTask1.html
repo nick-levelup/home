@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<title>Домашнее задание #17</title>
+  </head>
+
+  <body>
+    <h1>Заголовок с элементом <span>span</span> внутри.</h1>
+    <p>Параграф с <span>раз</span>, <span>два</span> элементами spans.</p>
+ 
+
+    <!--Написать функцию которая ищет текстовые узлы содержащие заданную строку и возвращает узел (либо true/false)
+
+    Параметры
+      1. Node object (от которого будет производиться поиск)
+      2. Текст, который будет искаться
+
+      getTextNode(document.body, 'текст') // node object
+      isTextExists(document.body, 'текст') // true/false-->
+  	<script>
+
+      function getTextNode(node, text) {
+
+        if (node.nodeType === 1) {
+
+          for (var i = 0; i < node.children.length; i++) {
+
+            if (node.children[i].innerText.indexOf(text) !== -1) {
+              return node.children[i];
+            }
+
+          }
+         
+        }        
+      }
+
+
+      function isTextExists(node, text) {
+
+       if (node.nodeType === 1) {
+
+        for (var i = 0; i < node.children.length; i++) {
+
+          if (node.children[i] !== null && node.children[i].innerText.indexOf(text) !== -1) {
+            return true;
+          }
+
+        }
+
+      }
+        return false;       
+      }
+
+
+
+  	</script>
+
+  </body>
+</html>
+

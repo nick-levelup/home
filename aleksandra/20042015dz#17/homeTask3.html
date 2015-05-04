@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<title>Домашнее задание #17</title>
+  </head>
+
+  <body>
+    
+    <h1>Заголовок с элементом <span>span</span> внутри.</h1>
+    <p>Параграф с <span>раз</span>, <span>два</span> элементами spans.</p>
+
+    <!--Метод getElementsByTagName возвращает все дочерние элементы с
+заданным именем тега. Сделайте свою версию этого метода в виде обычной
+функции, которая принимает узел и строчку (имя тега) и возвращает массив,
+содержащий все нисходящие узлы с заданным именем тега.
+Чтобы выяснить имя тега элемента, используйте свойство tagName.
+Заметьте, что оно возвратит имя тега в верхнем регистре. Используйте
+методы строк toLowerCase или toUpperCase.-->
+
+    <script>
+
+      function byTagName(node, tagName) {
+
+        var array = [];
+
+        if (node.nodeType !== 3 && node.childNodes !== null) {
+
+          for (var i = 0; i < node.childNodes.length; i++) {
+
+            if (node.childNodes[i].nodeType === 1) {
+
+              if (node.childNodes[i].tagName === tagName.toUpperCase()) {
+                array.push(node.childNodes[i]);
+              }
+
+              byTagName(node.childNodes[i],tagName);
+            } 
+
+          }
+
+        }
+         return array;
+      }
+        
+
+      console.log(byTagName(document.body, "h1").length);
+      // → 1
+      console.log(byTagName(document.body, "span").length);
+      // → 3
+      var para = document.querySelector("p");
+      console.log(byTagName(para, "span").length);
+      // → 2
+
+    </script>
+
+
+  </body>
+</html>
+
