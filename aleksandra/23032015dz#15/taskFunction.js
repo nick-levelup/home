@@ -21,9 +21,7 @@ function getStringGrid(sizeX,sizeY) {
 	for (var i = 0; i < sizeX; i++) {
 		
 		for (var j = 0; j < sizeY; j++) {
-		    if ((i + j) % 2 === 0) { 
-		    	newString = newString + ' '; 
-		    } else newString = newString +'#'; 
+		    ((i + j) % 2 === 0) ? newString = newString + ' ' : newString = newString +'#'; 
 		};
 
 		newString = newString + '\n';
@@ -90,19 +88,38 @@ console.log(arrayValue);
 
 
 function reverseArray (array) {
-	return array.reverse();
-}
-
-function reverseArrayInPlace(array) {
 
 	var newArray = [];
 
+	for (var i=0; i < array.length; i++) {
+        newArray.unshift( array[i] );
+	}
+
+	return newArray;
+}
+
+console.log(reverseArray(["A", "B", "C"]));
+// > ["C", "B", "A"];
+
+function reverseArrayInPlace(array) {
+   
+    var index = 0;
+
 	for( var i = array.length; i--; ) {
-	    newArray.push( array[i] );
+		//вставляем элемент в массив
+	    array.push( array[i] - index);
+	    index = index + 1;
+	    //удаляем 1 элемент массива
+	    array.shift( array[0] );
 	};
 
-    return newArray;
+    return array;
 }
+
+var arrayValue = [1, 2, 3, 4, 5];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue);
+// > [5, 4, 3, 2, 1]*/
 
 
 /*4.Используйте метод reduce в комбинации с concat для свёртки массива массивов в один массив, у которого есть все элементы входных массивов.

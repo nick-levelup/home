@@ -15,12 +15,12 @@ alert(dateN);
 */
 	var date = new Date(2012,0,3);
 	alert ( getWeekDay(date) );
-ы
+
 
 function getWeekDay(date) {
 
-	var day = date.getDay();
-    var dayArr = ['вс','пн','вт','ср','чт','пт','сб'];
+	var day = date.getDay(),
+	    dayArr = ['вс','пн','вт','ср','чт','пт','сб'];
 
     return dayArr[day];
 }
