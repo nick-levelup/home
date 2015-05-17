@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	@import url(http://fonts.googleapis.com/css?family=Lato);
+		.buttom {
+			top: 100%;
+			width: 500px;
+
+			height: 50px;
+			border-radius: 5px;
+			font-family: 'Lato', sans-serif;
+    		font-size: 14px;
+    		line-height: 50px;
+    		position: fixed;
+    		padding-left: 10px; 
+    		opacity: 0.3;
+    		-webkit-transition: all 2s linear; 	
+
+
+		}
+		.esk {
+			border-radius: 5px;
+			border: 1px solid #CBCCCE;
+			font-weight: 600;
+			cursor: pointer;
+			width: 18px;
+			height: 18px;
+			line-height: 10px;
+			position: absolute;
+			left: 488px;
+			top: 2px;
+		}
+
+		.esk span {
+			padding: 2px 0 4px 5px;
+			display: block;
+			text-shadow: 1px 1px 1px #fff;
+
+		}
+		.well-done {
+			border: 1px solid #8FB96C;			
+			background: #DFF0D8; /*зеленый*/
+			color: #8FB96C;
+
+		}
+		.heads-up {
+			border: 1px solid #60A0AD;
+			background: #D9EDF7; /*голубой*/
+			color: #60A0AD;
+
+		}
+		.oh-snap {
+			border: 1px solid #C36B7A;
+			background: #F2DEDE; /*красный*/
+			color: #C36B7A;
+		}
+		
+		.pressed {
+			background: rgba(230, 232, 250, 0.9);
+			box-shadow: 0 0 15px rgba(250, 250, 250, 0.9);
+		}
+
+		.isShow {
+			-webkit-transform:  translate(0, -300%);
+			opacity: 0.9;
+
+		}
+
+	
+
+			
+	</style>
+</head>
+<body>
+
+	<button value='well-done'>Сообщение 1</button>
+	<button value='heads-up'>Сообщение 2</button>
+	<button value='oh-snap'>Сообщение 3</button>
+
+	<script src="jsmain.js"></script>
+</body>
+</html>
