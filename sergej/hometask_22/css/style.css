@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 33%;
+    margin: -250px 0 0 -250px;
+}
+
+.accordion h3 {
+    cursor: pointer;
+    line-height: 28px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    background: #0086cd;
+    color: #fff;
+    white-space: nowrap;
+    border-bottom: 1px solid #0070cd;
+    text-shadow: 1px 1px 1px black;
+}
+.accordion h3.is-focus{
+    outline: auto;
+}
+
+.accordion .content {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s linear;
+    padding: 20px;
+    border-left: 1px solid #0086cd;
+    border-right: 1px solid #0086cd;
+}
+.accordion .content:last-child {
+    border-bottom: 1px solid #0086cd;
+}
+
+.accordion .content ul{
+    padding-left: 20px;
+}
+
+.accordion .content.is-active {
+    display: block;
+    opacity: 1;
+}
