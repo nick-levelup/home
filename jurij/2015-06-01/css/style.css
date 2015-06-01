@@ -1,0 +1,91 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+.container
+{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container h1
+{
+    font-weight: bold;
+
+    padding: 10px 0;
+
+    color: #383838;
+}
+
+.container p
+{
+    margin: 10px 0;
+}
+
+.scroll-btn
+{
+    position: fixed;
+
+    display: none;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .7);
+}
+
+.scroll-btn i
+{
+    position: relative;
+    top: 8px;
+    left: 16px;
+
+    -webkit-transition: all .2s;
+       -moz-transition: all .2s;
+         -o-transition: all .2s;
+            transition: all .2s;
+
+    color: #fff;
+}
+
+.scroll-btn:hover
+{
+    background: rgba(0, 0, 0, .8);
+}
+
+#top-up
+{
+    right: 20px;
+    bottom: 20px;
+}
+
+#top-down
+{
+    top: 20px;
+    right: 20px;
+}
+
+#top-up:hover i
+{
+    top: -5px;
+}
+
+#top-down:hover i
+{
+    top: 24px;
+}
+
+.is-active
+{
+    display: block !important;
+}
