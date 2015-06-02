@@ -7,6 +7,9 @@ var scroll = (function() {
 
   function init(config) {
 
+    // при обновлении страницы установим прокрутку в верхнюю часть
+    $(window).scrollTop(0);
+
     options = config;
     scrollSpeed = options.scrollSpeed;
     scrollIntervalMs = options.scrollIntervalMs;
@@ -20,6 +23,7 @@ var scroll = (function() {
 
   function bind() {
 
+    window.addEventListener('resize', setClientHeight);
     document.addEventListener('scroll', scrollEvent);
     $up[0].addEventListener('click', scrollToTop);
     $down[0].addEventListener('click', scrollToDown);
@@ -28,6 +32,7 @@ var scroll = (function() {
 
   function unbind() {
 
+    window.addEventListener('resize', setClientHeight);
     document.removeEventListener('scroll', scrollEvent);
     $up[0].removeEventListener('click', scrollToTop);
     $down[0].removeEventListener('click', scrollToDown);
@@ -44,7 +49,7 @@ var scroll = (function() {
 
     // при каждом вызове функции записываем текущую прокрутку страницы
     scrollHeight = $(window).scrollTop();
-
+    
     // как только высота страницы с учетом прокрутки будет больше, заданной
     // настройками, высоты страницы - отобразим кнопку прокрутки вверх
     $up.toggleClass('is-active', clientHeight < scrollHeight);
@@ -86,6 +91,12 @@ var scroll = (function() {
         $(window).scrollTop(tempScrollHeight);
       }
     }, scrollIntervalMs);
+  };
+
+  function setClientHeight() {
+
+    clientHeight = options.multiplier * $(window).height();
+
   };
 
   function destroy() {
