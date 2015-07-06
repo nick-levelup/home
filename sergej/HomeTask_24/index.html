@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>HomeTask24</title>
+	<link rel="stylesheet" href="http://yastatic.net/bootstrap/3.3.1/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">HomeTask24</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<h6>Inpute query:</h6>
+				<form>
+					<div class="input-group">
+						<input id="inputeCity" type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+							<button id="searchButton" class="btn btn-default" type="button">Search</button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="content" class="row"></div>
+	</div>
+
+	<div class="container">
+		<hr>
+		<footer>
+			<p>&copy; LevelUP 2015</p>
+		</footer>
+	</div>
+
+	<script id="users-template" type="text/x-handlebars-template">
+		{{#list users}}
+			<div class="type">
+				<p>{{type}}</p>
+			</div>
+			<div class="avatar">
+				<img src="{{avatar_url}}" alt="{{login}}_avatar"/>
+			</div>
+			<div class="title">
+				<h3><a href="{{html_url}}" target="_blank">{{login}}</a></h3>
+			</div>
+			<div class="score">
+				<p>Score: <span>{{score}}</span></p>
+			</div>
+		{{/list}}
+	</script>
+
+	<script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://yastatic.net/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>
