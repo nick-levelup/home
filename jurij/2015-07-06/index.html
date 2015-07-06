@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GitHub</title>
+</head>
+<body>
+
+	<script id="userList-tmpl" type="text/x-handlebars-template">
+		<div>
+			{{#list users}}
+				login: {{login}}
+				id: {{id}}
+			{{/list}}
+		</div>
+	</script>
+
+
+
+	<input type="text" placeholder="Search users">
+	<button>Search</button>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
